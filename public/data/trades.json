@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-08T21:52:00+08:00",
+  "updatedAt": "2026-09-08T22:40:00+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot",
-    "equityUsdtApprox": 45,
+    "equityUsdtApprox": 45.06,
     "risk": {
       "spotOnly": true,
       "maxPerTradeUsdt": 10,
@@ -12,16 +12,23 @@
   },
   "openOrders": [
     {
-      "ordId": "3904826264882139136",
-      "clOrdId": "gb1788875291",
+      "ordId": "3904931181907038208",
+      "clOrdId": "gt1788878417",
       "instId": "BTC-USDT",
-      "side": "buy",
+      "side": "sell",
       "ordType": "limit",
-      "px": "77775.3",
-      "sz": "0.00012858",
-      "notionalUsdtApprox": 10,
+      "px": "78553.1",
+      "sz": "0.00012848",
+      "notionalUsdtApprox": 10.09,
       "state": "live",
-      "createdAt": "2026-09-08T21:48:00+08:00"
+      "createdAt": "2026-09-08T22:40:00+08:00"
+    }
+  ],
+  "positions": [
+    {
+      "ccy": "BTC",
+      "sz": "0.00012848",
+      "entryPxApprox": "77775.3"
     }
   ],
   "decisions": [
@@ -31,9 +38,29 @@
       "action": "place_limit_buy",
       "instId": "BTC-USDT",
       "summary": "挂限价买单约 10 USDT",
-      "reason": "当日 BTC/ETH 偏弱（约 -2%），不追跌；在接近日内低位上方挂限价买单，单笔约 10 USDT，符合现货-only 与单笔上限风控；成交后再设卖出目标。",
-      "lesson": "下跌趋势里用限价接回踩，而不是市价追涨杀跌；每笔都要写清「为什么现在做」方便复盘。",
+      "reason": "当日偏弱不追跌，接近日内低位挂限价。",
+      "lesson": "用限价接回踩，而不是市价追跌。",
       "ordId": "3904826264882139136"
+    },
+    {
+      "id": "d2",
+      "at": "2026-09-08T22:30:00+08:00",
+      "action": "fill_buy",
+      "instId": "BTC-USDT",
+      "summary": "限价买单已成交",
+      "reason": "价格回落到挂单价附近，买单成交；现持有约 0.000128 BTC，成本约 77775。",
+      "lesson": "挂单成交后立刻更新日志，并设定卖出目标，避免拿到币却没有退出计划。",
+      "ordId": "3904826264882139136"
+    },
+    {
+      "id": "d3",
+      "at": "2026-09-08T22:40:00+08:00",
+      "action": "place_limit_sell",
+      "instId": "BTC-USDT",
+      "summary": "挂止盈卖单约 +1% @ 78553.1",
+      "reason": "买入已成交且现价高于成本；按小目标止盈，把利润落袋，符合小本金学习节奏。",
+      "lesson": "先学会完整闭环：买入理由 → 成交 → 卖出计划；不要只买不卖。",
+      "ordId": "3904931181907038208"
     }
   ]
 }
