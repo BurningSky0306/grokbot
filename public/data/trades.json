@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-08T22:55:39+08:00",
+  "updatedAt": "2026-09-08T23:37:19+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 45.065630939071305,
+    "equityUsdtApprox": 45.071692948533595,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 2,
@@ -15,91 +15,64 @@
       ]
     }
   },
-  "openOrders": [
-    {
-      "ordId": "3904962054433951744",
-      "clOrdId": "sl1788879337",
-      "instId": "BTC-USDT-SWAP",
-      "side": "buy",
-      "ordType": "market",
-      "px": "78473.0",
-      "sz": "0.01",
-      "notionalUsdtApprox": 7.85,
-      "state": "filled_position",
-      "lever": "2",
-      "mgnMode": "isolated",
-      "createdAt": "2026-09-08T22:55:39+08:00"
+  "market": {
+    "BTC-USDT": {
+      "last": "78549.4",
+      "bid": "78549.7",
+      "ask": "78549.8",
+      "open24h": "78886.1",
+      "high24h": "79485.9",
+      "low24h": "77624.6",
+      "vol24h": "5065.79769939",
+      "change%": -0.427
+    },
+    "ETH-USDT": {
+      "last": "2488.65",
+      "bid": "2488.65",
+      "ask": "2488.66",
+      "open24h": "2476.24",
+      "high24h": "2507.74",
+      "low24h": "2441.67",
+      "vol24h": "95047.533453",
+      "change%": 0.501
+    },
+    "BTC-USDT-SWAP": {
+      "last": "78515.2",
+      "bid": "78515.1",
+      "ask": "78515.2",
+      "open24h": "78850",
+      "high24h": "79454",
+      "low24h": "77574.3",
+      "vol24h": "6396404.13",
+      "change%": -0.425
+    },
+    "ETH-USDT-SWAP": {
+      "last": "2487.6",
+      "bid": "2487.6",
+      "ask": "2487.61",
+      "open24h": "2475.17",
+      "high24h": "2507.43",
+      "low24h": "2440.43",
+      "vol24h": "23805922.33",
+      "change%": 0.502
     }
-  ],
+  },
+  "openOrders": [],
   "positions": [
     {
-      "adl": "1",
-      "availPos": "",
-      "avgPx": "78473.1",
-      "baseBal": "",
-      "baseBorrowed": "",
-      "baseInterest": "",
-      "bePx": "78551.6123561781",
-      "bizRefId": "",
-      "bizRefType": "",
-      "cTime": "1788879338057",
-      "ccy": "USDT",
-      "clSpotInUseAmt": "",
-      "closeAllFlag": "0",
-      "closeOrderAlgo": [],
-      "deltaBS": "",
-      "deltaPA": "",
-      "estMaxWin": "",
-      "fee": "-0.003923655",
-      "fundingFee": "0",
-      "gammaBS": "",
-      "gammaPA": "",
-      "hedgedPos": "",
-      "idxPx": "78511.7",
-      "imr": "",
       "instId": "BTC-USDT-SWAP",
-      "instType": "SWAP",
-      "interest": "",
-      "last": "78473.1",
-      "lever": "2",
-      "liab": "",
-      "liabCcy": "",
-      "liqPenalty": "0",
-      "liqPx": "39414.01260673029",
-      "margin": "3.923655",
-      "markPx": "78472",
-      "maxSpotInUseAmt": "",
-      "mgnMode": "isolated",
-      "mgnRatio": "111.1095535845765",
-      "mmr": "0.0313888",
-      "nonSettleAvgPx": "",
-      "notionalUsd": "7.844688896",
-      "optVal": "",
-      "pendingCloseOrdLiabVal": "",
-      "pnl": "0",
       "pos": "0.01",
-      "posCcy": "",
-      "posId": "3904962054433951745",
       "posSide": "net",
-      "quoteBal": "",
-      "quoteBorrowed": "",
-      "quoteInterest": "",
-      "realizedPnl": "-0.003923655",
-      "ruleType": "normal",
-      "settledPnl": "",
-      "spotInUseAmt": "",
-      "spotInUseCcy": "",
-      "thetaBS": "",
-      "thetaPA": "",
-      "tradeId": "2903141265",
-      "uTime": "1788879338057",
-      "upl": "-0.0001100000000006",
-      "uplLastPx": "0",
-      "uplRatio": "-0.0000280350846342",
-      "uplRatioLastPx": "0",
-      "usdPx": "0.99968",
-      "vegaBS": "",
-      "vegaPA": ""
+      "avgPx": "78473.1",
+      "markPx": "78514.7",
+      "upl": "0.0041599999999991",
+      "uplRatio": "0.0010602359279801",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "margin": "3.923655",
+      "liqPx": "39414.01260673029",
+      "notionalUsd": "7.849271588400001",
+      "realizedPnl": "-0.003923655"
     }
   ],
   "decisions": [
@@ -134,6 +107,19 @@
       "ordId": "3904931181907038208"
     },
     {
+      "id": "d5",
+      "at": "2026-09-08T22:49:11+08:00",
+      "action": "fill_take_profit",
+      "instId": "BTC-USDT",
+      "summary": "现货止盈成交 @ 78553.1，约 +0.08 USDT",
+      "reason": "价格触及 +1% 止盈限价单并全部成交；现货 BTC 已清仓，完成首笔买卖闭环。手续费约 0.008 USDT。",
+      "lesson": "止盈单要提前挂好；小目标落袋比盯盘犹豫更重要。下一笔仍用限价、控制 ≤10U。",
+      "ordId": "3904931181907038208",
+      "avgPx": "78553.1",
+      "fillSz": "0.00012848",
+      "approxPnlUsdt": 0.0841
+    },
+    {
       "id": "d4",
       "at": "2026-09-08T22:55:39+08:00",
       "action": "open_swap_long",
@@ -145,6 +131,15 @@
       "lever": "2",
       "mgnMode": "isolated",
       "sz": "0.01"
+    },
+    {
+      "id": "d6",
+      "at": "2026-09-08T23:37:19+08:00",
+      "action": "hold",
+      "instId": "BTC-USDT-SWAP",
+      "summary": "继续持有教学永续多单；现货空仓观望",
+      "reason": "权益约 45.07U，日内浮亏远低于 9U 止损线。BTC 现货约 78549.4（24h -0.427%），中位震荡不追单。永续 0.01 张均价 78473.1，标记约 78515.2，浮盈极小，保留作杠杆体感教学。",
+      "lesson": "没有清晰优势时默认空手/持仓不动；教学仓不要加仓摊薄纪律。"
     }
   ]
 }
