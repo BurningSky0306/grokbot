@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0f14" />
+    <meta name="description" content="量化炒币 · 学习看板 — OKX 现货交易学习仪表盘" />
+    <title>量化炒币 · 学习看板</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">◈</span>
+          <div>
+            <h1>量化炒币 · 学习看板</h1>
+            <p class="subtitle">现货练习 · 记录理由 · 控制风险</p>
+          </div>
+        </div>
+        <div class="topbar-meta">
+          <span id="clock" class="mono">--</span>
+          <button type="button" id="btn-refresh" class="btn ghost" title="刷新行情与日志">刷新</button>
+        </div>
+      </header>
+
+      <section class="risk-strip" aria-label="风控条">
+        <div class="risk-item"><span class="label">模式</span><strong>仅现货</strong></div>
+        <div class="risk-item"><span class="label">单笔上限</span><strong>≤ 10 USDT</strong></div>
+        <div class="risk-item"><span class="label">日亏损止损</span><strong>~9 USDT</strong></div>
+        <div class="risk-item"><span class="label">权益约</span><strong id="equity">45 USDT</strong></div>
+      </section>
+
+      <main class="grid">
+        <section class="card" id="market-card">
+          <div class="card-head">
+            <h2>行情 · OKX 公开接口</h2>
+            <span id="market-status" class="pill muted">加载中</span>
+          </div>
+          <div class="tickers" id="tickers">
+            <article class="ticker skeleton" data-inst="BTC-USDT">
+              <div class="ticker-name">BTC-USDT</div>
+              <div class="ticker-price mono">—</div>
+              <div class="ticker-chg">—</div>
+            </article>
+            <article class="ticker skeleton" data-inst="ETH-USDT">
+              <div class="ticker-name">ETH-USDT</div>
+              <div class="ticker-price mono">—</div>
+              <div class="ticker-chg">—</div>
+            </article>
+          </div>
+          <p class="hint">数据来自 OKX 公开 REST，无需密钥。本地开发经 Vite 代理；线上经 Pages Function 转发。</p>
+        </section>
+
+        <section class="card" id="orders-card">
+          <div class="card-head">
+            <h2>挂单 / 开仓中</h2>
+            <span id="orders-count" class="pill">0</span>
+          </div>
+          <div id="orders" class="list"></div>
+        </section>
+
+        <section class="card wide" id="journal-card">
+          <div class="card-head">
+            <h2>交易日志 · 理由与教训</h2>
+            <span class="pill muted">初学者复盘</span>
+          </div>
+          <div id="decisions" class="timeline"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>学习用途 · 不构成投资建议 · 仓库不含任何 OKX 密钥</p>
+        <p class="mono muted" id="updated-at">—</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

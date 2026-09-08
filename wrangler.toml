@@ -1,0 +1,8 @@
+# Cloudflare Pages — 量化炒币 · 学习看板
+name = "grokbot"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "dist"
+
+# 绑定自定义域名（部署后在 Cloudflare Dashboard → Pages → 自定义域 添加）:
+# - 示例: learn.example.com
+# 本仓库不含任何 OKX API Key / Secret / Passphrase。

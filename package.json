@@ -1,0 +1,17 @@
+{
+  "name": "grokbot",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "量化炒币 · 学习看板 — OKX 现货学习仪表盘",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && wrangler pages deploy dist --project-name=grokbot"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11",
+    "wrangler": "^3.99.0"
+  }
+}
