@@ -1,28 +1,141 @@
 {
-  "updatedAt": "2026-09-09T14:24:51+08:00",
+  "updatedAt": "2026-09-09T14:34:24+08:00",
   "account": {
     "label": "grokbot量化炒币",
-    "mode": "v2",
-    "equityUsdtApprox": 45.22893233362774,
+    "mode": "always-in-market",
+    "equityUsdtApprox": 45.22271485957153,
     "risk": {
-      "strategy": "V2",
       "spotOnly": false,
       "maxLeverage": 2,
-      "instrumentsNew": [
+      "maxMarginPerTradeUsdt": 10,
+      "dailyLossStopUsdt": 9,
+      "alwaysInMarket": true,
+      "swapPrefer": [
         "BTC-USDT-SWAP",
         "ETH-USDT-SWAP"
-      ],
-      "riskPerTradePct": 0.25,
-      "dayLossStopPct": 1.0,
-      "legacyDenseStopped": true
+      ]
     }
   },
-  "openOrders": [],
-  "positions": [],
+  "openOrders": [
+    {
+      "ordId": "pos",
+      "instId": "SOL-USDT-SWAP",
+      "side": "buy",
+      "ordType": "position",
+      "px": "104.58",
+      "sz": "0.01",
+      "state": "open",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "margin": "0.5229",
+      "upl": "-0.0001000000000001",
+      "createdAt": "2026-09-09T14:34:24+08:00"
+    },
+    {
+      "ordId": "pos",
+      "instId": "ETH-USDT-SWAP",
+      "side": "buy",
+      "ordType": "position",
+      "px": "2497.98",
+      "sz": "0.01",
+      "state": "open",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "margin": "1.24899",
+      "upl": "-0.0000799999999999",
+      "createdAt": "2026-09-09T14:34:24+08:00"
+    },
+    {
+      "ordId": "pos",
+      "instId": "BTC-USDT-SWAP",
+      "side": "buy",
+      "ordType": "position",
+      "px": "79137.8",
+      "sz": "0.01",
+      "state": "open",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "margin": "3.95689",
+      "upl": "-0.0003100000000006",
+      "createdAt": "2026-09-09T14:34:24+08:00"
+    },
+    {
+      "ordId": "3906851957089681408",
+      "instId": "SOL-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "px": "105.82",
+      "sz": "0.01",
+      "state": "live",
+      "tpTriggerPx": "105.82",
+      "slTriggerPx": "103.52",
+      "createdAt": "2026-09-09T14:34:24+08:00"
+    },
+    {
+      "ordId": "3906851920783785985",
+      "instId": "ETH-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "px": "2528.17",
+      "sz": "0.01",
+      "state": "live",
+      "tpTriggerPx": "2528.17",
+      "slTriggerPx": "2473.21",
+      "createdAt": "2026-09-09T14:34:24+08:00"
+    },
+    {
+      "ordId": "3906851884679217153",
+      "instId": "BTC-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "px": "80087.5",
+      "sz": "0.01",
+      "state": "live",
+      "tpTriggerPx": "80087.5",
+      "slTriggerPx": "78346.4",
+      "createdAt": "2026-09-09T14:34:24+08:00"
+    }
+  ],
+  "positions": [
+    {
+      "instId": "SOL-USDT-SWAP",
+      "pos": "0.01",
+      "avgPx": "104.58",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "margin": "0.5229",
+      "upl": "-0.0001000000000001",
+      "notionalUsd": "1.0454804029999998"
+    },
+    {
+      "instId": "ETH-USDT-SWAP",
+      "pos": "0.01",
+      "avgPx": "2497.98",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "margin": "1.24899",
+      "upl": "-0.0000799999999999",
+      "notionalUsd": "2.497375441"
+    },
+    {
+      "instId": "BTC-USDT-SWAP",
+      "pos": "0.01",
+      "avgPx": "79137.8",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "margin": "3.95689",
+      "upl": "-0.0003100000000006",
+      "notionalUsd": "7.9118081713"
+    }
+  ],
   "equityHistory": [
     {
       "at": "2026-09-09T14:24:51+08:00",
       "equity": 45.22893233362774
+    },
+    {
+      "at": "2026-09-09T14:34:24+08:00",
+      "equity": 45.22271485957153
     }
   ],
   "decisions": [
@@ -406,7 +519,54 @@
           "ordId": "3906832767872815107"
         }
       ]
+    },
+    {
+      "id": "d_05140736",
+      "at": "2026-09-09T14:34:24+08:00",
+      "action": "open_swap_long",
+      "instId": "BTC-USDT-SWAP",
+      "summary": "始终在场：BTC-USDT-SWAP 多 0.01张 2x逐仓 TP~1.2% SL~1.0%",
+      "reason": "账户曾被清空，按始终持仓要求立刻补仓。24h +1.00%，15m趋势=上行，thesis=support_or_up；最小张数名义约7.9138U，2x保证金约3.9569U（≤10U）；交易所侧 TP@80087.5 / SL@78346.4。",
+      "lesson": "始终在场≠乱开仓：用主流永续、最小张数、逐仓2x，并预先挂好TP/SL；名义=张数×面值×价格，保证金=名义/杠杆；先练可度量的闭环再谈加仓。",
+      "ordId": "3906851884705140736",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "sz": "0.01",
+      "tp": "80087.5",
+      "sl": "78346.4",
+      "marginEst": 3.9569
+    },
+    {
+      "id": "d_09709568",
+      "at": "2026-09-09T14:34:24+08:00",
+      "action": "open_swap_long",
+      "instId": "ETH-USDT-SWAP",
+      "summary": "始终在场：ETH-USDT-SWAP 多 0.01张 2x逐仓 TP~1.2% SL~1.0%",
+      "reason": "账户曾被清空，按始终持仓要求立刻补仓。24h +1.33%，15m趋势=整固/偏弱，thesis=support_or_up；最小张数名义约2.4982U，2x保证金约1.2491U（≤10U）；交易所侧 TP@2528.17 / SL@2473.21。",
+      "lesson": "始终在场≠乱开仓：用主流永续、最小张数、逐仓2x，并预先挂好TP/SL；名义=张数×面值×价格，保证金=名义/杠杆；先练可度量的闭环再谈加仓。",
+      "ordId": "3906851920809709568",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "sz": "0.01",
+      "tp": "2528.17",
+      "sl": "2473.21",
+      "marginEst": 1.2491
+    },
+    {
+      "id": "d_82050560",
+      "at": "2026-09-09T14:34:24+08:00",
+      "action": "open_swap_long",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "始终在场：SOL-USDT-SWAP 多 0.01张 2x逐仓 TP~1.2% SL~1.0%",
+      "reason": "账户曾被清空，按始终持仓要求立刻补仓。24h +1.99%，15m趋势=上行，thesis=support_or_up；最小张数名义约1.0457U，2x保证金约0.5228U（≤10U）；交易所侧 TP@105.82 / SL@103.52。",
+      "lesson": "始终在场≠乱开仓：用主流永续、最小张数、逐仓2x，并预先挂好TP/SL；名义=张数×面值×价格，保证金=名义/杠杆；先练可度量的闭环再谈加仓。",
+      "ordId": "3906851957082050560",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "sz": "0.01",
+      "tp": "105.82",
+      "sl": "103.52",
+      "marginEst": 0.5228
     }
-  ],
-  "universe": []
+  ]
 }
