@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T23:37:19+08:00",
+  "updatedAt": "2026-09-09T12:52:33+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
@@ -11,7 +11,10 @@
       "dailyLossStopUsdt": 9,
       "swapAllow": [
         "BTC-USDT-SWAP",
-        "ETH-USDT-SWAP"
+        "ETH-USDT-SWAP",
+        "SOL-USDT-SWAP",
+        "XRP-USDT-SWAP",
+        "DOGE-USDT-SWAP"
       ]
     }
   },
@@ -140,6 +143,15 @@
       "summary": "继续持有教学永续多单；现货空仓观望",
       "reason": "权益约 45.07U，日内浮亏远低于 9U 止损线。BTC 现货约 78549.4（24h -0.427%），中位震荡不追单。永续 0.01 张均价 78473.1，标记约 78515.2，浮盈极小，保留作杠杆体感教学。",
       "lesson": "没有清晰优势时默认空手/持仓不动；教学仓不要加仓摊薄纪律。"
+    },
+    {
+      "id": "d_universe",
+      "at": "2026-09-09T12:52:33+08:00",
+      "action": "expand_swap_universe",
+      "instId": "MULTI",
+      "summary": "永续观察池扩至 BTC/ETH/SOL/XRP/DOGE",
+      "reason": "用户要求不要只盯 BTC；选流动性好、最小名义远低于10U保证金上限的5个USDT永续，杠杆统一2x。",
+      "lesson": "小资金先做高流动性品种；先定交易池再谈方向，避免随意上山寨。"
     }
   ]
 }
