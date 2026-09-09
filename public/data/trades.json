@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-09T23:20:03+08:00",
+  "updatedAt": "2026-09-10T00:48:49+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 42.4035,
+    "equityUsdtApprox": 43.2766,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 3,
@@ -18,6 +18,7 @@
         "LIT-USDT-SWAP",
         "NEAR-USDT-SWAP",
         "PEPE-USDT-SWAP",
+        "PUMP-USDT-SWAP",
         "SOL-USDT-SWAP",
         "XRP-USDT-SWAP",
         "ZEC-USDT-SWAP"
@@ -36,11 +37,11 @@
         5
       ],
       "anyInstrument": true,
-      "notes": "2026-09-09 23:16 SGT: LIT SL → rotate NEAR; book ZEC/DOT/NEAR."
+      "notes": "2026-09-10 00:45 SGT: DOT提前轮换→PUMP；书 ZEC/NEAR/PUMP。"
     },
-    "equity": 42.4035,
-    "availEq": 10.2965,
-    "updatedAt": "2026-09-09T23:20:03+08:00"
+    "equity": 43.2766,
+    "availEq": 7.9742,
+    "updatedAt": "2026-09-10T00:48:49+08:00"
   },
   "openOrders": [
     {
@@ -53,26 +54,10 @@
       "state": "open",
       "lever": "3",
       "mgnMode": "isolated",
-      "upl": 0.6675,
+      "upl": 1.1499,
       "tp": "1335.84",
       "sl": "1168.08",
       "algoId": "3907129712154951680",
-      "createdAt": "2026-09-09T16:52:19+08:00"
-    },
-    {
-      "ordId": "3907129768384548864",
-      "instId": "DOT-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "1.1811",
-      "sz": "26",
-      "state": "open",
-      "lever": "3",
-      "mgnMode": "isolated",
-      "upl": -1.4898,
-      "tp": "1.2701",
-      "sl": "1.1106",
-      "algoId": "3907129768392179712",
       "createdAt": "2026-09-09T16:52:19+08:00"
     },
     {
@@ -85,11 +70,27 @@
       "state": "open",
       "lever": "3",
       "mgnMode": "isolated",
-      "upl": 0.024,
+      "upl": 0.324,
       "tp": "2.766",
       "sl": "2.419",
       "algoId": "3907908162696429569",
       "createdAt": "2026-09-09T23:18:58+08:00"
+    },
+    {
+      "ordId": "3908086552746151936",
+      "instId": "PUMP-USDT-SWAP",
+      "side": "buy",
+      "ordType": "position",
+      "px": "0.00478",
+      "sz": "7",
+      "state": "open",
+      "lever": "3",
+      "mgnMode": "isolated",
+      "upl": -0.007,
+      "tp": "0.005145",
+      "sl": "0.004499",
+      "algoId": "3908086552720228353",
+      "createdAt": "2026-09-10T00:48:49+08:00"
     }
   ],
   "positions": [
@@ -98,178 +99,78 @@
       "posSide": "net",
       "pos": "3",
       "avgPx": "1242.16",
-      "markPx": "1264.41",
+      "markPx": "1280.49",
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": "12.4216",
-      "notionalUsd": "37.9243",
-      "upl": 0.6675,
+      "margin": "12.4209",
+      "notionalUsd": "38.4078",
+      "upl": 1.1499,
       "tpTriggerPx": "1335.84",
       "slTriggerPx": "1168.08",
       "algoId": "3907129712154951680",
       "ordId": "3907129712147320832"
     },
     {
-      "instId": "DOT-USDT-SWAP",
-      "posSide": "net",
-      "pos": "26",
-      "avgPx": "1.1811",
-      "markPx": "1.1238",
-      "lever": "3",
-      "mgnMode": "isolated",
-      "margin": "10.2362",
-      "notionalUsd": "29.2127",
-      "upl": -1.4898,
-      "tpTriggerPx": "1.2701",
-      "slTriggerPx": "1.1106",
-      "algoId": "3907129768392179712",
-      "ordId": "3907129768384548864"
-    },
-    {
       "instId": "NEAR-USDT-SWAP",
       "posSide": "net",
       "pos": "1.2",
       "avgPx": "2.572",
-      "markPx": "2.574",
+      "markPx": "2.599",
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": "10.288",
-      "notionalUsd": "30.8815",
-      "upl": 0.024,
+      "margin": "10.2849",
+      "notionalUsd": "31.1824",
+      "upl": 0.324,
       "tpTriggerPx": "2.766",
       "slTriggerPx": "2.419",
       "algoId": "3907908162696429569",
       "ordId": "3907908162722353152"
-    }
-  ],
-  "universe": [
-    "NEAR-USDT-SWAP",
-    "DOT-USDT-SWAP",
-    "LIT-USDT-SWAP",
-    "ZEC-USDT-SWAP",
-    "BTC-USDT-SWAP",
-    "ETH-USDT-SWAP",
-    "SOL-USDT-SWAP",
-    {
-      "instId": "SATS-USDT-SWAP",
-      "volCcy24h": 60937380000000.0,
-      "margin2x": 0.0565,
-      "chg24": -0.04
-    },
-    {
-      "instId": "PEPE-USDT-SWAP",
-      "volCcy24h": 31367100000000.0,
-      "margin2x": 1.8525,
-      "chg24": 3.12
-    },
-    {
-      "instId": "SHIB-USDT-SWAP",
-      "volCcy24h": 2190533200000.0,
-      "margin2x": 0.2723,
-      "chg24": 1.23
-    },
-    {
-      "instId": "BONK-USDT-SWAP",
-      "volCcy24h": 1338204500000.0,
-      "margin2x": 0.1525,
-      "chg24": -1.9
-    },
-    {
-      "instId": "SOPH-USDT-SWAP",
-      "volCcy24h": 51586572700.0,
-      "margin2x": 0.276,
-      "chg24": -45.07
     },
     {
       "instId": "PUMP-USDT-SWAP",
-      "volCcy24h": 31368533000.0,
-      "margin2x": 2.268,
-      "chg24": 7.67
-    },
-    {
-      "instId": "FLOKI-USDT-SWAP",
-      "volCcy24h": 30895300000.0,
-      "margin2x": 1.3145,
-      "chg24": 0.27
-    },
-    {
-      "instId": "IOST-USDT-SWAP",
-      "volCcy24h": 22285291000.0,
-      "margin2x": 0.595,
-      "chg24": 23.6
-    },
-    {
-      "instId": "NEIRO-USDT-SWAP",
-      "volCcy24h": 17367305000.0,
-      "margin2x": 0.0446,
-      "chg24": 0.29
-    },
-    {
-      "instId": "KAT-USDT-SWAP",
-      "volCcy24h": 5882677900.0,
-      "margin2x": 0.2702,
-      "chg24": 14.66
-    },
-    {
-      "instId": "BOME-USDT-SWAP",
-      "volCcy24h": 4608730000.0,
-      "margin2x": 0.4612,
-      "chg24": 2.08
-    },
-    {
-      "instId": "DOGE-USDT-SWAP",
-      "volCcy24h": 4075052250.0,
-      "margin2x": 0.4532,
-      "chg24": 1.85
-    },
-    {
-      "instId": "DOOD-USDT-SWAP",
-      "volCcy24h": 3537599000.0,
-      "margin2x": 0.8765,
-      "chg24": 5.16
-    },
-    {
-      "instId": "HMSTR-USDT-SWAP",
-      "volCcy24h": 3473728800.0,
-      "margin2x": 0.0088,
-      "chg24": -0.85
-    },
-    {
-      "instId": "OL-USDT-SWAP",
-      "volCcy24h": 2811970000.0,
-      "margin2x": 0.2823,
-      "chg24": 15.55
-    },
-    {
-      "instId": "PENGU-USDT-SWAP",
-      "volCcy24h": 2244102800.0,
-      "margin2x": 0.4119,
-      "chg24": -0.22
-    },
-    {
-      "instId": "CP-USDT-SWAP",
-      "volCcy24h": 2212892400.0,
-      "margin2x": 0.8185,
-      "chg24": -16.69
-    },
-    {
-      "instId": "NOT-USDT-SWAP",
-      "volCcy24h": 2033061200.0,
-      "margin2x": 0.023,
-      "chg24": -1.9
-    },
-    {
-      "instId": "MEME-USDT-SWAP",
-      "volCcy24h": 1854415400.0,
-      "margin2x": 0.0281,
-      "chg24": 0.63
-    },
-    {
-      "instId": "GALA-USDT-SWAP",
-      "volCcy24h": 1376963340.0,
-      "margin2x": 0.0094,
-      "chg24": -0.53
+      "posSide": "net",
+      "pos": "7",
+      "avgPx": "0.00478",
+      "markPx": "0.004779",
+      "lever": "3",
+      "mgnMode": "isolated",
+      "margin": "11.1533",
+      "notionalUsd": "33.4470",
+      "upl": -0.007,
+      "tpTriggerPx": "0.005145",
+      "slTriggerPx": "0.004499",
+      "algoId": "3908086552720228353",
+      "ordId": "3908086552746151936"
     }
+  ],
+  "universe": [
+    "BOME-USDT-SWAP",
+    "BONK-USDT-SWAP",
+    "BTC-USDT-SWAP",
+    "CP-USDT-SWAP",
+    "DOGE-USDT-SWAP",
+    "DOOD-USDT-SWAP",
+    "DOT-USDT-SWAP",
+    "ETH-USDT-SWAP",
+    "FLOKI-USDT-SWAP",
+    "GALA-USDT-SWAP",
+    "HMSTR-USDT-SWAP",
+    "IOST-USDT-SWAP",
+    "KAT-USDT-SWAP",
+    "LIT-USDT-SWAP",
+    "MEME-USDT-SWAP",
+    "NEAR-USDT-SWAP",
+    "NEIRO-USDT-SWAP",
+    "NOT-USDT-SWAP",
+    "OL-USDT-SWAP",
+    "PENGU-USDT-SWAP",
+    "PEPE-USDT-SWAP",
+    "PUMP-USDT-SWAP",
+    "SATS-USDT-SWAP",
+    "SHIB-USDT-SWAP",
+    "SOL-USDT-SWAP",
+    "SOPH-USDT-SWAP",
+    "ZEC-USDT-SWAP"
   ],
   "decisions": [
     {
@@ -1287,6 +1188,76 @@
       "riskNote": "3x isolated；max margin~15U；daily stop 9U；target hit PnL 2–3U",
       "isoEq": 32.9458,
       "tactics": "hold_zec_dot_rotate_near"
+    },
+    {
+      "id": "d_strategy_review_004523",
+      "at": "2026-09-10T00:48:49+08:00",
+      "action": "strategy_review",
+      "instId": "BOOK",
+      "summary": "5小时策略审视：平DOT轮换开PUMP；维持ZEC/NEAR；书=ZEC/NEAR/PUMP 3x集中仓",
+      "reason": "权益≈43.28U（起步~45U），日PnL≈-1.72U，未触9U日损线。LIT已SL约-1.98U。DOT持仓浮亏≈-1.35、24h约-5.5%、15m RSI≈35且跌破EMA20，距SL仅约1.6%，继续持有期望差；提前平仓fillPnl≈-1.37U（含费约-1.39U）节省剩余止损空间。ZEC浮盈≈+1.15、NEAR≈+0.32表现健康。PUMP 24h约+9%、量能>1.7亿U、OI约3200万U、15m RSI≈63，适合作为下一集中多头。",
+      "lesson": "集中3x+交易所OCO继续有效；弱币不要死等到SL——策略窗可提前轮换到高波动流动币；禁止回填微仓；盯盘仍以TP/SL为主，策略审视负责结构性换仓。",
+      "decision": "rotate",
+      "material": true,
+      "bookChange": true,
+      "equity": 43.2766,
+      "availEq": 7.9742,
+      "isoEq": 35.3106,
+      "upl": 1.4515,
+      "dailyPnlApprox": -1.7234,
+      "positions": [
+        "ZEC-USDT-SWAP",
+        "NEAR-USDT-SWAP",
+        "PUMP-USDT-SWAP"
+      ],
+      "tactics": {
+        "keep": [
+          "concentrated_3x",
+          "exchange_oco",
+          "always_in_market",
+          "any_instrument_inside_risk"
+        ],
+        "tweak": [
+          "strategy_window_early_rotate_weak_leg",
+          "prefer_liquid_24h_movers_over_laggards"
+        ],
+        "replace": [
+          "hold_weak_leg_to_sl_always",
+          "micro_spray"
+        ]
+      },
+      "riskNote": "3x逐仓；单笔目标PnL≈2–3U；偏好2–5并发；日损停≈9U；无出金。"
+    },
+    {
+      "id": "d_close_dot_004523",
+      "at": "2026-09-10T00:48:49+08:00",
+      "action": "close",
+      "instId": "DOT-USDT-SWAP",
+      "summary": "策略审视提前平仓 DOT-USDT-SWAP 26张@≈1.1283",
+      "reason": "开仓均价1.1811；市价平仓均价约1.1283；fillPnl合计约-1.3708U，手续费约-0.015U，合计已实现约-1.39U。弱结构+近SL，轮换释放保证金。",
+      "ordId": "3908085912896688128",
+      "fillPx": "1.1283",
+      "sz": "26",
+      "realizedPnlApprox": -1.39,
+      "material": true,
+      "bookChange": true
+    },
+    {
+      "id": "d_open_pump_004523",
+      "at": "2026-09-10T00:48:49+08:00",
+      "action": "open",
+      "instId": "PUMP-USDT-SWAP",
+      "summary": "开多 PUMP-USDT-SWAP 7张 3x逐仓（DOT轮换）",
+      "reason": "DOT→PUMP轮换；24h约+9%、高流动性。名义约33.5U，保证金约11.2U；TP≈+7.6%(~2.5U)/SL≈-5.9%(~2.0U)。成交均价0.00478；交易所OCO TP=0.005145 / SL=0.004499。",
+      "ordId": "3908086552746151936",
+      "algoId": "3908086552720228353",
+      "fillPx": "0.00478",
+      "sz": "7",
+      "lever": "3",
+      "tp": "0.005145",
+      "sl": "0.004499",
+      "material": true,
+      "bookChange": true
     }
   ]
 }
