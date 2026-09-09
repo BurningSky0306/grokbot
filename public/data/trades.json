@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-09T15:12:35+08:00",
+  "updatedAt": "2026-09-09T15:39:34+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 45.2689,
+    "equityUsdtApprox": 45.249139541385794,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 2,
@@ -46,250 +46,243 @@
       ],
       "style": "dense_min_size",
       "anyInstrument": true
-    }
+    },
+    "availUsdtApprox": 36.824580307928905,
+    "isoMarginUsdtApprox": 8.430895,
+    "uplUsdtApprox": 0.00913
   },
   "openOrders": [
     {
-      "ordId": "pos",
-      "instId": "SHIB-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "0.000005465",
-      "sz": "0.1",
-      "state": "open",
-      "lever": "2",
-      "mgnMode": "isolated",
-      "upl": "0",
-      "createdAt": "2026-09-09T15:12:35+08:00"
-    },
-    {
-      "ordId": "pos",
-      "instId": "PEPE-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "0.000003715",
-      "sz": "0.1",
-      "state": "open",
-      "lever": "2",
-      "mgnMode": "isolated",
-      "upl": "0.0010000000000001",
-      "createdAt": "2026-09-09T15:12:35+08:00"
-    },
-    {
-      "ordId": "pos",
-      "instId": "SATS-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "0.000000011303",
-      "sz": "1",
-      "state": "open",
-      "lever": "2",
-      "mgnMode": "isolated",
-      "upl": "-0.00005",
-      "createdAt": "2026-09-09T15:12:35+08:00"
-    },
-    {
-      "ordId": "pos",
-      "instId": "GALA-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "0.00189",
-      "sz": "1",
-      "state": "open",
-      "lever": "2",
-      "mgnMode": "isolated",
-      "upl": "0.00005",
-      "createdAt": "2026-09-09T15:12:35+08:00"
-    },
-    {
-      "ordId": "pos",
-      "instId": "NOT-USDT-SWAP",
-      "side": "sell",
-      "ordType": "position",
-      "px": "0.0004606",
-      "sz": "-1",
-      "state": "open",
-      "lever": "2",
-      "mgnMode": "isolated",
-      "upl": "-0.0002",
-      "createdAt": "2026-09-09T15:12:35+08:00"
-    },
-    {
-      "ordId": "pos",
-      "instId": "HMSTR-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "0.0001748",
-      "sz": "1",
-      "state": "open",
-      "lever": "2",
-      "mgnMode": "isolated",
-      "upl": "0.00005",
-      "createdAt": "2026-09-09T15:12:35+08:00"
-    },
-    {
-      "ordId": "pos",
+      "ordId": "3906981906593267712",
       "instId": "BOME-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "0.000929",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "0.0009401",
+      "slTriggerPx": "0.0009151",
       "sz": "1",
-      "state": "open",
+      "state": "live",
       "lever": "2",
       "mgnMode": "isolated",
-      "upl": "-0.0018",
-      "createdAt": "2026-09-09T15:12:35+08:00"
+      "createdAt": "2026-09-09T15:39:34+08:00"
     },
     {
-      "ordId": "pos",
+      "ordId": "3906981900754796544",
+      "instId": "HMSTR-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "0.0001769",
+      "slTriggerPx": "0.0001731",
+      "sz": "1",
+      "state": "live",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "createdAt": "2026-09-09T15:39:34+08:00"
+    },
+    {
+      "ordId": "3906981817204260864",
+      "instId": "NOT-USDT-SWAP",
+      "side": "buy",
+      "ordType": "oco",
+      "tpTriggerPx": "0.0004551",
+      "slTriggerPx": "0.0004652",
+      "sz": "1",
+      "state": "live",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "createdAt": "2026-09-09T15:39:34+08:00"
+    },
+    {
+      "ordId": "3906981769254977536",
+      "instId": "GALA-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "0.001913",
+      "slTriggerPx": "0.001871",
+      "sz": "1",
+      "state": "live",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "createdAt": "2026-09-09T15:39:34+08:00"
+    },
+    {
+      "ordId": "3906981716608073728",
+      "instId": "SATS-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "0.000000011439",
+      "slTriggerPx": "0.000000011190",
+      "sz": "1",
+      "state": "live",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "createdAt": "2026-09-09T15:39:34+08:00"
+    },
+    {
+      "ordId": "3906981660102410240",
+      "instId": "PEPE-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "0.000003760",
+      "slTriggerPx": "0.000003678",
+      "sz": "0.1",
+      "state": "live",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "createdAt": "2026-09-09T15:39:34+08:00"
+    },
+    {
+      "ordId": "3906981607757496320",
+      "instId": "SHIB-USDT-SWAP",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "0.000005531",
+      "slTriggerPx": "0.000005410",
+      "sz": "0.1",
+      "state": "live",
+      "lever": "2",
+      "mgnMode": "isolated",
+      "createdAt": "2026-09-09T15:39:34+08:00"
+    },
+    {
+      "ordId": "3906851957089681408",
       "instId": "SOL-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "104.58",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "105.82",
+      "slTriggerPx": "103.52",
       "sz": "0.01",
-      "state": "open",
+      "state": "live",
       "lever": "2",
       "mgnMode": "isolated",
-      "upl": "0.0028",
-      "createdAt": "2026-09-09T15:12:35+08:00"
+      "createdAt": "2026-09-09T15:39:34+08:00"
     },
     {
-      "ordId": "pos",
+      "ordId": "3906851920783785985",
       "instId": "ETH-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "2497.98",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "2528.17",
+      "slTriggerPx": "2473.21",
       "sz": "0.01",
-      "state": "open",
+      "state": "live",
       "lever": "2",
       "mgnMode": "isolated",
-      "upl": "0.0150700000000002",
-      "createdAt": "2026-09-09T15:12:35+08:00"
+      "createdAt": "2026-09-09T15:39:34+08:00"
     },
     {
-      "ordId": "pos",
+      "ordId": "3906851884679217153",
       "instId": "BTC-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "79137.8",
+      "side": "sell",
+      "ordType": "oco",
+      "tpTriggerPx": "80087.5",
+      "slTriggerPx": "78346.4",
       "sz": "0.01",
-      "state": "open",
+      "state": "live",
       "lever": "2",
       "mgnMode": "isolated",
-      "upl": "0.0146399999999994",
-      "createdAt": "2026-09-09T15:12:35+08:00"
+      "createdAt": "2026-09-09T15:39:34+08:00"
     }
   ],
   "positions": [
     {
       "instId": "SHIB-USDT-SWAP",
       "pos": "0.1",
-      "side": "long",
       "avgPx": "0.000005465",
-      "markPx": "0.000005465",
-      "upl": "0",
-      "pnl_pct": 0.0,
+      "markPx": "0.000005453",
+      "upl": "-0.0012",
       "margin": "0.27325",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "PEPE-USDT-SWAP",
       "pos": "0.1",
-      "side": "long",
       "avgPx": "0.000003715",
-      "markPx": "0.000003716",
-      "upl": "0.0010000000000001",
-      "pnl_pct": 0.027,
+      "markPx": "0.000003711",
+      "upl": "-0.004",
       "margin": "1.8575",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "SATS-USDT-SWAP",
       "pos": "1",
-      "side": "long",
       "avgPx": "0.000000011303",
-      "markPx": "0.000000011298",
-      "upl": "-0.00005",
-      "pnl_pct": -0.044,
+      "markPx": "0.000000011305",
+      "upl": "0.00002",
       "margin": "0.056515",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "GALA-USDT-SWAP",
       "pos": "1",
-      "side": "long",
       "avgPx": "0.00189",
-      "markPx": "0.001895",
-      "upl": "0.00005",
-      "pnl_pct": 0.265,
+      "markPx": "0.001884",
+      "upl": "-0.00006",
       "margin": "0.00945",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "NOT-USDT-SWAP",
       "pos": "-1",
-      "side": "short",
       "avgPx": "0.0004606",
-      "markPx": "0.0004626",
-      "upl": "-0.0002",
-      "pnl_pct": -0.434,
+      "markPx": "0.0004613",
+      "upl": "-0.00007",
       "margin": "0.02303",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "HMSTR-USDT-SWAP",
       "pos": "1",
-      "side": "long",
       "avgPx": "0.0001748",
-      "markPx": "0.0001753",
-      "upl": "0.00005",
-      "pnl_pct": 0.286,
+      "markPx": "0.000175",
+      "upl": "0.00002",
       "margin": "0.00874",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "BOME-USDT-SWAP",
       "pos": "1",
-      "side": "long",
       "avgPx": "0.000929",
-      "markPx": "0.0009272",
-      "upl": "-0.0018",
-      "pnl_pct": -0.194,
+      "markPx": "0.0009226",
+      "upl": "-0.0064",
       "margin": "0.4645",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "SOL-USDT-SWAP",
       "pos": "0.01",
-      "side": "long",
       "avgPx": "104.58",
-      "markPx": "104.86",
-      "upl": "0.0028",
-      "pnl_pct": 0.268,
+      "markPx": "104.68",
+      "upl": "0.001",
       "margin": "0.5229",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "ETH-USDT-SWAP",
       "pos": "0.01",
-      "side": "long",
       "avgPx": "2497.98",
-      "markPx": "2513.05",
-      "upl": "0.0150700000000002",
-      "pnl_pct": 0.603,
+      "markPx": "2511.92",
+      "upl": "0.01394",
       "margin": "1.24899",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     },
     {
       "instId": "BTC-USDT-SWAP",
       "pos": "0.01",
-      "side": "long",
       "avgPx": "79137.8",
-      "markPx": "79284.2",
-      "upl": "0.0146399999999994",
-      "pnl_pct": 0.185,
+      "markPx": "79216.5",
+      "upl": "0.00787",
       "margin": "3.95689",
-      "lever": "2"
+      "lever": "2",
+      "mgnMode": "isolated"
     }
   ],
   "universe": [
@@ -1016,6 +1009,33 @@
       "mgnMode": "isolated",
       "sz": "0.1",
       "side": "buy"
+    },
+    {
+      "id": "d_protect_7oco_1539",
+      "at": "2026-09-09T15:39:34+08:00",
+      "action": "attach_oco_protection",
+      "instId": "MULTI",
+      "summary": "为7个无保护仓位挂上交易所端OCO止盈/止损（SHIB/PEPE/SATS/GALA/NOT/HMSTR/BOME）",
+      "reason": "账面10仓均在；权益≈45.25U，浮盈≈+0.009U，日损未触发。BTC/ETH/SOL已有OCO；其余7仓此前裸奔。统一：多单TP约+1.2%、SL约-1%（BOME因已回撤约0.7%将SL放宽至约-1.5%，避免立刻扫损）。",
+      "lesson": "开仓同轮就要挂交易所端退出；盯盘轮优先补保护，而不是再堆新仓。",
+      "algoIds": [
+        "3906981906593267712",
+        "3906981900754796544",
+        "3906981817204260864",
+        "3906981769254977536",
+        "3906981716608073728",
+        "3906981660102410240",
+        "3906981607757496320"
+      ]
+    },
+    {
+      "id": "d_hold_1539",
+      "at": "2026-09-09T15:39:34+08:00",
+      "action": "hold",
+      "instId": "BOOK",
+      "summary": "持有10仓；ETH浮盈约+0.56%/+0.014U，BOME最差约-0.69%/-0.006U",
+      "reason": "总浮盈仍接近持平；单仓亏损绝对值都远小于10U预算。不新开仓（已满仓分散），等待OCO触发。",
+      "lesson": "小仓位分散时，管理重点是保护与退出，不是继续加笔数。"
     }
   ]
 }
