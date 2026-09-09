@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-09T19:43:07+08:00",
+  "updatedAt": "2026-09-09T23:20:03+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 45.167858666356906,
+    "equityUsdtApprox": 42.4035,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 3,
       "maxMarginPerTradeUsdt": 15,
       "dailyLossStopUsdt": 9,
       "swapAllow": [
-        "BTC-USDT-SWAP",
-        "ETH-USDT-SWAP",
-        "SOL-USDT-SWAP",
-        "DOGE-USDT-SWAP",
-        "PEPE-USDT-SWAP",
-        "XRP-USDT-SWAP",
         "BNB-USDT-SWAP",
-        "ZEC-USDT-SWAP",
-        "LIT-USDT-SWAP",
+        "BTC-USDT-SWAP",
+        "DOGE-USDT-SWAP",
         "DOT-USDT-SWAP",
-        "NEAR-USDT-SWAP"
+        "ETH-USDT-SWAP",
+        "LIT-USDT-SWAP",
+        "NEAR-USDT-SWAP",
+        "PEPE-USDT-SWAP",
+        "SOL-USDT-SWAP",
+        "XRP-USDT-SWAP",
+        "ZEC-USDT-SWAP"
       ],
       "style": "concentrated_3x_meaningful",
       "targetPnlPerHitUsdt": [
@@ -36,11 +36,11 @@
         5
       ],
       "anyInstrument": true,
-      "notes": "2026-09-09 19:42 SGT strategy_review: keep ZEC/LIT/DOT 3x+OCO; no micro refill; rotate only on TP/SL."
+      "notes": "2026-09-09 23:16 SGT: LIT SL → rotate NEAR; book ZEC/DOT/NEAR."
     },
-    "equity": 45.1679,
-    "availEq": 12.1162,
-    "updatedAt": "2026-09-09T19:43:07+08:00"
+    "equity": 42.4035,
+    "availEq": 10.2965,
+    "updatedAt": "2026-09-09T23:20:03+08:00"
   },
   "openOrders": [
     {
@@ -53,26 +53,10 @@
       "state": "open",
       "lever": "3",
       "mgnMode": "isolated",
-      "upl": 0.5964,
+      "upl": 0.6675,
       "tp": "1335.84",
       "sl": "1168.08",
       "algoId": "3907129712154951680",
-      "createdAt": "2026-09-09T16:52:19+08:00"
-    },
-    {
-      "ordId": "3907129734729453568",
-      "instId": "LIT-USDT-SWAP",
-      "side": "buy",
-      "ordType": "position",
-      "px": "5.22635",
-      "sz": "6",
-      "state": "open",
-      "lever": "3",
-      "mgnMode": "isolated",
-      "upl": -0.4863,
-      "tp": "5.6147",
-      "sl": "4.9096",
-      "algoId": "3907129734737084416",
       "createdAt": "2026-09-09T16:52:19+08:00"
     },
     {
@@ -85,11 +69,27 @@
       "state": "open",
       "lever": "3",
       "mgnMode": "isolated",
-      "upl": -0.156,
+      "upl": -1.4898,
       "tp": "1.2701",
       "sl": "1.1106",
       "algoId": "3907129768392179712",
       "createdAt": "2026-09-09T16:52:19+08:00"
+    },
+    {
+      "ordId": "3907908162722353152",
+      "instId": "NEAR-USDT-SWAP",
+      "side": "buy",
+      "ordType": "position",
+      "px": "2.572",
+      "sz": "1.2",
+      "state": "open",
+      "lever": "3",
+      "mgnMode": "isolated",
+      "upl": 0.024,
+      "tp": "2.766",
+      "sl": "2.419",
+      "algoId": "3907908162696429569",
+      "createdAt": "2026-09-09T23:18:58+08:00"
     }
   ],
   "positions": [
@@ -98,48 +98,48 @@
       "posSide": "net",
       "pos": "3",
       "avgPx": "1242.16",
-      "markPx": "1262.04",
+      "markPx": "1264.41",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "12.4216",
-      "notionalUsd": "37.8517347",
-      "upl": 0.5964,
+      "notionalUsd": "37.9243",
+      "upl": 0.6675,
       "tpTriggerPx": "1335.84",
       "slTriggerPx": "1168.08",
       "algoId": "3907129712154951680",
       "ordId": "3907129712147320832"
     },
     {
-      "instId": "LIT-USDT-SWAP",
-      "posSide": "net",
-      "pos": "6",
-      "avgPx": "5.22635",
-      "markPx": "5.1453",
-      "lever": "3",
-      "mgnMode": "isolated",
-      "margin": "10.4527",
-      "notionalUsd": "30.86408205",
-      "upl": -0.4863,
-      "tpTriggerPx": "5.6147",
-      "slTriggerPx": "4.9096",
-      "algoId": "3907129734737084416",
-      "ordId": "3907129734729453568"
-    },
-    {
       "instId": "DOT-USDT-SWAP",
       "posSide": "net",
       "pos": "26",
       "avgPx": "1.1811",
-      "markPx": "1.1751",
+      "markPx": "1.1238",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "10.2362",
-      "notionalUsd": "30.54496185",
-      "upl": -0.156,
+      "notionalUsd": "29.2127",
+      "upl": -1.4898,
       "tpTriggerPx": "1.2701",
       "slTriggerPx": "1.1106",
       "algoId": "3907129768392179712",
       "ordId": "3907129768384548864"
+    },
+    {
+      "instId": "NEAR-USDT-SWAP",
+      "posSide": "net",
+      "pos": "1.2",
+      "avgPx": "2.572",
+      "markPx": "2.574",
+      "lever": "3",
+      "mgnMode": "isolated",
+      "margin": "10.288",
+      "notionalUsd": "30.8815",
+      "upl": 0.024,
+      "tpTriggerPx": "2.766",
+      "slTriggerPx": "2.419",
+      "algoId": "3907908162696429569",
+      "ordId": "3907908162722353152"
     }
   ],
   "universe": [
@@ -1219,6 +1219,74 @@
         ]
       },
       "riskNote": "3x逐仓；单笔目标PnL≈2–3U；偏好2–5并发；日损停≈9U；无出金。"
+    },
+    {
+      "id": "d_lit_sl_231045",
+      "at": "2026-09-09T23:07:17+08:00",
+      "action": "close_swap_long_sl",
+      "instId": "LIT-USDT-SWAP",
+      "summary": "LIT止损成交：6张@4.9009，已实现约-1.98U",
+      "reason": "交易所OCO止损触发（SL=4.9096，实际成交4.9009）。开仓均价5.22635，持仓约6.2小时；fillPnl=-1.9527，含费+资金费后已实现约-1.985U，符合约2U尺度。当日未触9U日损线。",
+      "lesson": "OCO按计划砍仓，避免Discretionary犹豫；触SL后立刻轮换到下一高波动流动币，勿反手再追LIT。",
+      "ordId": "3907884640696422401",
+      "algoId": "3907129734737084416",
+      "side": "sell",
+      "sz": "6",
+      "closeAvgPx": "4.9009",
+      "openAvgPx": "5.22635",
+      "pnl": -1.9527,
+      "realizedPnl": -1.98462837,
+      "trigger": "sl",
+      "slTriggerPx": "4.9096",
+      "material": true
+    },
+    {
+      "id": "d_rot_open_near_231159",
+      "at": "2026-09-09T23:18:58+08:00",
+      "action": "open_swap_long",
+      "instId": "NEAR-USDT-SWAP",
+      "summary": "开多 NEAR-USDT-SWAP 1.2张 3x逐仓（LIT止损后轮换）",
+      "reason": "LIT触SL后按策略审视轮换：NEAR 24h约+6.6%、成交额>1亿U、OI约3650万U，15m RSI≈56中性回踩。名义约30.9U，保证金约10.3U；TP≈+7.5%(~2.3U)/SL≈-6%(~1.85U)。成交均价2.572；OCO TP=2.766 / SL=2.419。",
+      "lesson": "保持2–5个有意义尺寸仓位；止损后立刻换高流动性山寨，不用碎仓填空。",
+      "ordId": "3907908162722353152",
+      "algoId": "3907908162696429569",
+      "clOrdId": "rotNEAR091116",
+      "lever": "3",
+      "mgnMode": "isolated",
+      "sz": "1.2",
+      "side": "buy",
+      "marginApprox": 10.288,
+      "notionalApprox": 30.88,
+      "avgPx": "2.572",
+      "tp": "2.766",
+      "sl": "2.419",
+      "tpPnlApprox": 2.32,
+      "slPnlApprox": 1.85,
+      "material": true
+    },
+    {
+      "id": "d_watch_231159",
+      "at": "2026-09-09T23:20:03+08:00",
+      "action": "watch_cycle",
+      "instId": "BOOK",
+      "summary": "盯盘：LIT止损→开NEAR；现仓ZEC/DOT/NEAR",
+      "reason": "权益≈42.40U，日PnL≈-2.60U（起步45U），浮盈≈-0.83U（ZEC+0.67/DOT-1.49/NEAR+0.02）。DOT距SL约1.2%，未达2–3U裁量止损，交OCO。可用≈10.3U作缓冲。",
+      "lesson": "日损线仍宽裕；优先让交易所OCO干活，DOT若再跌由SL接手。",
+      "decision": "managed_rotate",
+      "material": true,
+      "equity": 42.4035,
+      "availEq": 10.2965,
+      "upl": -0.8303,
+      "dailyPnlApprox": -2.596,
+      "positions": [
+        "ZEC-USDT-SWAP",
+        "DOT-USDT-SWAP",
+        "NEAR-USDT-SWAP"
+      ],
+      "bookChange": "LIT SL closed; NEAR opened",
+      "riskNote": "3x isolated；max margin~15U；daily stop 9U；target hit PnL 2–3U",
+      "isoEq": 32.9458,
+      "tactics": "hold_zec_dot_rotate_near"
     }
   ]
 }
