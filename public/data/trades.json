@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-10T03:58:04+08:00",
+  "updatedAt": "2026-09-10T05:50:41+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 39.363194410607804,
+    "equityUsdtApprox": 38.27340874348692,
     "availUsdt": 5.212889954720591,
-    "dailyPnlApprox": -5.6368,
-    "uplApprox": -0.4682,
+    "dailyPnlApprox": -6.7266,
+    "uplApprox": -1.5563000000000051,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 3,
@@ -40,7 +40,7 @@
         5
       ],
       "anyInstrument": true,
-      "notes": "2026-09-10 00:45 SGT: DOT提前轮换→PUMP；书 ZEC/NEAR/PUMP。"
+      "notes": "2026-09-10 05:48 SGT策略审视：维持ZEC/NEAR/SOL；日损≈-6.7U接近9U停线→冻结裁量轮换；NEAR超卖近SL交给OCO。"
     }
   },
   "openOrders": [
@@ -78,12 +78,12 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "102.23",
+      "markPx": "101.85",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "11.921",
-      "notionalUsd": "35.77298609499999",
-      "upl": "0.0175",
+      "notionalUsd": 35.6475,
+      "upl": -0.1155,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
@@ -95,12 +95,12 @@
       "posSide": "net",
       "pos": "1.2",
       "avgPx": "2.572",
-      "markPx": "2.512",
+      "markPx": "2.446",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "10.284892",
-      "notionalUsd": "30.137669759999998",
-      "upl": "-0.72",
+      "notionalUsd": 29.352,
+      "upl": -1.512,
       "tpTriggerPx": "2.766",
       "slTriggerPx": "2.419",
       "algoId": "3907908162696429569",
@@ -111,12 +111,12 @@
       "posSide": "net",
       "pos": "3",
       "avgPx": "1242.16",
-      "markPx": "1249.94",
+      "markPx": "1239.82",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "12.4208804629949415",
-      "notionalUsd": "37.490325377999994",
-      "upl": "0.2334",
+      "notionalUsd": 37.1946,
+      "upl": -0.0702,
       "tpTriggerPx": "1335.84",
       "slTriggerPx": "1168.08",
       "algoId": "3907129712154951680",
@@ -1276,6 +1276,47 @@
       "notionalUsd": "35.77",
       "material": true,
       "bookChange": true
+    },
+    {
+      "id": "d_strategy_review_055041",
+      "at": "2026-09-10T05:50:41+08:00",
+      "action": "strategy_review",
+      "instId": "BOOK",
+      "summary": "5小时策略审视：维持 ZEC/NEAR/SOL 三仓3x集中书，暂不换仓；日损接近停线，冻结裁量轮换",
+      "reason": "权益≈38.27U（集中仓起步~45U），日PnL≈-6.73U，未触9U日损线但余量仅约2.3U。已实现尺度正确：LIT止损≈-1.98、DOT提前平≈-1.39、PUMP止损≈-1.96，单笔≈2U符合目标。现仓浮盈≈-1.56U（SOL≈-0.12 / NEAR≈-1.51 / ZEC≈-0.0702）。NEAR距SL≈1.1%且15m RSI≈28超卖、仍处24h正区间，与上次DOT弱结构不同——期望差偏向交给交易所OCO而非提前砍。SOL为PUMP止损后回补的主流超卖腿，结构健康；ZEC基本打平、OCO齐全。可用≈5.2U，不宜再开第4仓；若此时裁量平NEAR再开新仓，新SL≈2U可能把日损顶穿9U。",
+      "lesson": "日损MTM超过约5.5U（停线9U的~60%）时冻结策略窗提前轮换，只让OCO/日损线干活；止损回补优先选超卖高流动性主流/中盘，避开刚打穿止损的高beta meme；超卖近SL≠弱结构死等到SL——RSI<30可持有等反弹或OCO。",
+      "decision": "keep",
+      "material": false,
+      "bookChange": false,
+      "equity": 38.27340874348692,
+      "availEq": 5.212889954720591,
+      "isoEq": 33.070472462994935,
+      "upl": -1.5563000000000051,
+      "dailyPnlApprox": -6.7266,
+      "positions": [
+        "ZEC-USDT-SWAP",
+        "NEAR-USDT-SWAP",
+        "SOL-USDT-SWAP"
+      ],
+      "tactics": {
+        "keep": [
+          "concentrated_3x",
+          "exchange_oco",
+          "always_in_market_when_risk_allows",
+          "any_instrument_inside_risk",
+          "target_2_3u_per_hit"
+        ],
+        "tweak": [
+          "freeze_discretionary_rotate_when_daily_mtm_gt_5p5u",
+          "post_sl_refill_prefer_liquid_majors_over_meme",
+          "near_sl_oversold_hold_for_oco_not_panic_rotate"
+        ],
+        "replace": [
+          "micro_spray",
+          "rotate_into_meme_when_daily_loss_elevated"
+        ]
+      },
+      "riskNote": "3x逐仓；单笔目标PnL≈2–3U；偏好2–5并发；日损停≈9U；无出金；当前日损余量紧，禁止裁量加风险。"
     }
   ]
 }
