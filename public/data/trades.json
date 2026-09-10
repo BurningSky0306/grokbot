@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-10T15:37:52+08:00",
+  "updatedAt": "2026-09-10T15:43:53+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 36.811559118805135,
-    "availUsdt": 5.212889954720591,
-    "dailyPnlApprox": -8.1884,
-    "uplApprox": -3.0127000000000117,
+    "equityUsdtApprox": 36.61114129520513,
+    "availUsdt": 13.596313554720592,
+    "dailyPnlApprox": -8.3889,
+    "uplApprox": -1.3147000000000089,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 3,
@@ -40,7 +40,7 @@
         5
       ],
       "anyInstrument": true,
-      "notes": "2026-09-10 15:37 SGT策略审视：维持ZEC/NEAR/SOL；日损≈-8.1884U接近9U停线→继续冻结裁量轮换；NEAR弱但交给OCO（SELECTIVE）。"
+      "notes": "2026-09-10 15:40 SGT：NEAR OCO止损触发成交价2.415 实现约-1.884U；剩SOL/ZEC两仓OCO完好；日损≈8.39U逼近9U停线→不新开仓，空仓位暂不补。"
     }
   },
   "openOrders": [
@@ -51,15 +51,6 @@
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "sz": "0.35",
-      "state": "live"
-    },
-    {
-      "instId": "NEAR-USDT-SWAP",
-      "algoId": "3907908162696429569",
-      "ordType": "oco",
-      "tpTriggerPx": "2.766",
-      "slTriggerPx": "2.419",
-      "sz": "1.2",
       "state": "live"
     },
     {
@@ -79,6 +70,7 @@
       "pos": "0.35",
       "avgPx": "102.18",
       "markPx": "100.96",
+      "last": "100.96",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "11.924232588642447",
@@ -90,32 +82,17 @@
       "side": "buy"
     },
     {
-      "instId": "NEAR-USDT-SWAP",
-      "posSide": "net",
-      "pos": "1.2",
-      "avgPx": "2.572",
-      "markPx": "2.433",
-      "lever": "3",
-      "mgnMode": "isolated",
-      "margin": "10.2819136",
-      "notionalUsd": 29.185489439999998,
-      "upl": -1.668,
-      "tpTriggerPx": "2.766",
-      "slTriggerPx": "2.419",
-      "algoId": "3907908162696429569",
-      "side": "buy"
-    },
-    {
       "instId": "ZEC-USDT-SWAP",
       "posSide": "net",
       "pos": "3",
       "avgPx": "1242.16",
-      "markPx": "1211.69",
+      "markPx": "1212.57",
+      "last": "1212.18",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "12.4184799092210315",
-      "notionalUsd": 36.337613748,
-      "upl": -0.9141,
+      "notionalUsd": 36.364004244,
+      "upl": -0.8877,
       "tpTriggerPx": "1335.84",
       "slTriggerPx": "1168.08",
       "algoId": "3907129712154951680",
@@ -152,6 +129,24 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
+    {
+      "id": "near-sl-20260910-1539",
+      "at": "2026-09-10T15:39:55+08:00",
+      "action": "stop_loss_filled",
+      "instId": "NEAR-USDT-SWAP",
+      "summary": "NEAR多仓OCO止损触发：触发价2.419，成交约2.415，仓位1.2张@3x，实现盈亏约-1.884U（另费~0.0145U）",
+      "reason": "价格跌破预设止损线，交易所侧OCO自动卖出平仓；此前15m偏弱（RSI/MACD/Supertrend下行），未做提前砍仓，交给计划止损。",
+      "lesson": "止损按计划执行优于犹豫；止损后勿急着补仓。日损已逼近~9U停线，应用可用保证金耐心等高质量结构，而不是马上再开一笔。",
+      "ordId": "3909883075960131586",
+      "algoId": "3907908162696429569",
+      "fillPx": "2.415",
+      "slTriggerPx": "2.419",
+      "avgEntry": "2.572",
+      "pnl": -1.884,
+      "fee": -0.01449,
+      "side": "sell",
+      "sz": "1.2"
+    },
     {
       "id": "d1",
       "at": "2026-09-08T21:48:00+08:00",
