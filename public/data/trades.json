@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-10T15:43:53+08:00",
+  "updatedAt": "2026-09-10T21:26:02+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 36.61114129520513,
-    "availUsdt": 13.596313554720592,
-    "dailyPnlApprox": -8.3889,
-    "uplApprox": -1.3147000000000089,
+    "equityUsdtApprox": 34.692054264833445,
+    "availUsdt": 23.749694585869147,
+    "dailyPnlApprox": -10.3079,
+    "uplApprox": -0.966,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 3,
@@ -52,15 +52,6 @@
       "slTriggerPx": "96.04",
       "sz": "0.35",
       "state": "live"
-    },
-    {
-      "instId": "ZEC-USDT-SWAP",
-      "algoId": "3907129712154951680",
-      "ordType": "oco",
-      "tpTriggerPx": "1335.84",
-      "slTriggerPx": "1168.08",
-      "sz": "3",
-      "state": "live"
     }
   ],
   "positions": [
@@ -69,33 +60,16 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.96",
-      "last": "100.96",
+      "markPx": "99.42",
+      "last": "99.38",
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": "11.924232588642447",
-      "notionalUsd": 35.323279039999996,
-      "upl": -0.427,
+      "margin": "11.9253948588477462",
+      "notionalUsd": 34.78342917,
+      "upl": -0.966,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
-      "side": "buy"
-    },
-    {
-      "instId": "ZEC-USDT-SWAP",
-      "posSide": "net",
-      "pos": "3",
-      "avgPx": "1242.16",
-      "markPx": "1212.57",
-      "last": "1212.18",
-      "lever": "3",
-      "mgnMode": "isolated",
-      "margin": "12.4184799092210315",
-      "notionalUsd": 36.364004244,
-      "upl": -0.8877,
-      "tpTriggerPx": "1335.84",
-      "slTriggerPx": "1168.08",
-      "algoId": "3907129712154951680",
       "side": "buy"
     }
   ],
@@ -1356,6 +1330,35 @@
       "uplApprox": -3.0127000000000117,
       "availUsdt": 5.212889954720591,
       "positions": 3
+    },
+    {
+      "id": "d_zec_sl_212602",
+      "at": "2026-09-10T21:26:02+08:00",
+      "action": "stop_loss_filled",
+      "instId": "ZEC-USDT-SWAP",
+      "summary": "ZEC-USDT-SWAP 多头被交易所OCO止损触发平仓：开仓均价1242.16 → 平仓均价1167.29，实现PnL≈-2.25U（含费约-2.29U）。现仅剩SOL多头；日损已穿≈9U停线，今日不再开新仓。",
+      "reason": "OCO SL 1168.08 触发，实际成交1167.29，fillPnl=-2.2461，realized≈-2.287。盯盘发现仓位已空、仅SOL-USDT-SWAP long 0.35@102.18 仍在，浮亏≈-0.97U，OCO 109.83/96.04 完好。权益≈34.69U（起步~45U），日PnL≈-10.31U，已超过日损停线；按规则冻结新风险。SOL RSI15≈32.3、RSI1H≈31.0 超卖但浮亏未达2–3U裁量砍仓阈值且结构未彻底破坏，继续持有由交易所OCO管理。",
+      "lesson": "止损按计划执行是正确的；日损穿线后必须停手，不因空出仓位就急着补仓。选择性>忙碌度。",
+      "material": true,
+      "bookChange": true,
+      "decision": "zec_sl_hold_sol_daily_stop",
+      "equity": 34.692054264833445,
+      "dailyPnlApprox": -10.3079,
+      "uplApprox": -0.966,
+      "availUsdt": 23.749694585869147,
+      "positions": 1,
+      "fill": {
+        "ordId": "3910553423516946432",
+        "algoId": "3907129712154951680",
+        "side": "sell",
+        "fillPx": "1167.29",
+        "fillSz": "3",
+        "fillPnl": -2.2461,
+        "realizedPnl": -2.2868513688514445,
+        "openAvgPx": "1242.16",
+        "slTriggerPx": "1168.08",
+        "actualSide": "sl"
+      }
     }
   ]
 }
