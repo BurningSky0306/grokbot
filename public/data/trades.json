@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-11T06:34:19+08:00",
+  "updatedAt": "2026-09-11T11:36:28+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 34.71657567114407,
+    "equityUsdtApprox": 34.59124099134887,
     "availUsdt": 23.749694585869147,
-    "dailyPnlApprox": 0.1686,
-    "uplApprox": -0.9380000000000023,
+    "dailyPnlApprox": 0.0433,
+    "uplApprox": -1.0710000000000006,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 3,
@@ -40,7 +40,7 @@
         5
       ],
       "anyInstrument": true,
-      "notes": "2026-09-11T06:34:19+08:00 策略审视：仅持SOL多头0.35+OCO；今日日PnL微正；无高确信度新仓，选择性等待。"
+      "notes": "2026-09-11T11:36:28+08:00 策略审视：仅持SOL多头0.35+OCO；今日日PnL微正；无高确信度新仓，选择性等待。"
     }
   },
   "openOrders": [
@@ -60,13 +60,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "99.5",
-      "last": "99.48",
+      "markPx": "99.12",
+      "last": "99.14",
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": "11.926493945604998",
-      "notionalUsd": 34.81350774999999,
-      "upl": -0.9380000000000023,
+      "margin": "11.926734631458826",
+      "notionalUsd": 34.677776279999996,
+      "upl": -1.0710000000000006,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
@@ -1374,6 +1374,23 @@
       "equity": 34.71657567114407,
       "dailyPnlApprox": 0.1686,
       "uplApprox": -0.9380000000000023,
+      "availUsdt": 23.749694585869147,
+      "positions": 1
+    },
+    {
+      "id": "d_strategy_review_113628",
+      "at": "2026-09-11T11:36:28+08:00",
+      "action": "strategy_review",
+      "instId": "BOOK",
+      "summary": "5小时策略审视：维持仅剩的 SOL-USDT-SWAP 多头+交易所OCO；今日日PnL微正、结构仍弱，无高确信度新仓/轮换，继续选择性等待。",
+      "reason": "权益≈34.59U（起步~45U，累计约-10.4U/-23%）。今日SGT基线≈34.55U，日PnL≈+0.043U，未触9U停线。仓位：仅 SOL-USDT-SWAP 多头0.35@102.18，最新/标记≈99.14/99.12，浮亏≈-1.07U（未达2–3U裁量砍仓），保证金≈11.93U，可用≈23.75U。交易所OCO完好 TP109.83/SL96.04（algoId 3908468717568049152）。复盘：近期LIT/DOT/PUMP/NEAR/ZEC 多为~2U量级止损，仓位尺度符合目标；失败主因是弱势区间偏多与轮换过勤，非单笔过大。SOL结构偏弱：RSI15≈46.86、RSI1H≈38.22，价低于EMA20≈99.89；MACD柱≈+0.08但DIF/DEA仍负（-0.69/-0.73）。BTC≈76740（24h约-2.0%，RSI1H≈35.71）偏弱。现价距TP约10.8%、距SL约3.1%，期望差一般，但不构成清晰平仓/反手thesis。SELECTIVE：不因空闲强行补仓；无突破/趋势确认不开新仓；继续由OCO管理SOL，空仓等待优质setup。",
+      "lesson": "连亏后优先选择性与空仓耐心；尺度已对，问题在入场质量，不靠忙碌轮换修补期望差。",
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_sol_selective_wait",
+      "equity": 34.59124099134887,
+      "dailyPnlApprox": 0.0433,
+      "uplApprox": -1.0710000000000006,
       "availUsdt": 23.749694585869147,
       "positions": 1
     }
