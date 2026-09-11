@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-11T16:33:41+08:00",
+  "updatedAt": "2026-09-11T22:00:38+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 34.95233756410939,
+    "equityUsdtApprox": 36.557573903992164,
     "availUsdt": 23.749694585869147,
-    "dailyPnlApprox": 0.4044,
-    "uplApprox": -0.7070000000000035,
+    "dailyPnlApprox": 2.0096,
+    "uplApprox": 0.9029999999999994,
     "risk": {
       "spotOnly": false,
       "maxLeverage": 3,
@@ -40,7 +40,7 @@
         5
       ],
       "anyInstrument": true,
-      "notes": "2026-09-11T16:33:41+08:00 策略审视：仅持SOL多头0.35+OCO；今日日PnL微正；短线反弹但无高确信度新仓，选择性等待。"
+      "notes": "2026-09-11T22:00:38+08:00 策略审视：仅持SOL多头0.35+OCO；日PnL≈+2.01U；短线超买，选择性等待，无换仓。"
     }
   },
   "openOrders": [
@@ -60,13 +60,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.16",
-      "last": "100.07",
+      "markPx": "104.76",
+      "last": "104.84",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "11.924678948860182",
-      "notionalUsd": 35.04092592,
-      "upl": -0.7070000000000035,
+      "notionalUsd": 36.65280024,
+      "upl": 0.9029999999999994,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
@@ -1408,6 +1408,23 @@
       "equity": 34.95233756410939,
       "dailyPnlApprox": 0.4044,
       "uplApprox": -0.7070000000000035,
+      "availUsdt": 23.749694585869147,
+      "positions": 1
+    },
+    {
+      "id": "d_strategy_review_220038",
+      "at": "2026-09-11T22:00:38+08:00",
+      "action": "strategy_review",
+      "instId": "BOOK",
+      "summary": "5小时策略审视：维持仅剩的 SOL-USDT-SWAP 多头+交易所OCO；今日日PnL转正约+2U、SOL浮盈回升但短线超买，无高确信度新仓/轮换，继续选择性等待。",
+      "reason": "权益≈36.56U（起步~45U，累计约-8.4U/−19%）。今日SGT基线≈34.55U，日PnL≈+2.010U，未触9U停线。仓位：仅 SOL-USDT-SWAP 多头0.35@102.18，最新/标记≈104.84/104.76，浮盈≈+0.90U（未达2–3U裁量兑现；TP109.83对应约+2.7U期望），保证金≈11.92U，可用≈23.75U。交易所OCO完好 TP109.83/SL96.04（algoId 3908468717568049152）。自上次审视以来无新成交、账面未变。SOL短线偏热：RSI15≈82.5、RSI1H≈76.6（超买），价明显高于EMA20≈100.60；MACD1H dif+0.20/dea-0.32/柱+1.04偏多但已延伸。BTC≈79163（24h约+2.6%）；SOL 24h约+5.2%、贴近日高。距TP约4.8%、距SL约8.4%。超买追高/加仓无清晰边；浮盈未达目标也不提前砍。SELECTIVE：不开新仓、不轮换；继续由OCO管理SOL，等待回撤后的优质setup或TP/SL出清。",
+      "lesson": "日PnL回暖时更要忍住追高；选择性持有现仓OCO，不因反弹忙碌补仓。尺度已对，问题仍在入场质量。",
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_sol_selective_wait",
+      "equity": 36.557573903992164,
+      "dailyPnlApprox": 2.0096,
+      "uplApprox": 0.9029999999999994,
       "availUsdt": 23.749694585869147,
       "positions": 1
     }
