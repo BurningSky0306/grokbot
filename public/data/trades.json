@@ -1,21 +1,19 @@
 {
-  "updatedAt": "2026-09-15T01:32:18+08:00",
+  "updatedAt": "2026-09-15T05:41:26+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 35.889214,
-    "availUsdt": 23.749695,
-    "dailyPnlApprox": 0.315,
-    "uplApprox": 0.2345,
+    "equityUsdtApprox": 36.0671,
+    "availUsdt": 23.7497,
+    "dailyPnlApprox": 0.4928,
+    "uplApprox": 0.413,
     "risk": {
       "maxLeverage": 3,
       "dailyLossStopUsdt": 9,
       "targetPnlPerHitUsdt": [
         2,
         3
-      ],
-      "selective": true,
-      "maxMarginPerTradeUsdt": 15
+      ]
     }
   },
   "openOrders": [
@@ -23,8 +21,8 @@
       "instId": "SOL-USDT-SWAP",
       "algoId": "3908468717568049152",
       "ordType": "oco",
-      "tpTriggerPx": "109.83",
-      "slTriggerPx": "96.04",
+      "tpTriggerPx": 109.83,
+      "slTriggerPx": 96.04,
       "sz": "0.35",
       "state": "live"
     }
@@ -33,19 +31,19 @@
     {
       "instId": "SOL-USDT-SWAP",
       "posSide": "net",
-      "pos": "0.35",
+      "pos": 0.35,
       "avgPx": 102.18,
-      "markPx": "102.85",
-      "last": "102.86",
-      "lever": "3",
+      "markPx": 103.36,
+      "last": 103.33,
+      "lever": 3,
       "mgnMode": "isolated",
-      "margin": "11.909057557484363",
-      "notionalUsd": 35.989940524999994,
-      "upl": 0.2345,
-      "tpTriggerPx": "109.83",
-      "slTriggerPx": "96.04",
+      "margin": 11.909057557484363,
+      "notionalUsd": 36.176,
+      "upl": 0.413,
+      "tpTriggerPx": 109.83,
+      "slTriggerPx": 96.04,
       "algoId": "3908468717568049152",
-      "side": "buy"
+      "side": "long"
     }
   ],
   "universe": [
@@ -1534,6 +1532,34 @@
         },
         "ema20_1h": 101.5,
         "btc_last": 78820
+      }
+    },
+    {
+      "id": "d_strategy_review_054126",
+      "at": "2026-09-15T05:41:26+08:00",
+      "action": "strategy_review",
+      "instId": "BOOK",
+      "summary": "5小时策略审视：维持 SOL-USDT-SWAP 多头0.35+交易所OCO；近3日无新SWAP成交，日PnL≈+0.4928U，无高确信度新仓/轮换，继续选择性持有。",
+      "reason": "权益≈36.07U（起步~45U，累计约-8.9U）。今日SGT基线≈35.57U，日PnL≈+0.4928U，远未触9U停线。仓位：仅 SOL-USDT-SWAP 多头0.35@102.18，最新/标记≈103.33/103.36，浮盈≈+0.4130U（未达2–3U裁量兑现；TP109.83对应约+2.7U期望），保证金≈11.91U，可用≈23.75U。交易所OCO完好 TP109.83/SL96.04（algoId 3908468717568049152），与仓位匹配。近3日无SWAP成交，账单主要为资金费；账面结构未破：Supertrend1H仍UP（下轨≈101.31），价在OCO区间内。RSI15/1H≈53.4/64.45，MACD1H dif+0.68/dea+0.47/柱+0.43动能仍偏多但非新入场信号。选择性方针：不因空闲强行轮换；无高确信度新仓，安静持有现有OCO。",
+      "lesson": "选择性持有优于强行交易；结构未破且OCO完好时，等待TP/SL或明确反转再动。",
+      "decision": "hold_sol_selective_wait",
+      "material": false,
+      "book_change": false,
+      "equity": 36.06706281557487,
+      "dailyPnl": 0.4928,
+      "positions": 1,
+      "indicators": {
+        "rsi_15m": 53.4,
+        "rsi_1H": 64.45,
+        "macd_1H": {
+          "dif": 0.68,
+          "dea": 0.47,
+          "hist": 0.43
+        },
+        "supertrend_1H": {
+          "trend": "UP",
+          "lowerBand": 101.31
+        }
       }
     }
   ]
