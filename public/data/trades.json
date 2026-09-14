@@ -1,19 +1,18 @@
 {
-  "updatedAt": "2026-09-15T05:41:26+08:00",
+  "updatedAt": "2026-09-15T07:50:10+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 36.0671,
-    "availUsdt": 23.7497,
-    "dailyPnlApprox": 0.4928,
-    "uplApprox": 0.413,
+    "equityUsdtApprox": 35.76152938,
+    "availUsdt": 23.74969459,
+    "dailyPnlApprox": 0.1873,
+    "uplApprox": 0.1085,
     "risk": {
       "maxLeverage": 3,
       "dailyLossStopUsdt": 9,
-      "targetPnlPerHitUsdt": [
-        2,
-        3
-      ]
+      "dayBaselineEq": 35.57422072,
+      "dayBaselineDate": "2026-09-15",
+      "underDailyStop": true
     }
   },
   "openOrders": [
@@ -33,13 +32,13 @@
       "posSide": "net",
       "pos": 0.35,
       "avgPx": 102.18,
-      "markPx": 103.36,
-      "last": 103.33,
+      "markPx": 102.49,
+      "last": 102.51,
       "lever": 3,
       "mgnMode": "isolated",
       "margin": 11.909057557484363,
-      "notionalUsd": 36.176,
-      "upl": 0.413,
+      "notionalUsd": 35.866119274999996,
+      "upl": 0.1085,
       "tpTriggerPx": 109.83,
       "slTriggerPx": 96.04,
       "algoId": "3908468717568049152",
@@ -1559,6 +1558,38 @@
         "supertrend_1H": {
           "trend": "UP",
           "lowerBand": 101.31
+        }
+      }
+    },
+    {
+      "id": "d_watch_075010",
+      "at": "2026-09-15T07:50:10+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持SOL多头0.35+OCO；日PnL≈+0.19U，浮盈小，15m回撤中，1H结构未破，继续选择性持有。",
+      "reason": "盯盘2026-09-15T07:50:10+08:00：权益≈35.7615U，日基线35.57422072U，日PnL≈+0.1873U（远未触-9U）。仅持有SOL-USDT-SWAP多头0.35@102.18，最新/标记≈102.51/102.49，浮盈≈+0.1085U，未达2–3U裁量兑现；结构未破：Supertrend1H仍UP（下轨≈101.31），价在OCO区间内。交易所OCO TP109.83/SL96.04（algoId 3908468717568049152）完好且与仓位匹配，无SWAP挂单。RSI15/1H≈40.64/54.92（15m偏软中性），MACD1H dif+0.57/dea+0.50/柱+0.13动能仍偏多但转弱；15m Supertrend=DOWN@103.72为正常回撤。选择性入场：无高确信度新仓，安静持有现有OCO。",
+      "lesson": "15m回撤不等于结构破；1H Supertrend仍UP且OCO完好时，不因短周期转弱而提前砍仓或强行加仓。",
+      "decision": "hold_sol_selective_wait",
+      "material": false,
+      "book_change": false,
+      "equity": 35.76152938301056,
+      "dailyPnl": 0.1873,
+      "positions": 1,
+      "indicators": {
+        "rsi_15m": 40.64,
+        "rsi_1H": 54.92,
+        "macd_1H": {
+          "dif": 0.57,
+          "dea": 0.5,
+          "hist": 0.13
+        },
+        "supertrend_1H": {
+          "trend": "UP",
+          "lowerBand": 101.31
+        },
+        "supertrend_15m": {
+          "trend": "DOWN",
+          "upperBand": 103.72
         }
       }
     }
