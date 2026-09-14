@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-12T22:36:30+08:00",
+  "updatedAt": "2026-09-15T01:32:18+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 35.57903416115204,
-    "availUsdt": 23.749694585869147,
-    "dailyPnlApprox": -0.0661,
-    "uplApprox": -0.0805,
+    "equityUsdtApprox": 35.889214,
+    "availUsdt": 23.749695,
+    "dailyPnlApprox": 0.315,
+    "uplApprox": 0.2345,
     "risk": {
       "maxLeverage": 3,
       "dailyLossStopUsdt": 9,
@@ -14,7 +14,8 @@
         2,
         3
       ],
-      "selective": true
+      "selective": true,
+      "maxMarginPerTradeUsdt": 15
     }
   },
   "openOrders": [
@@ -34,13 +35,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": 102.18,
-      "markPx": "101.95",
-      "last": "101.96",
+      "markPx": "102.85",
+      "last": "102.86",
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": "11.9187365580688748",
-      "notionalUsd": 35.673579374999996,
-      "upl": -0.0805,
+      "margin": "11.909057557484363",
+      "notionalUsd": 35.989940524999994,
+      "upl": 0.2345,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
@@ -1504,6 +1505,36 @@
       "book_change": false,
       "equity": 35.57903416115204,
       "dailyPnl": -0.0661
+    },
+    {
+      "id": "d_strategy_review_013218",
+      "at": "2026-09-15T01:32:18+08:00",
+      "action": "strategy_review",
+      "instId": "BOOK",
+      "summary": "5小时策略审视：维持 SOL-USDT-SWAP 多头0.35+交易所OCO；自9/12审视以来无新成交，日PnL≈+0.3150U，无高确信度新仓/轮换，继续选择性持有。",
+      "reason": "权益≈35.89U（起步~45U，累计约-9.1U/-20%）。今日SGT基线≈35.57U，日PnL≈+0.3150U，远未触9U停线。仓位：仅 SOL-USDT-SWAP 多头0.35@102.18，最新/标记≈102.86/102.85，浮盈≈+0.2345U（未达2–3U裁量兑现；TP109.83对应约+2.7U期望），保证金≈11.91U，可用≈23.75U。交易所OCO完好 TP109.83/SL96.04（algoId 3908468717568049152），与仓位匹配。近3日无SWAP成交，账单主要为资金费；账面结构未变。SOL结构仍偏多：Supertrend1H仍UP（下轨≈100.43），价>101.5 EMA20_1H；RSI15/1H≈69.57/68.18偏强但未极端；MACD1H dif+0.38/dea+0.21/柱+0.34动能偏多。BTC≈78820（24h 76323–78968，自开盘~77243回升）。选择性纪律：近期回撤后不因“空仓焦虑”轮换；无清晰新thesis，不另开仓；继续让交易所OCO管退出。不保证盈利。",
+      "lesson": "选择性持有优于被迫轮换；无成交≠必须交易；日损未触线时让计划止盈/止损工作。",
+      "decision": "hold_sol_selective_wait",
+      "material": false,
+      "book_change": false,
+      "equity": 35.8892138254034,
+      "dailyPnl": 0.315,
+      "positions": 1,
+      "indicators": {
+        "rsi15": 69.57,
+        "rsi1h": 68.18,
+        "macd1h": {
+          "dif": 0.38,
+          "dea": 0.21,
+          "hist": 0.34
+        },
+        "supertrend1h": {
+          "trend": "UP",
+          "lower": 100.43
+        },
+        "ema20_1h": 101.5,
+        "btc_last": 78820
+      }
     }
   ]
 }
