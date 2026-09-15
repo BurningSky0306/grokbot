@@ -1,42 +1,51 @@
 {
-  "updatedAt": "2026-09-15T16:44:25+08:00",
+  "updatedAt": "2026-09-15T17:34:06+08:00",
   "account": {
     "label": "grokbot量化炒币",
-    "mode": "live",
-    "equityUsdtApprox": 35.02189850901612,
-    "availUsdt": 23.749694585869147,
-    "dailyPnlApprox": -0.5523,
-    "uplApprox": -0.6195,
+    "mode": "spot+swap",
+    "equityUsdtApprox": 35.086979,
+    "dailyPnlApprox": -0.4872,
+    "dayBaselineEq": 35.57422072,
     "risk": {
       "maxLeverage": 3,
+      "maxMarginPerTradeUsdt": 15,
       "dailyLossStopUsdt": 9,
-      "targetPnlPerTradeUsdt": [
+      "targetPnlPerHitUsdt": [
         2,
         3
       ],
-      "preferConcentrated": true
-    },
-    "totalEq": 35.02189850901612,
-    "availEq": 23.749694585869147,
-    "upl": -0.6195,
-    "dayPnlApprox": -0.5523,
-    "dayBaseline": 35.57422072,
-    "asOf": "2026-09-15T16:44:25+08:00"
+      "preferOpenPositions": [
+        2,
+        5
+      ]
+    }
   },
-  "openOrders": [],
+  "openOrders": [
+    {
+      "algoId": "3908468717568049152",
+      "instId": "SOL-USDT-SWAP",
+      "ordType": "oco",
+      "side": "sell",
+      "sz": "0.35",
+      "tpTriggerPx": "109.83",
+      "slTriggerPx": "96.04",
+      "state": "live",
+      "reduceOnly": true
+    }
+  ],
   "positions": [
     {
       "instId": "SOL-USDT-SWAP",
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.41",
-      "last": "100.42",
+      "markPx": "100.59",
+      "last": "100.59",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.905718288296635,
-      "notionalUsd": 35.1294426,
-      "upl": -0.6195,
+      "notionalUsd": 35.19452979,
+      "upl": -0.5565,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152"
@@ -72,34 +81,6 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
-    {
-      "id": "near-sl-20260910-1539",
-      "at": "2026-09-10T15:39:55+08:00",
-      "action": "stop_loss_filled",
-      "instId": "NEAR-USDT-SWAP",
-      "summary": "NEAR多仓OCO止损触发：触发价2.419，成交约2.415，仓位1.2张@3x，实现盈亏约-1.884U（另费~0.0145U）",
-      "reason": "价格跌破预设止损线，交易所侧OCO自动卖出平仓；此前15m偏弱（RSI/MACD/Supertrend下行），未做提前砍仓，交给计划止损。",
-      "lesson": "止损按计划执行优于犹豫；止损后勿急着补仓。日损已逼近~9U停线，应用可用保证金耐心等高质量结构，而不是马上再开一笔。",
-      "ordId": "3909883075960131586",
-      "algoId": "3907908162696429569",
-      "fillPx": "2.415",
-      "slTriggerPx": "2.419",
-      "avgEntry": "2.572",
-      "pnl": -1.884,
-      "fee": -0.01449,
-      "side": "sell",
-      "sz": "1.2"
-    },
-    {
-      "id": "d1",
-      "at": "2026-09-08T21:48:00+08:00",
-      "action": "place_limit_buy",
-      "instId": "BTC-USDT",
-      "summary": "挂限价买单约 10 USDT",
-      "reason": "当日偏弱不追跌，接近日内低位挂限价。",
-      "lesson": "用限价接回踩，而不是市价追跌。",
-      "ordId": "3904826264882139136"
-    },
     {
       "id": "d2",
       "at": "2026-09-08T22:30:00+08:00",
@@ -1517,6 +1498,28 @@
       "uplApprox": -0.6195,
       "availUsdt": 23.749694585869147,
       "positions": 1
+    },
+    {
+      "id": "d_watch_1734",
+      "at": "2026-09-15T17:34:06+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持SOL多头0.35+OCO；日PnL≈-0.487U，浮盈≈-0.556U，15m/1H ST均DOWN，继续选择性持有。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈-0.4872U，浮盈≈-0.5565U；价≈100.59；15m偏弱(RSI≈36.56/ST DOWN/MACD柱≈+0.11但DIF负≈-0.35)，1H ST DOWN(上轨≈102.51/下轨≈98.86)、EMA20≈101.52、RSI≈38.16；仍远高于OCO止损96.04；浮亏远小于2–3U提前止损尺度；无改单、无新仓；选择性持有、不加仓、不开新仓。",
+      "lesson": "弱势未破交易所止损时不提前砍仓；无高确信度结构不开新仓。",
+      "market": {
+        "last": 100.59,
+        "rsi15": 36.56,
+        "rsi1h": 38.16,
+        "st15": "DOWN",
+        "st1h": "DOWN",
+        "ema20_1h": 101.52,
+        "macd15_hist": 0.11,
+        "macd15_dif": -0.35
+      },
+      "decision": "hold_sol_selective_wait",
+      "material": false,
+      "orderChange": false
     }
   ]
 }
