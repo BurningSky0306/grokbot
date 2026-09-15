@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T04:58:53+08:00",
+  "updatedAt": "2026-09-16T05:03:11+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 33.4547,
-    "dailyPnlApprox": -1.0065,
+    "equityUsdtApprox": 33.4554,
+    "dailyPnlApprox": -1.0058,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -21,9 +21,9 @@
     "daily": {
       "date": "2026-09-16",
       "startEq": 34.4612,
-      "pnl": -1.0065,
+      "pnl": -1.0058,
       "baselineEq": 34.4612,
-      "pnlApprox": -1.0065,
+      "pnlApprox": -1.0058,
       "lossStopUsdt": 9
     }
   },
@@ -59,46 +59,6 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
-    {
-      "id": "d_watch_045853",
-      "at": "2026-09-16T04:58:53+08:00",
-      "action": "watch",
-      "instId": "SOL-USDT-SWAP",
-      "summary": "5分钟盯盘：空仓观望；SOL止损后15m+1H仍ST DOWN，结构偏弱不追多。",
-      "reason": "5分钟盯盘：仓位空、无挂单/无pending algo；权益≈33.4547U，日PnL≈-1.0065U（2026-09-16基线34.4612），未触≈9U日停，但无高确信度结构；SOL last≈97.41；RSI15/1H≈36.40/29.32；15m ST DOWN上轨≈99.42下轨≈95.18 MACD柱≈-0.24 DIF≈-0.70；1H ST DOWN上轨≈101.51下轨≈96.45 EMA20≈99.91 MACD柱≈-0.65 DIF≈-0.94；价仍低于15m ST上轨与1H EMA20，双周期弱势未翻，15m RSI≈36反弹不足，按选择性入场继续空仓等待，不追多也不逆势空。",
-      "lesson": "止损后空仓等待：双周期ST仍DOWN时，15m RSI小反弹不等于结构修复，勿强迫补仓。",
-      "material": false,
-      "bookChange": false,
-      "decision": "flat_after_sol_sl_wait",
-      "equity": 33.4547,
-      "dailyPnlApprox": -1.0065,
-      "uplApprox": 0.0,
-      "availUsdt": 33.4805,
-      "positions": 0,
-      "market": {
-        "last": 97.41,
-        "rsi15": 36.4,
-        "rsi1h": 29.32,
-        "st15": "DOWN",
-        "st15_upper": 99.42,
-        "st15_lower": 95.18,
-        "macd15": -0.24,
-        "dif15": -0.7,
-        "st1h": "DOWN",
-        "st1h_upper": 101.51,
-        "st1h_lower": 96.45,
-        "ema20_1h": 99.91,
-        "macd1h": -0.65,
-        "dif1h": -0.94
-      },
-      "tags": [
-        "watch",
-        "flat",
-        "sol",
-        "selective_entry"
-      ],
-      "decisionCode": "flat_after_sol_sl_wait"
-    },
     {
       "id": "d_watch_045446",
       "at": "2026-09-16T04:54:46+08:00",
@@ -2698,6 +2658,39 @@
         "ema20_1h": 100.15,
         "macd1h_hist": -0.61,
         "macd1h_dif": -0.85
+      }
+    },
+    {
+      "id": "d_watch_050311",
+      "at": "2026-09-16T05:03:11+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：空仓观望；SOL止损后15m+1H仍ST DOWN，价下破并远离EMA20，不追多、不强行开仓。",
+      "reason": "5分钟盯盘：仓位空、无挂单/无pending algo；权益≈33.4554U，日PnL≈-1.0058U（2026-09-16基线34.4612），未触≈9U日停，但无高确信度结构；SOL last≈97.1；RSI15/1H≈33.37/27.82；15m ST DOWN上轨≈99.42下轨≈95.18 MACD柱≈-0.21 DIF≈-0.72；1H ST DOWN上轨≈101.09下轨≈96.45 EMA20≈99.63 MACD柱≈-0.68 DIF≈-1.06；价仍低于15m ST上轨与1H EMA20，双周期弱势未修复；1H RSI≈27.82更弱且MACD柱加深，按选择性入场继续空仓等待，不追多也不逆势空。",
+      "lesson": "止损后空仓等待结构修复优于强迫补仓；双周期ST DOWN且1H MACD加深时优先观望。",
+      "material": false,
+      "bookChange": false,
+      "decision": "flat_after_sol_sl_wait",
+      "equity": 33.4554,
+      "dailyPnlApprox": -1.0058,
+      "uplApprox": 0.0,
+      "availUsdt": 33.4805,
+      "positions": 0,
+      "market": {
+        "last": 97.1,
+        "rsi15": 33.37,
+        "rsi1h": 27.82,
+        "st15": "DOWN",
+        "st15_upper": 99.42,
+        "st15_lower": 95.18,
+        "macd15_hist": -0.21,
+        "macd15_dif": -0.72,
+        "st1h": "DOWN",
+        "st1h_upper": 101.09,
+        "st1h_lower": 96.45,
+        "ema20_1h": 99.63,
+        "macd1h_hist": -0.68,
+        "macd1h_dif": -1.06
       }
     }
   ]
