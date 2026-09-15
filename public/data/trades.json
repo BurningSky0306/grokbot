@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-15T23:47:16+08:00",
+  "updatedAt": "2026-09-16T00:15:48+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 34.6556,
+    "equityUsdtApprox": 34.4612,
     "dailyPnlApprox": -0.9186,
     "dayBaselineEq": 35.57422072,
     "risk": {
@@ -12,10 +12,17 @@
       "targetPnlPerHitUsdt": [
         2,
         3
-      ]
+      ],
+      "style": "concentrated_3x_meaningful"
     },
     "availUsdt": 23.7497,
-    "uplApprox": -0.9765
+    "uplApprox": -0.9765,
+    "frozenUsdt": 10.7346,
+    "daily": {
+      "date": "2026-09-16",
+      "startEq": 34.4612,
+      "pnl": 0.0
+    }
   },
   "openOrders": [
     {
@@ -36,18 +43,18 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "99.39",
-      "last": "99.39",
+      "markPx": "98.82",
+      "last": "98.84",
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": "11.9057182882966353",
-      "notionalUsd": "34.76632383",
-      "upl": -0.9765,
+      "margin": "11.9070982077052865",
+      "notionalUsd": "34.56348084",
+      "upl": -1.176,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
       "side": "long",
-      "liqPx": "68.48178506623626"
+      "liqPx": "68.47782461733432"
     }
   ],
   "universe": [
@@ -1903,6 +1910,19 @@
       "summary": "5分钟盯盘：维持 SOL 多头+OCO；结构偏弱，无改单无新仓。",
       "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈-0.9186U，浮盈≈-0.9765U；价≈99.39；15m偏弱(RSI≈36.87/ST DOWN上轨≈100.17下轨≈97.76/MACD柱≈-0.21 DIF≈-0.43)，1H ST DOWN(上轨≈102.09/下轨≈96.11)、EMA20≈100.89、RSI≈34.19；现价高于OCO止损96.04约3.4点，也高于1H ST下轨；浮亏≈0.98U仍小于2–3U提前止损尺度；结构仍偏弱但仓位计划未破，无成交、无改单、无新仓；选择性持有、不加仓、不开新仓。",
       "lesson": "结构偏弱时优先守交易所OCO与仓位计划，不因短期弱势强行砍仓或硬凑新仓。",
+      "decision": "hold_sol_selective_wait",
+      "material": false,
+      "orderChange": false
+    },
+    {
+      "id": "d_watch_0015",
+      "at": "2026-09-16T00:15:48+08:00",
+      "action": "watch_hold",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持 SOL 多头+OCO；结构偏弱，无改单无新仓。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈0.0000U（2026-09-16基线34.46），浮盈≈-1.1760U；价≈98.84；15m偏弱(RSI≈30.74/ST DOWN上轨≈100.17下轨≈97.66/MACD柱≈-0.24 DIF≈-0.47)，1H ST DOWN(上轨≈101.98/下轨≈96.25)、EMA20≈100.69、RSI≈30.65；现价高于OCO止损96.04约2.8点，也高于1H ST下轨；浮亏≈1.18U仍小于2–3U提前止损尺度；结构仍偏弱但仓位计划未破，无成交、无改单、无新仓；选择性持有、不加仓、不开新仓。",
+      "lesson": "结构偏弱时优先守交易所OCO与仓位计划，不因短期弱势强行砍仓或硬凑新仓。",
+      "ordId": null,
       "decision": "hold_sol_selective_wait",
       "material": false,
       "orderChange": false
