@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-16T00:21:09+08:00",
+  "updatedAt": "2026-09-16T01:30:48+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 34.5322,
-    "dailyPnlApprox": 0.071,
-    "dayBaselineEq": 35.57422072,
+    "equityUsdtApprox": 34.649,
+    "dailyPnlApprox": 0.1878,
+    "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
       "dailyLossStopUsdt": 9,
@@ -16,12 +16,12 @@
       "style": "concentrated_3x_meaningful"
     },
     "availUsdt": 23.7497,
-    "uplApprox": -1.1025,
-    "frozenUsdt": 10.8046,
+    "uplApprox": -0.9835,
+    "frozenUsdt": 10.9236,
     "daily": {
       "date": "2026-09-16",
       "startEq": 34.4612,
-      "pnl": 0.071
+      "pnl": 0.1878
     }
   },
   "openOrders": [
@@ -43,13 +43,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "99.03",
-      "last": "99.07",
+      "markPx": "99.37",
+      "last": "99.38",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "11.9070982077052865",
-      "notionalUsd": "34.63762407",
-      "upl": -1.1025,
+      "notionalUsd": "34.754806555",
+      "upl": -0.9835,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
@@ -1939,6 +1939,15 @@
       "decision": "hold_sol_selective_wait",
       "material": false,
       "orderChange": false
+    },
+    {
+      "id": "d_watch_0130",
+      "at": "2026-09-16T01:30:48+08:00",
+      "action": "watch_hold",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持 SOL 多头+OCO；结构偏弱，无改单无新仓。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈+0.1878U（2026-09-16基线34.46），浮盈≈-0.9835U；价≈99.38；15m偏弱但RSI回升(RSI≈43.94/ST DOWN上轨≈100.17下轨≈97.66/MACD柱≈-0.03 DIF≈-0.41)，1H ST DOWN(上轨≈101.82/下轨≈96.25)、EMA20≈100.58、RSI≈35.71、MACD柱≈-0.47 DIF≈-0.64；现价高于OCO止损96.04约3.3点，也高于1H ST下轨；浮亏≈0.98U仍小于2–3U提前止损尺度；结构仍偏弱但仓位计划未破，无成交、无改单、无新仓；选择性持有、不加仓、不开新仓。",
+      "lesson": "结构双周期仍偏空时不要抢反弹加仓；交易所OCO在位且浮亏未到尺度就继续等计划位。"
     }
   ]
 }
