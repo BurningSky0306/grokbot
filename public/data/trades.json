@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T02:56:36+08:00",
+  "updatedAt": "2026-09-16T03:05:58+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 33.4577,
-    "dailyPnlApprox": -1.0035,
+    "equityUsdtApprox": 33.4567,
+    "dailyPnlApprox": -1.0045,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -21,7 +21,7 @@
     "daily": {
       "date": "2026-09-16",
       "startEq": 34.4612,
-      "pnl": -1.0035
+      "pnl": -1.0045
     }
   },
   "openOrders": [],
@@ -56,6 +56,37 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
+    {
+      "id": "d_watch_030558",
+      "at": "2026-09-16T03:05:58+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：空仓观望；SOL止损后结构仍双周期DOWN，不追多、不追热门山寨。",
+      "reason": "5分钟盯盘：仓位空、无挂单；权益≈33.4567U，日PnL≈-1.0045U（2026-09-16基线34.4612），低于9U日损线可交易但无高确信度；SOL last≈98.27（止损后反弹至仍低于15m ST上轨≈99.88与1H EMA20≈100.22）；RSI15/1H≈39.21/34.27；15m ST DOWN上轨≈99.88下轨≈95.18 MACD柱≈-0.15 DIF≈-0.40；1H ST DOWN上轨≈101.99下轨≈96.45；热门涨幅CNPY/PONS等已大幅延伸且非清晰结构，不追；选择性空仓等待ST翻多或清晰空头定义出场。",
+      "lesson": "止损后短暂反弹≠反转；双周期仍DOWN时空仓等待比强迫补仓更符合选择性入场。",
+      "material": false,
+      "bookChange": false,
+      "decision": "flat_after_sol_sl_wait",
+      "equity": 33.4567,
+      "dailyPnlApprox": -1.0045,
+      "uplApprox": 0.0,
+      "availUsdt": 33.4805,
+      "positions": 0,
+      "market": {
+        "last": 98.27,
+        "rsi15": 39.21,
+        "rsi1h": 34.27,
+        "st15": "DOWN",
+        "st15_upper": 99.88,
+        "st15_lower": 95.18,
+        "st1h": "DOWN",
+        "st1h_upper": 101.99,
+        "st1h_lower": 96.45,
+        "ema20_1h": 100.22,
+        "macd15_hist": -0.15,
+        "macd15_dif": -0.4
+      }
+    },
     {
       "id": "d_watch_024724",
       "at": "2026-09-16T02:47:24+08:00",
