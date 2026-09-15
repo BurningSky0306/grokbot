@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T07:45:32+08:00",
+  "updatedAt": "2026-09-16T07:53:39+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 33.4561,
-    "dailyPnlApprox": -1.0051,
+    "equityUsdtApprox": 33.456385090023055,
+    "dailyPnlApprox": -1.004803227379675,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -15,21 +15,21 @@
       ],
       "style": "concentrated_3x_meaningful"
     },
-    "availUsdt": 33.480491,
+    "availUsdt": 33.48049104357443,
     "uplApprox": 0.0,
     "frozenUsdt": 0.0,
     "daily": {
       "date": "2026-09-16",
-      "baselineEq": 34.4612,
-      "pnlApprox": -1.0051,
+      "baselineEq": 34.46118831740273,
+      "pnlApprox": -1.004803227379675,
       "stopUsdt": 9,
       "stopped": false
     },
-    "equity": 33.4561,
-    "equityUsdt": 33.45605,
+    "equity": 33.456385090023055,
+    "equityUsdt": 33.456385090023055,
     "baselineDate": "2026-09-16",
     "baselineEquity": 34.46118831740273,
-    "asOf": "2026-09-16T07:45:32+08:00"
+    "asOf": "2026-09-16T07:53:39+08:00"
   },
   "openOrders": [],
   "positions": [],
@@ -63,6 +63,62 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
+    {
+      "id": "d_watch_075339",
+      "at": "2026-09-16T07:53:39+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "空仓等待：SOL双周期Supertrend仍DOWN，无高确信度入场。",
+      "reason": "权益≈33.4564U（日PnL≈-1.0048U vs 基线34.4612，未触9U停线）。仓位/挂单/pending algo均为空，OKX鉴权正常。SOL last≈96.90；RSI15/1H≈39.34/30.84；15m+1H SuperTrend均DOWN（15m上≈98.61下≈95.83；1H上≈100.71下≈96.45）；价低于15m EMA20≈97.40和1H EMA20≈99.10；MACD15m柱≈0.22、DIF≈-0.47，1H柱≈-0.66、DIF≈-1.17，15m仅弱反弹且1H仍偏空；布林带15m约96.39–97.96、1H约96.30–102.63。双周期结构未修复，无高确信度入场；继续选择性空仓，不追多也不逆势空。",
+      "lesson": "止损后空仓等待仍是正确选择；15m弱反弹和超卖不能替代结构确认，需价站上短周期ST上轨并有1H配合。",
+      "material": false,
+      "bookChange": false,
+      "decision": "flat_after_sol_sl_wait",
+      "decisionCode": "flat_after_sol_sl_wait",
+      "equity": 33.456385090023055,
+      "dailyPnlApprox": -1.004803227379675,
+      "uplApprox": 0.0,
+      "availUsdt": 33.48049104357443,
+      "positions": 0,
+      "openOrders": 0,
+      "pendingAlgos": 0,
+      "sol": {
+        "last": 96.9,
+        "rsi15": 39.34,
+        "rsi1h": 30.84,
+        "st15": "DOWN",
+        "st1h": "DOWN",
+        "st15_upper": 98.61,
+        "st15_lower": 95.83,
+        "st1h_upper": 100.71,
+        "st1h_lower": 96.45,
+        "ema20_15m": 97.4,
+        "ema20_1h": 99.1,
+        "macd15_hist": 0.22,
+        "macd15_dif": -0.47,
+        "macd15_dea": -0.58,
+        "macd1h_hist": -0.66,
+        "macd1h_dif": -1.17,
+        "macd1h_dea": -0.84,
+        "bb15": {
+          "upper": 97.96,
+          "middle": 97.18,
+          "lower": 96.39
+        },
+        "bb1h": {
+          "upper": 102.63,
+          "middle": 99.46,
+          "lower": 96.3
+        }
+      },
+      "tags": [
+        "watch",
+        "flat",
+        "selective",
+        "sol",
+        "no_entry"
+      ]
+    },
     {
       "id": "d_watch_0744",
       "at": "2026-09-16T07:45:32+08:00",
