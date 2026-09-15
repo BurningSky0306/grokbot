@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T07:35:06+08:00",
+  "updatedAt": "2026-09-15T23:45:21+00:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 33.4557,
-    "dailyPnlApprox": -1.0055,
+    "equityUsdtApprox": 33.4561,
+    "dailyPnlApprox": -1.0051,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -21,15 +21,15 @@
     "daily": {
       "date": "2026-09-16",
       "baselineEq": 34.4612,
-      "pnlApprox": -1.0055,
+      "pnlApprox": -1.0051,
       "stopUsdt": 9,
       "stopped": false
     },
-    "equity": 33.4557,
-    "equityUsdt": 33.45572,
+    "equity": 33.4561,
+    "equityUsdt": 33.45605,
     "baselineDate": "2026-09-16",
     "baselineEquity": 34.46118831740273,
-    "asOf": "2026-09-16T07:35:06+08:00"
+    "asOf": "2026-09-15T23:45:21+00:00"
   },
   "openOrders": [],
   "positions": [],
@@ -63,6 +63,38 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
+    {
+      "id": "d_watch_0744",
+      "at": "2026-09-15T23:45:21+00:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "空仓等待：双周期Supertrend仍DOWN，无高确信度入场。",
+      "reason": "权益≈33.4561U（日PnL≈-1.0051U vs 基线34.4612，未触9U停线）。仓位/挂单/algo均为空。SOL last≈97.03；RSI15/1H≈40.88/31.48；15m+1H ST DOWN（15m上≈98.72下≈95.83；1H上≈100.71下≈96.45）；价低于1H EMA20≈99.11；MACD15m柱≈0.24 DIF≈-0.49，1H柱≈-0.64 DIF≈-1.16仍偏空。15m柱弱反弹不足以对抗双周期DOWN与价在EMA20下方。SELECTIVE：不补仓。",
+      "lesson": "止损后空仓等待是对的；弱反弹MACD柱≠结构修复，高确信度要等双周期趋势或清晰破位setup。",
+      "material": false,
+      "bookChange": false,
+      "decision": "flat_after_sol_sl_wait",
+      "decisionCode": "flat_after_sol_sl_wait",
+      "equity": 33.4561,
+      "dailyPnlApprox": -1.0051,
+      "uplApprox": 0.0,
+      "sol": {
+        "last": 97.03,
+        "rsi15": 40.88,
+        "rsi1h": 31.48,
+        "st15": "DOWN",
+        "st1h": "DOWN",
+        "st15_upper": 98.72,
+        "st15_lower": 95.83,
+        "st1h_upper": 100.71,
+        "st1h_lower": 96.45,
+        "ema20_1h": 99.11,
+        "macd15_hist": 0.24,
+        "macd15_dif": -0.49,
+        "macd1h_hist": -0.64,
+        "macd1h_dif": -1.16
+      }
+    },
     {
       "id": "d_watch_073506",
       "at": "2026-09-16T07:35:06+08:00",
