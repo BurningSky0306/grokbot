@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T07:19:23+08:00",
+  "updatedAt": "2026-09-16T07:27:52+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 33.4574,
-    "dailyPnlApprox": -1.0038,
+    "equityUsdtApprox": 33.4571,
+    "dailyPnlApprox": -1.0041,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -21,15 +21,15 @@
     "daily": {
       "date": "2026-09-16",
       "baselineEq": 34.4612,
-      "pnlApprox": -1.0038,
+      "pnlApprox": -1.0041,
       "stopUsdt": 9,
       "stopped": false
     },
-    "equity": 33.4574,
-    "equityUsdt": 33.45739,
+    "equity": 33.4571,
+    "equityUsdt": 33.45705,
     "baselineDate": "2026-09-16",
     "baselineEquity": 34.46118831740273,
-    "asOf": "2026-09-16T07:19:23+08:00"
+    "asOf": "2026-09-16T07:27:52+08:00"
   },
   "openOrders": [],
   "positions": [],
@@ -3228,6 +3228,57 @@
           "hist": -0.58
         },
         "ema20_1h": 99.16
+      },
+      "tags": [
+        "watch",
+        "flat",
+        "selective",
+        "sol",
+        "no_entry"
+      ]
+    },
+    {
+      "id": "d_watch_072752",
+      "at": "2026-09-16T07:27:52+08:00",
+      "action": "hold_flat",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "空仓等待：SOL双周期ST仍DOWN，无高确信度入场",
+      "reason": "5分钟盯盘：仓位空、无挂单/无pending algo；权益≈33.4571U，日PnL≈-1.0041U（2026-09-16基线34.4612），未触≈9U日停，但无高确信度结构；SOL last≈97.49；RSI15/1H≈45.86/35.17；15m ST DOWN上轨≈98.71下轨≈95.84 MACD柱≈0.26 DIF≈-0.51；1H ST DOWN上轨≈100.71下轨≈96.45 EMA20≈99.15 MACD柱≈-0.59 DIF≈-1.13；价仍低于15m ST上轨与1H EMA20，双周期弱势未修复；15m RSI≈45.86、MACD柱≈0.26仍属弱势反弹，1H RSI≈35.17且MACD仍负，不算确认；按选择性入场继续空仓等待，不追多也不逆势空。",
+      "lesson": "止损后空仓是正确的；弱势未修复时宁可错过，不强制补仓。15m RSI/MACD反弹不算入场信号，需价站上ST上轨并有1H配合。",
+      "material": false,
+      "bookChange": false,
+      "decision": "flat_after_sol_sl_wait",
+      "equity": 33.4571,
+      "dailyPnlApprox": -1.0041,
+      "uplApprox": 0.0,
+      "availUsdt": 33.4805,
+      "positions": 0,
+      "market": {
+        "instId": "SOL-USDT-SWAP",
+        "last": 97.49,
+        "rsi15": 45.86,
+        "rsi1h": 35.17,
+        "st15": {
+          "trend": "DOWN",
+          "upper": 98.71,
+          "lower": 95.84
+        },
+        "st1h": {
+          "trend": "DOWN",
+          "upper": 100.71,
+          "lower": 96.45
+        },
+        "macd15": {
+          "dif": -0.51,
+          "dea": -0.64,
+          "hist": 0.26
+        },
+        "macd1h": {
+          "dif": -1.13,
+          "dea": -0.83,
+          "hist": -0.59
+        },
+        "ema20_1h": 99.15
       },
       "tags": [
         "watch",
