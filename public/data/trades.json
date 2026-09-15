@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T02:20:16+08:00",
+  "updatedAt": "2026-09-16T02:24:43+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 34.7071,
-    "dailyPnlApprox": 0.2459,
+    "equityUsdtApprox": 34.699,
+    "dailyPnlApprox": 0.2378,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -16,12 +16,12 @@
       "style": "concentrated_3x_meaningful"
     },
     "availUsdt": 23.7497,
-    "uplApprox": -0.9275,
-    "frozenUsdt": 10.9796,
+    "uplApprox": -0.9345,
+    "frozenUsdt": 10.9726,
     "daily": {
       "date": "2026-09-16",
       "startEq": 34.4612,
-      "pnl": 0.2459
+      "pnl": 0.2378
     }
   },
   "openOrders": [
@@ -43,13 +43,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "99.53",
+      "markPx": "99.51",
       "last": "99.52",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "11.9070982077052865",
-      "notionalUsd": "34.81285692499999",
-      "upl": -0.9275,
+      "notionalUsd": "34.80481662",
+      "upl": -0.9345,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
@@ -2169,6 +2169,22 @@
           "dea": -0.44
         }
       }
+    },
+    {
+      "id": "d_watch_022443",
+      "at": "2026-09-16T02:24:43+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持 SOL 多头+OCO；双周期ST DOWN，浮亏未到2–3U，继续交给OCO、不追弱仓。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈+0.2378U（2026-09-16基线34.46），浮盈≈-0.9345U；价≈99.52；15m已转弱(RSI≈46.83/ST DOWN上轨≈100.17下轨≈98.39/MACD柱≈+0.22 DIF≈-0.21)，1H仍DOWN(上轨≈101.98/下轨≈96.63)、EMA20≈100.55、RSI≈39.66、MACD柱≈-0.32 DIF≈-0.60；现价高于OCO止损96.04约3.5点；浮亏≈0.93U小于2–3U提前止损尺度；双周期ST均DOWN但未破OCO止损、浮亏未到裁量尺度，无高确信度加仓/新仓；无成交、无改单；选择性持有。",
+      "lesson": "双周期ST DOWN时不要用新仓对冲或补仓；OCO有效且浮亏未达裁量尺度时，优先让交易所止损管理。",
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_sol_selective_wait",
+      "equity": 34.699,
+      "dailyPnlApprox": 0.2378,
+      "uplApprox": -0.9345,
+      "availUsdt": 23.7497
     }
   ]
 }
