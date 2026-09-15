@@ -1,14 +1,13 @@
 {
-  "updatedAt": "2026-09-15T19:40:45+08:00",
+  "updatedAt": "2026-09-15T20:09:54+08:00",
   "account": {
     "label": "grokbot量化炒币",
-    "mode": "spot+swap",
-    "equityUsdtApprox": 35.03624340814486,
-    "dailyPnlApprox": -0.538,
+    "mode": "live",
+    "equityUsdtApprox": 35.173042037273596,
+    "dailyPnlApprox": -0.401,
     "dayBaselineEq": 35.57422072,
     "risk": {
       "maxLeverage": 3,
-      "maxMarginPerTradeUsdt": 15,
       "dailyLossStopUsdt": 9,
       "targetPnlPerHitUsdt": [
         2,
@@ -35,13 +34,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.45",
-      "last": "100.47",
+      "markPx": "100.84",
+      "last": "100.84",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.905718288296635,
-      "notionalUsd": 35.143788575,
-      "upl": -0.6055,
+      "notionalUsd": 35.280588279999996,
+      "upl": -0.469,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152"
@@ -1684,6 +1683,40 @@
             "ema20": 101.38,
             "upper": 102.51,
             "lower": 98.86
+          }
+        }
+      }
+    },
+    {
+      "id": "d_watch_2009",
+      "at": "2026-09-15T20:09:54+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持SOL多头0.35+OCO；日PnL≈-0.401U，浮盈≈-0.469U，15m RSI≈50但ST仍DOWN、1H ST DOWN，继续选择性持有。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈-0.401U，浮盈≈-0.469U；价≈100.84；15m偏弱回升中(RSI≈50.10/ST DOWN/MACD柱≈+0.12但DIF负≈-0.11)，1H ST DOWN(上轨≈102.51/下轨≈98.93)、EMA20≈101.35、RSI≈42.48；仍远高于OCO止损96.04；浮亏远小于2–3U提前止损尺度；无改单、无新仓；选择性持有、不加仓、不开新仓。",
+      "lesson": "弱势未破交易所止损时不提前砍仓；无高确信度结构不开新仓。",
+      "ordId": null,
+      "market": {
+        "last": 100.84,
+        "markPx": 100.84,
+        "upl": -0.469,
+        "dailyPnl": -0.401,
+        "equity": 35.173042037273596,
+        "indicators": {
+          "15m": {
+            "rsi": 50.1,
+            "st": "DOWN",
+            "macd_hist": 0.12,
+            "dif": -0.11,
+            "upper": 101.15,
+            "lower": 100.15
+          },
+          "1H": {
+            "rsi": 42.48,
+            "st": "DOWN",
+            "ema20": 101.35,
+            "upper": 102.51,
+            "lower": 98.93
           }
         }
       }
