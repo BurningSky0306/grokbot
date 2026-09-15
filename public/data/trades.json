@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-15T19:03:30+08:00",
+  "updatedAt": "2026-09-15T19:10:17+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "spot+swap",
-    "equityUsdtApprox": 35.1783,
-    "dailyPnlApprox": -0.3959,
+    "equityUsdtApprox": 35.1821,
+    "dailyPnlApprox": -0.3921,
     "dayBaselineEq": 35.57422072,
     "risk": {
       "maxLeverage": 3,
@@ -39,13 +39,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.86",
-      "last": "100.88",
+      "markPx": "100.87",
+      "last": "100.87",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.905718288296635,
-      "notionalUsd": 35.28582056999999,
-      "upl": -0.462,
+      "notionalUsd": 35.28967211,
+      "upl": -0.4585,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152"
@@ -1564,6 +1564,39 @@
       "decision": "hold_sol_selective_wait",
       "material": false,
       "orderChange": false
+    },
+    {
+      "id": "d_watch_1910",
+      "at": "2026-09-15T19:10:17+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持SOL多头0.35+OCO；日PnL≈-0.3921U，浮盈≈-0.4585U，15m/1H ST均DOWN，继续选择性持有。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈-0.3921U，浮盈≈-0.4585U；价≈100.87；15m中性偏弱(RSI≈48.08/ST DOWN/MACD柱≈+0.19但DIF负≈-0.15)，1H ST DOWN(上轨≈102.51/下轨≈98.89)、EMA20≈101.42、RSI≈42.25；仍远高于OCO止损96.04；浮亏远小于2–3U提前止损尺度；无改单、无新仓；选择性持有、不加仓、不开新仓。",
+      "lesson": "弱势未破交易所止损时不提前砍仓；无高确信度结构不开新仓。",
+      "market": {
+        "last": 100.87,
+        "markPx": 100.87,
+        "upl": -0.4585,
+        "dailyPnl": -0.3921,
+        "equity": 35.1821,
+        "indicators": {
+          "15m": {
+            "rsi": 48.08,
+            "st": "DOWN",
+            "macd_hist": 0.19,
+            "dif": -0.15,
+            "upper": 101.15,
+            "lower": 100.15
+          },
+          "1H": {
+            "rsi": 42.25,
+            "st": "DOWN",
+            "ema20": 101.42,
+            "upper": 102.51,
+            "lower": 98.89
+          }
+        }
+      }
     }
   ]
 }
