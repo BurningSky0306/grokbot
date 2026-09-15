@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-15T20:30:38+08:00",
+  "updatedAt": "2026-09-15T20:49:51+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 35.191591504659826,
-    "dailyPnlApprox": -0.3826,
+    "equityUsdtApprox": 35.1975327272736,
+    "dailyPnlApprox": -0.3767,
     "dayBaselineEq": 35.57422072,
     "risk": {
       "maxLeverage": 3,
@@ -13,7 +13,9 @@
         2,
         3
       ]
-    }
+    },
+    "availUsdt": 23.749694585869147,
+    "uplApprox": -0.4445
   },
   "openOrders": [
     {
@@ -34,16 +36,17 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.89",
-      "last": "100.93",
+      "markPx": "100.91",
+      "last": "100.95",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.905718288296635,
-      "notionalUsd": 35.29914097499999,
-      "upl": -0.4515,
+      "notionalUsd": 35.30507896999999,
+      "upl": -0.4445,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
-      "algoId": "3908468717568049152"
+      "algoId": "3908468717568049152",
+      "side": "long"
     }
   ],
   "universe": [
@@ -1747,6 +1750,40 @@
           },
           "1h": {
             "rsi": 42.78,
+            "st": "DOWN",
+            "ema20": 101.36,
+            "upper": 102.51,
+            "lower": 98.97
+          }
+        }
+      }
+    },
+    {
+      "id": "d_watch_2049",
+      "at": "2026-09-15T20:49:51+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持SOL多头0.35+OCO；日PnL≈-0.3767U，浮盈≈-0.4445U，15m/1H ST均DOWN，继续选择性持有。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈-0.3767U，浮盈≈-0.4445U；价≈100.95；15m中性偏弱(RSI≈52.27/ST DOWN上轨≈101.15/MACD柱≈+0.14但DIF负≈-0.05)，1H ST DOWN(上轨≈102.51/下轨≈98.97)、EMA20≈101.36、RSI≈43.65；仍远高于OCO止损96.04；浮亏远小于2–3U提前止损尺度；无改单、无新仓；选择性持有、不加仓、不开新仓。",
+      "lesson": "弱势未破交易所止损时不提前砍仓；无高确信度结构不开新仓。",
+      "ordId": null,
+      "market": {
+        "last": 100.95,
+        "markPx": 100.91,
+        "upl": -0.4445,
+        "dailyPnl": -0.3767,
+        "equity": 35.1975327272736,
+        "indicators": {
+          "15m": {
+            "rsi": 52.27,
+            "st": "DOWN",
+            "macd_hist": 0.14,
+            "dif": -0.05,
+            "upper": 101.15,
+            "lower": 100.16
+          },
+          "1h": {
+            "rsi": 43.65,
             "st": "DOWN",
             "ema20": 101.36,
             "upper": 102.51,
