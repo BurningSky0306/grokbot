@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T01:53:40+08:00",
+  "updatedAt": "2026-09-16T01:58:13+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 35.0173,
-    "dailyPnlApprox": 0.5561,
+    "equityUsdtApprox": 34.9708,
+    "dailyPnlApprox": 0.5096,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -16,12 +16,12 @@
       "style": "concentrated_3x_meaningful"
     },
     "availUsdt": 23.7497,
-    "uplApprox": -0.616,
-    "frozenUsdt": 11.2911,
+    "uplApprox": -0.686,
+    "frozenUsdt": 11.2211,
     "daily": {
       "date": "2026-09-16",
       "startEq": 34.4612,
-      "pnl": 0.5561
+      "pnl": 0.5096
     }
   },
   "openOrders": [
@@ -43,13 +43,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.42",
-      "last": "100.44",
+      "markPx": "100.22",
+      "last": "100.23",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": "11.9070982077052865",
-      "notionalUsd": "35.12345151",
-      "upl": -0.616,
+      "notionalUsd": "35.05419995",
+      "upl": -0.686,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152",
@@ -2078,6 +2078,50 @@
         "macd1h": {
           "macd": -0.33,
           "dif": -0.56,
+          "dea": -0.39
+        }
+      }
+    },
+    {
+      "id": "d_watch_015813",
+      "at": "2026-09-16T01:58:13+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持 SOL 多头+OCO；15m ST UP但1H仍DOWN，日PnL微正、无高确信度新仓，继续选择性等待。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈+0.5096U（2026-09-16基线34.46），浮盈≈-0.6860U；价≈100.23；15m偏多(RSI≈56.37/ST UP下轨≈98.39上轨≈100.17/MACD柱≈+0.22 DIF≈-0.26)，1H仍DOWN(上轨≈101.98/下轨≈96.46)、EMA20≈100.67、RSI≈44.48、MACD柱≈-0.36 DIF≈-0.58；现价高于OCO止损96.04约4.2点；浮亏≈0.69U小于2–3U提前止损尺度；15m反弹但1H结构未转多，无高确信度加仓/新仓；无成交、无改单；选择性持有。",
+      "lesson": "15m Supertrend UP+RSI偏强不等于1H转多；高确信度需更高周期共振。继续交给交易所OCO管理，不做弱反弹加仓。",
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_sol_selective_wait",
+      "equity": 34.9708,
+      "dailyPnlApprox": 0.5096,
+      "uplApprox": -0.686,
+      "availUsdt": 23.7497,
+      "positions": 1,
+      "market": {
+        "last": 100.23,
+        "mark": 100.22,
+        "rsi15": 56.37,
+        "rsi1h": 44.48,
+        "ema20_1h": 100.67,
+        "st15": {
+          "trend": "UP",
+          "upper": 100.17,
+          "lower": 98.39
+        },
+        "st1h": {
+          "trend": "DOWN",
+          "upper": 101.98,
+          "lower": 96.46
+        },
+        "macd15": {
+          "macd": 0.22,
+          "dif": -0.26,
+          "dea": -0.36
+        },
+        "macd1h": {
+          "macd": -0.36,
+          "dif": -0.58,
           "dea": -0.39
         }
       }
