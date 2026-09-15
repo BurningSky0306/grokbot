@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T02:47:24+08:00",
+  "updatedAt": "2026-09-16T02:56:36+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 34.001,
-    "dailyPnlApprox": -0.4599,
+    "equityUsdtApprox": 33.4577,
+    "dailyPnlApprox": -1.0035,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -15,48 +15,17 @@
       ],
       "style": "concentrated_3x_meaningful"
     },
-    "availUsdt": 23.7497,
-    "uplApprox": -1.6345,
-    "frozenUsdt": 10.2516,
+    "availUsdt": 33.4805,
+    "uplApprox": 0.0,
+    "frozenUsdt": 0.0,
     "daily": {
       "date": "2026-09-16",
       "startEq": 34.4612,
-      "pnl": -0.4599
+      "pnl": -1.0035
     }
   },
-  "openOrders": [
-    {
-      "algoId": "3908468717568049152",
-      "instId": "SOL-USDT-SWAP",
-      "ordType": "oco",
-      "side": "sell",
-      "sz": "0.35",
-      "tpTriggerPx": "109.83",
-      "slTriggerPx": "96.04",
-      "state": "live",
-      "reduceOnly": true
-    }
-  ],
-  "positions": [
-    {
-      "instId": "SOL-USDT-SWAP",
-      "posSide": "net",
-      "pos": "0.35",
-      "avgPx": "102.18",
-      "markPx": "97.51",
-      "last": "97.4",
-      "lever": "3",
-      "mgnMode": "isolated",
-      "margin": "11.9070982077052865",
-      "notionalUsd": "34.10529262",
-      "upl": -1.6345,
-      "tpTriggerPx": "109.83",
-      "slTriggerPx": "96.04",
-      "algoId": "3908468717568049152",
-      "side": "long",
-      "liqPx": "68.47782461733432"
-    }
-  ],
+  "openOrders": [],
+  "positions": [],
   "universe": [
     "BOME-USDT-SWAP",
     "BONK-USDT-SWAP",
@@ -2328,6 +2297,53 @@
         "macd15_dif": -0.21,
         "macd1h_hist": -0.38,
         "macd1h_dif": -0.64
+      }
+    },
+    {
+      "id": "d_sl_025625",
+      "at": "2026-09-16T02:56:36+08:00",
+      "action": "close_sl",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "SOL多头OCO止损成交：0.35@96.01平仓，已实现约-2.21U；当前空仓，双周期仍DOWN，不追单。",
+      "reason": "5分钟盯盘发现仓位已平：SOL-USDT-SWAP 多头0.35@102.18 的交易所OCO(algoId 3908468717568049152) 于02:49:24 SGT 触发止损(actualSide=sl, SL=96.04)，市价成交卖出0.35@96.01；成交PnL≈-2.1595U，含费+资金费已实现≈-2.2081U。现权益≈33.46U，相对2026-09-16基线34.4612日PnL≈-1.00U（未触≈9U日停）。现价≈97.92；15m RSI≈34.15/ST DOWN上轨≈99.73下轨≈94.08/MACD柱≈-0.10 DIF≈-0.36；1H RSI≈32.32/ST DOWN上轨≈101.98下轨≈96.45/EMA20≈100.42/MACD柱≈-0.49 DIF≈-0.71。结构仍弱、无清晰反转与流动性确认，按选择性入场规则空仓等待，不强行回补。",
+      "lesson": "止损触发后不要立刻反手/补仓；双周期ST仍DOWN时优先空仓等待结构修复，把已实现亏损记入日账并继续受≈9U日停约束。",
+      "material": true,
+      "bookChange": true,
+      "decision": "flat_after_sol_sl_wait",
+      "equity": 33.4577,
+      "dailyPnlApprox": -1.0035,
+      "uplApprox": 0.0,
+      "availUsdt": 33.4805,
+      "positions": 0,
+      "realizedPnlApprox": -2.2081,
+      "fill": {
+        "side": "sell",
+        "fillPx": 96.01,
+        "fillSz": 0.35,
+        "fillPnl": -2.1595,
+        "fee": -0.01680175,
+        "ordId": "3925726408934576132",
+        "algoId": "3908468717568049152",
+        "trigger": "sl",
+        "slTriggerPx": 96.04,
+        "openAvgPx": 102.18,
+        "atSgt": "2026-09-16T02:49:24+08:00"
+      },
+      "market": {
+        "last": 97.92,
+        "rsi15": 34.15,
+        "rsi1h": 32.32,
+        "st15": "DOWN",
+        "st15_upper": 99.73,
+        "st15_lower": 94.08,
+        "st1h": "DOWN",
+        "st1h_upper": 101.98,
+        "st1h_lower": 96.45,
+        "ema20_1h": 100.42,
+        "macd15": -0.1,
+        "dif15": -0.36,
+        "macd1h": -0.49,
+        "dif1h": -0.71
       }
     }
   ]
