@@ -1,30 +1,27 @@
 {
-  "updatedAt": "2026-09-15T16:39:08+08:00",
+  "updatedAt": "2026-09-15T16:44:25+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 34.96557110988738,
+    "equityUsdtApprox": 35.02189850901612,
     "availUsdt": 23.749694585869147,
-    "dailyPnlApprox": -0.609,
-    "uplApprox": -0.6755,
+    "dailyPnlApprox": -0.5523,
+    "uplApprox": -0.6195,
     "risk": {
       "maxLeverage": 3,
       "dailyLossStopUsdt": 9,
-      "targetPnlPerHitUsdt": [
+      "targetPnlPerTradeUsdt": [
         2,
         3
       ],
-      "preferOpenPositions": [
-        2,
-        5
-      ]
+      "preferConcentrated": true
     },
-    "totalEq": 34.976067,
+    "totalEq": 35.02189850901612,
     "availEq": 23.749694585869147,
-    "upl": -0.665,
-    "dayPnlApprox": -0.5939,
-    "dayBaseline": 35.57,
-    "asOf": "2026-09-15T16:39:08+08:00"
+    "upl": -0.6195,
+    "dayPnlApprox": -0.5523,
+    "dayBaseline": 35.57422072,
+    "asOf": "2026-09-15T16:44:25+08:00"
   },
   "openOrders": [],
   "positions": [
@@ -33,13 +30,13 @@
       "posSide": "net",
       "pos": "0.35",
       "avgPx": "102.18",
-      "markPx": "100.28",
-      "last": "100.3",
+      "markPx": "100.41",
+      "last": "100.42",
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.905718288296635,
-      "notionalUsd": 35.08360982,
-      "upl": -0.665,
+      "notionalUsd": 35.1294426,
+      "upl": -0.6195,
       "tpTriggerPx": "109.83",
       "slTriggerPx": "96.04",
       "algoId": "3908468717568049152"
@@ -1486,6 +1483,40 @@
         },
         "ema20_1h": 101.6
       }
+    },
+    {
+      "id": "d_watch_1644",
+      "at": "2026-09-15T16:44:25+08:00",
+      "action": "watch",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5分钟盯盘：维持SOL多头0.35+OCO；日PnL≈-0.552U，浮盈≈-0.620U，15m/1H ST均DOWN，继续选择性持有。",
+      "reason": "5分钟盯盘：维持 SOL-USDT-SWAP 多头0.35+交易所OCO(TP109.83/SL96.04)；日PnL≈-0.552U，浮盈≈-0.620U；价≈100.42；15m偏弱(RSI≈28.81/ST DOWN/MACD柱≈-0.01且DIF负≈-0.47)，1H ST DOWN(上轨≈102.38/下轨≈98.85)、EMA20≈101.61、RSI≈35.63；仍远高于OCO止损96.04；浮亏远小于2–3U提前止损尺度；无新成交/改单；选择性持有、不加仓、不开新仓。",
+      "lesson": "弱势未破交易所止损时不提前砍仓；无高确信度结构不开新仓。",
+      "market": {
+        "last": 100.42,
+        "rsi15": 28.81,
+        "rsi1h": 35.63,
+        "st15": "DOWN",
+        "st1h": "DOWN",
+        "macd15": {
+          "dif": -0.47,
+          "dea": -0.47,
+          "macd": -0.01
+        },
+        "ema20_1h": 101.61,
+        "st1h_bands": {
+          "upper": 102.38,
+          "lower": 98.85
+        }
+      },
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_sol_selective_wait",
+      "equity": 35.02189850901612,
+      "dailyPnlApprox": -0.5523,
+      "uplApprox": -0.6195,
+      "availUsdt": 23.749694585869147,
+      "positions": 1
     }
   ]
 }
