@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T07:53:39+08:00",
+  "updatedAt": "2026-09-16T08:00:42+08:00",
   "account": {
     "label": "grokbot量化炒币",
     "mode": "live",
-    "equityUsdtApprox": 33.456385090023055,
-    "dailyPnlApprox": -1.004803227379675,
+    "equityUsdtApprox": 33.4561,
+    "dailyPnlApprox": -1.0051,
     "dayBaselineEq": 34.4612,
     "risk": {
       "maxLeverage": 3,
@@ -21,15 +21,15 @@
     "daily": {
       "date": "2026-09-16",
       "baselineEq": 34.46118831740273,
-      "pnlApprox": -1.004803227379675,
+      "pnlApprox": -1.0051380322901053,
       "stopUsdt": 9,
       "stopped": false
     },
-    "equity": 33.456385090023055,
-    "equityUsdt": 33.456385090023055,
+    "equity": 33.456050285112624,
+    "equityUsdt": 33.456050285112624,
     "baselineDate": "2026-09-16",
     "baselineEquity": 34.46118831740273,
-    "asOf": "2026-09-16T07:53:39+08:00"
+    "asOf": "2026-09-16T08:00:42+08:00"
   },
   "openOrders": [],
   "positions": [],
@@ -3399,6 +3399,57 @@
           "hist": -0.59
         },
         "ema20_1h": 99.15
+      },
+      "tags": [
+        "watch",
+        "flat",
+        "selective",
+        "sol",
+        "no_entry"
+      ]
+    },
+    {
+      "id": "d_watch_080042",
+      "at": "2026-09-16T08:00:42+08:00",
+      "action": "hold_flat",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "空仓等待：SOL双周期ST仍DOWN，无高确信度入场",
+      "reason": "5分钟盯盘：仓位空、无挂单/无pending algo；权益≈33.4561U，日PnL≈-1.0051U（2026-09-16基线34.4612），未触≈9U日停，但无高确信度结构；SOL last≈96.89；RSI15/1H≈39.13/30.80；15m ST DOWN上轨≈98.61下轨≈95.83 MACD柱≈0.21 DIF≈-0.47；1H ST DOWN上轨≈100.71下轨≈96.45 EMA20≈99.10 MACD柱≈-0.66 DIF≈-1.17；价仍低于15m ST上轨与1H EMA20，双周期弱势未修复；15m MACD柱≈0.21仍属弱势反弹，1H RSI≈30.80虽偏超卖但MACD仍深负、ST未翻，不算确认；按选择性入场继续空仓等待，不追多也不逆势空。",
+      "lesson": "止损后空仓是正确的；弱势未修复时宁可错过，不强制补仓。15m MACD柱反弹与1H超卖都不算入场信号，需价站上ST上轨并有1H配合。",
+      "material": false,
+      "bookChange": false,
+      "decision": "flat_after_sol_sl_wait",
+      "equity": 33.4561,
+      "dailyPnlApprox": -1.0051,
+      "uplApprox": 0.0,
+      "availUsdt": 33.4805,
+      "positions": 0,
+      "market": {
+        "instId": "SOL-USDT-SWAP",
+        "last": 96.89,
+        "rsi15": 39.13,
+        "rsi1h": 30.8,
+        "st15": {
+          "trend": "DOWN",
+          "upper": 98.61,
+          "lower": 95.83
+        },
+        "st1h": {
+          "trend": "DOWN",
+          "upper": 100.71,
+          "lower": 96.45
+        },
+        "macd15": {
+          "dif": -0.47,
+          "dea": -0.58,
+          "hist": 0.21
+        },
+        "macd1h": {
+          "dif": -1.17,
+          "dea": -0.84,
+          "hist": -0.66
+        },
+        "ema20_1h": 99.1
       },
       "tags": [
         "watch",
