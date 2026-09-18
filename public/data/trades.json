@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-18T03:47:00+08:00",
+  "updatedAt": "2026-09-18T08:47:15+08:00",
   "account": {
-    "totalEq": 33.454,
+    "totalEq": 33.453,
     "availEq": 33.4805,
     "upl": 0,
     "ccy": "USDT",
     "dayBaseline": 33.4507,
-    "dayPnl": 0.0033,
-    "asOf": "2026-09-18T03:47:00+08:00"
+    "dayPnl": 0.0023,
+    "asOf": "2026-09-18T08:47:15+08:00"
   },
   "openOrders": [],
   "positions": [],
@@ -3843,67 +3843,79 @@
       "dailyPnlApprox": 0.0033,
       "uplApprox": 0.0,
       "availUsdt": 33.48049104357443
+    },
+    {
+      "id": "d_sr_084715",
+      "at": "2026-09-18T08:47:15+08:00",
+      "action": "strategy_review",
+      "instId": "SOL-USDT-SWAP",
+      "summary": "5小时策略审视：继续空仓观望；SOL/BTC均为15m ST DOWN、1H ST UP，15m动量偏弱，不追不强迫，等回踩企稳再议。",
+      "reason": "权益≈33.453U（起步~45U，累计约-11.55U）。今日SGT基线≈33.4507U，日PnL≈+0.0023U，未触9U停线（余量≈9.0U）。仓位：空；无挂单、无pending algo。自上次策略审视（2026-09-18 03:47）以来：无新成交、无仓位变动；5分钟盯盘维持 flat_wait_pullback。近几日失败侧：高波动多头轮换（ZEC/NEAR/PUMP/DOT/LIT）与SOL教学多均以止损离场（单笔约-1.4～-2.3U，尺度符合2–3U目标）；成功侧：止损后坚持空仓、未强迫回补，日损极小。SOL last≈101.21（24h高102.03/低98.41）。结构：RSI15≈49.94、RSI1H≈62.75；价略高于EMA20_1H≈100.63；MACD15m dif0.05/dea0.07/柱-0.03；MACD1H dif0.71/dea0.76/柱-0.11（柱转负）；15m ST DOWN（上轨≈101.95 下轨≈100.57）；1H ST UP（上轨≈102.24 下轨≈99.17）。BTC last≈76385.7，15m ST DOWN（上轨≈76697.3）、1H ST UP（下轨≈75549.0 上轨≈77329.7）。结论：keep_flat / flat_wait_pullback — 短周期ST已转DOWN且MACD柱偏弱，RSI1H偏高，贴近24h高位，无高确信度入场；等回踩~100.57附近且15m ST转UP再评估。风险包络不变：≤3x、单笔TP/SL约2–3U、日损停~9U。",
+      "lesson": "短周期ST转DOWN时不因1H仍UP而追多；空仓等待是选择性策略的正确执行。",
+      "material": false,
+      "bookChange": false,
+      "decision": "flat_wait_pullback",
+      "decisionCode": "keep_flat",
+      "equity": 33.453,
+      "dailyPnlApprox": 0.0023,
+      "uplApprox": 0,
+      "availUsdt": 33.4805
     }
   ],
   "strategy_review": {
-    "at": "2026-09-18T03:47:00+08:00",
+    "at": "2026-09-18T08:47:15+08:00",
     "decision": "flat_wait_pullback",
-    "summary": "5小时策略审视：继续空仓观望；SOL双ST仍UP但15m动量偏弱、贴ST下轨未确认，BTC双ST DOWN，不追不强迫，等企稳再议。",
-    "reason": "权益≈33.4540U（起步~45U，累计约-11.55U）。今日SGT基线≈33.4507U，日PnL≈+0.0033U，未触9U停线（余量≈9.0U）。仓位：空；无挂单、无pending algo。自上次策略审视（2026-09-17 22:52）以来：无新成交、无仓位变动；5分钟盯盘维持 flat_wait_pullback。近几日失败侧：高波动多头轮换（ZEC/NEAR/PUMP/DOT/LIT）与SOL教学多均以止损离场（单笔约-1.4～-2.3U，尺度符合2–3U目标）；成功侧：止损后坚持空仓、未强迫回补，日损极小。SOL last≈100.73（24h高102.03/低97.33）。结构：RSI15≈45.68、RSI1H≈61.56；价贴近EMA20_1H≈100.18与15m ST下轨≈100.15；MACD15m dif0.05/dea0.16/柱-0.20（动量偏弱）；MACD1H dif0.75/dea0.75/柱0.00；15m+1H ST均UP（15m上轨≈102.03 下轨≈100.15；1H上轨≈102.26 下轨≈98.63）。BTC last≈76476.5，15m+1H ST均DOWN（15m上轨≈77005；1H上轨≈76806.8）。结论：keep_flat / flat_wait_pullback — 双ST仍UP但15m动量偏弱、价在ST下轨/EMA20附近尚未确认企稳反弹，且BTC双ST DOWN；非高确信度入场；维持风险壳（≤3x、~2–3U目标、~9U日停），不强制轮换，空仓可接受。入场条件：优先等≈100.15/EMA20附近明确企稳且MACD柱修复，或更深回踩后结构再评估；否则继续观望。",
-    "equity": 33.454,
-    "dayPnl": 0.0033,
+    "summary": "5小时策略审视：继续空仓观望；SOL/BTC均为15m ST DOWN、1H ST UP，15m动量偏弱，不追不强迫，等回踩企稳再议。",
+    "reason": "权益≈33.453U（起步~45U，累计约-11.55U）。今日SGT基线≈33.4507U，日PnL≈+0.0023U，未触9U停线（余量≈9.0U）。仓位：空；无挂单、无pending algo。自上次策略审视（2026-09-18 03:47）以来：无新成交、无仓位变动；5分钟盯盘维持 flat_wait_pullback。近几日失败侧：高波动多头轮换（ZEC/NEAR/PUMP/DOT/LIT）与SOL教学多均以止损离场（单笔约-1.4～-2.3U，尺度符合2–3U目标）；成功侧：止损后坚持空仓、未强迫回补，日损极小。SOL last≈101.21（24h高102.03/低98.41）。结构：RSI15≈49.94、RSI1H≈62.75；价略高于EMA20_1H≈100.63；MACD15m dif0.05/dea0.07/柱-0.03；MACD1H dif0.71/dea0.76/柱-0.11（柱转负）；15m ST DOWN（上轨≈101.95 下轨≈100.57）；1H ST UP（上轨≈102.24 下轨≈99.17）。BTC last≈76385.7，15m ST DOWN（上轨≈76697.3）、1H ST UP（下轨≈75549.0 上轨≈77329.7）。结论：keep_flat / flat_wait_pullback — 短周期ST已转DOWN且MACD柱偏弱，RSI1H偏高，贴近24h高位，无高确信度入场；等回踩~100.57附近且15m ST转UP再评估。风险包络不变：≤3x、单笔TP/SL约2–3U、日损停~9U。",
+    "equity": 33.453,
+    "dayPnl": 0.0023,
     "dayBaseline": 33.4507,
-    "book": "flat",
+    "book": {
+      "positions": 0,
+      "openOrders": 0,
+      "pendingAlgos": 0
+    },
     "material_change": false,
     "keep": [
-      "risk_envelope_3x_2to3u_9u_daystop",
-      "selective_flat_ok",
-      "wait_pullback_to_st15_lower_or_clear_hold"
+      "空仓观望",
+      "高确信度才开仓",
+      "风险包络3x/2-3U/9U日停"
     ],
-    "tweak": [
-      "require_hold_confirmation_near_st15_lower_macd_repair_btc_soft"
-    ],
+    "tweak": [],
     "replace": [],
     "freeze_discretionary_opens": false,
     "markets": {
       "SOL-USDT-SWAP": {
-        "last": 100.73,
-        "rsi15": 45.68,
-        "rsi1h": 61.56,
-        "st15": "UP",
+        "last": 101.21,
+        "high24h": 102.03,
+        "low24h": 98.41,
+        "rsi15": 49.94,
+        "rsi1h": 62.75,
+        "st15": "DOWN",
+        "st15_upper": 101.95,
+        "st15_lower": 100.57,
         "st1h": "UP",
-        "st15_bands": {
-          "upper": 102.03,
-          "lower": 100.15
-        },
-        "st1h_bands": {
-          "upper": 102.26,
-          "lower": 98.63
-        },
-        "ema20_1h": 100.18,
-        "macd15m": {
+        "st1h_upper": 102.24,
+        "st1h_lower": 99.17,
+        "ema20_1h": 100.63,
+        "macd15": {
           "dif": 0.05,
-          "dea": 0.16,
-          "macd": -0.2
+          "dea": 0.07,
+          "hist": -0.03
         },
         "macd1h": {
-          "dif": 0.75,
-          "dea": 0.75,
-          "macd": 0.0
+          "dif": 0.71,
+          "dea": 0.76,
+          "hist": -0.11
         }
       },
       "BTC-USDT-SWAP": {
-        "last": 76476.5,
+        "last": 76385.7,
         "st15": "DOWN",
-        "st1h": "DOWN",
-        "st15_bands": {
-          "upper": 77005.0,
-          "lower": 76119.0
-        },
-        "st1h_bands": {
-          "upper": 76806.8,
-          "lower": 75540.1
-        }
+        "st15_upper": 76697.3,
+        "st1h": "UP",
+        "st1h_lower": 75549.0,
+        "st1h_upper": 77329.7
       }
     }
   }
