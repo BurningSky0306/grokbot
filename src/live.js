@@ -16,7 +16,7 @@ const color = (n) => (Number(n) >= 0 ? 'up' : 'down');
 
 function accountEquity(data) {
   const a = data?.account || {};
-  const eq = Number(a.totalEq ?? a.equityUsdtApprox ?? a.eq);
+  const eq = Number(a.totalEq ?? a.equityUsdtApprox ?? a.equity ?? a.eq);
   return Number.isFinite(eq) ? eq : NaN;
 }
 function accountAvail(data) {
