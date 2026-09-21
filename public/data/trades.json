@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-19T04:49:27+08:00",
+  "updatedAt": "2026-09-21T18:17:21+08:00",
   "account": {
-    "totalEq": 33.4725,
+    "totalEq": 33.4731,
     "availEq": 33.4805,
     "upl": 0,
     "ccy": "USDT",
-    "dayBaseline": 33.4661,
-    "dayPnl": 0.0064,
-    "asOf": "2026-09-19T04:49:27+08:00"
+    "dayBaseline": 33.48,
+    "dayPnl": -0.0069,
+    "asOf": "2026-09-21T18:17:21+08:00"
   },
   "openOrders": [],
   "positions": [],
@@ -3914,22 +3914,65 @@
       "reason": "权益≈33.4725U（起步~45U，累计约-11.53U）。今日SGT基线≈33.4661U，日PnL≈+0.0064U，未触9U停线（余量≈8.99U）。仓位：空；无挂单、无pending algo。自上次策略审视（2026-09-18 23:56）以来：无新成交、无仓位变动；近期5分钟盯盘维持 flat_wait_pullback。SOL last≈113.7（24h高114.29/低100.72，贴近高位）。结构：RSI15≈70.7、RSI1H≈83.92（1H仍极端超买）；价高于EMA20_1H≈108.53；MACD15m dif1.23/dea1.33/柱-0.2；15m+1H ST均UP（15m上轨≈115.5 下轨≈111.8；1H上轨≈117.87 下轨≈109.4）。BTC last≈81133.4，RSI15/1H≈66.63/84.65，15m+1H ST均UP（15m下轨≈80399.4 上轨≈81618.0；1H下轨≈79417.2 上轨≈82378.4）。结论：keep_flat / flat_wait_pullback — 结构仍偏多，但双币RSI1H极端、贴近24h高，且SOL 15m MACD柱转负，追入胜率差；维持风险壳（≤3x、~2–3U目标、~9U日停），不强制轮换，空仓可接受。入场条件：优先等回踩15m ST下轨≈111.8附近企稳且RSI1H回落后再评估；更深可看1H ST下轨≈109.4/EMA20≈108.53；否则继续观望。",
       "decision": "flat_wait_pullback",
       "material_change": false
+    },
+    {
+      "id": "d_watch_181721",
+      "at": "2026-09-21T18:17:21+08:00",
+      "action": "watch",
+      "instId": "BTC-USDT-SWAP",
+      "summary": "盯盘：空仓等待BTC回踩做多；双ST仍UP但RSI极端，不追高、不逆势空。",
+      "reason": "权益≈33.4731U，avail≈33.4805U，upl=0；今日SGT基线≈33.48U，日PnL≈-0.0069U，未触9U日停。仓位：空；无挂单、无pending algo。今日早些时候API IP白名单已恢复（104.30.180.115 + 104.28.189.159），5分钟（正过渡到10分钟）盯盘已恢复，仍选择性空仓。BTC-USDT-SWAP last≈84570.9（24h高85332.9/低80250.0）。结构：RSI15≈77.83、RSI1H≈82.84（双周期均极端超买）；15m+1H SuperTrend均UP（15m下轨≈83222.3 上轨≈85953.7；1H下轨≈82514.2 上轨≈86738.7）；1H EMA20≈82024.8。结论：wait_pullback_long — 结构偏多但不追；优先等回踩15m ST≈83100–83300企稳再评估，更深可看1H ST/EMA20≈82000–82600；计划3x、约2–3U OCO；RSI极端期间不做空、不追多。",
+      "lesson": "双ST UP但RSI15/1H极端时，宁可等回踩15m ST下轨再做多；不追高、不因空闲逆势做空。",
+      "material": true,
+      "bookChange": false,
+      "decision": "wait_pullback_long",
+      "decisionCode": "wait_pullback_long",
+      "equity": 33.4731,
+      "dailyPnlApprox": -0.0069,
+      "uplApprox": 0.0,
+      "availUsdt": 33.4805,
+      "positions": 0,
+      "openOrders": 0,
+      "pendingAlgos": 0,
+      "btc": {
+        "last": 84570.9,
+        "rsi15": 77.83,
+        "rsi1h": 82.84,
+        "st15": "UP",
+        "st1h": "UP",
+        "st15_upper": 85953.7,
+        "st15_lower": 83222.3,
+        "st1h_upper": 86738.7,
+        "st1h_lower": 82514.2,
+        "ema20_1h": 82024.8,
+        "high24h": 85332.9,
+        "low24h": 80250.0
+      },
+      "tags": [
+        "watch",
+        "flat",
+        "btc",
+        "wait_pullback_long",
+        "api_restored",
+        "no_chase"
+      ]
     }
   ],
   "strategy_review": {
-    "at": "2026-09-19T04:49:27+08:00",
-    "decision": "flat_wait_pullback",
-    "summary": "策略审视：继续空仓观望；SOL/BTC双ST仍UP但RSI1H极端、贴近24h高，15m MACD柱为负，不追多，等回踩再议。",
-    "reason": "权益≈33.4725U（起步~45U，累计约-11.53U）。今日SGT基线≈33.4661U，日PnL≈+0.0064U，未触9U停线（余量≈8.99U）。仓位：空；无挂单、无pending algo。自上次策略审视（2026-09-18 23:56）以来：无新成交、无仓位变动；近期5分钟盯盘维持 flat_wait_pullback。SOL last≈113.7（24h高114.29/低100.72，贴近高位）。结构：RSI15≈70.7、RSI1H≈83.92（1H仍极端超买）；价高于EMA20_1H≈108.53；MACD15m dif1.23/dea1.33/柱-0.2；15m+1H ST均UP（15m上轨≈115.5 下轨≈111.8；1H上轨≈117.87 下轨≈109.4）。BTC last≈81133.4，RSI15/1H≈66.63/84.65，15m+1H ST均UP（15m下轨≈80399.4 上轨≈81618.0；1H下轨≈79417.2 上轨≈82378.4）。结论：keep_flat / flat_wait_pullback — 结构仍偏多，但双币RSI1H极端、贴近24h高，且SOL 15m MACD柱转负，追入胜率差；维持风险壳（≤3x、~2–3U目标、~9U日停），不强制轮换，空仓可接受。入场条件：优先等回踩15m ST下轨≈111.8附近企稳且RSI1H回落后再评估；更深可看1H ST下轨≈109.4/EMA20≈108.53；否则继续观望。",
-    "equity": 33.4725,
-    "dayPnl": 0.0064,
-    "dayBaseline": 33.4661,
+    "at": "2026-09-21T18:17:21+08:00",
+    "decision": "wait_pullback_long",
+    "summary": "策略更新：聚焦BTC wait_pullback_long；API白名单已恢复，继续空仓等回踩，不追高不逆势空。",
+    "reason": "权益≈33.4731U，avail≈33.4805U，upl=0；今日SGT基线≈33.48U，日PnL≈-0.0069U，未触9U日停。仓位：空；无挂单、无pending algo。今日早些时候API IP白名单已恢复（104.30.180.115 + 104.28.189.159），5分钟（正过渡到10分钟）盯盘已恢复，仍选择性空仓。BTC-USDT-SWAP last≈84570.9（24h高85332.9/低80250.0）。结构：RSI15≈77.83、RSI1H≈82.84（双周期均极端超买）；15m+1H SuperTrend均UP（15m下轨≈83222.3 上轨≈85953.7；1H下轨≈82514.2 上轨≈86738.7）；1H EMA20≈82024.8。结论：wait_pullback_long — 结构偏多但不追；优先等回踩15m ST≈83100–83300企稳再评估，更深可看1H ST/EMA20≈82000–82600；计划3x、约2–3U OCO；RSI极端期间不做空、不追多。",
+    "equity": 33.4731,
+    "dayPnl": -0.0069,
+    "dayBaseline": 33.48,
     "book": "flat",
-    "material_change": false,
+    "material_change": true,
     "keep": [
       "risk_envelope_3x_2to3u_9u_daystop",
       "selective_flat_ok",
-      "wait_pullback_rsi_cool_st15_lower"
+      "wait_pullback_rsi_cool_st15_lower",
+      "btc_wait_pullback_long"
     ],
     "tweak": [
       "block_chase_when_rsi1h_extreme_near_24h_high",
@@ -3963,21 +4006,22 @@
         "low24h": 100.72
       },
       "BTC-USDT-SWAP": {
-        "last": 81133.4,
-        "rsi15": 66.63,
-        "rsi1h": 84.65,
+        "last": 84570.9,
+        "rsi15": 77.83,
+        "rsi1h": 82.84,
         "st15": "UP",
         "st1h": "UP",
         "st15_bands": {
-          "upper": 81618.0,
-          "lower": 80399.4
+          "upper": 85953.7,
+          "lower": 83222.3
         },
         "st1h_bands": {
-          "upper": 82378.4,
-          "lower": 79417.2
+          "upper": 86738.7,
+          "lower": 82514.2
         },
-        "high24h": 81377.3,
-        "low24h": 76217.7
+        "ema20_1h": 82024.8,
+        "high24h": 85332.9,
+        "low24h": 80250.0
       }
     }
   }
