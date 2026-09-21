@@ -1,18 +1,82 @@
 {
-  "updatedAt": "2026-09-21T18:17:21+08:00",
+  "updatedAt": "2026-09-21T18:28:12+08:00",
   "account": {
-    "totalEq": 33.4731,
-    "availEq": 33.4805,
-    "upl": 0,
+    "totalEq": 33.4342,
+    "availEq": 10.8541,
+    "upl": -0.0053,
     "ccy": "USDT",
     "dayBaseline": 33.48,
-    "dayPnl": -0.0069,
-    "asOf": "2026-09-21T18:17:21+08:00",
-    "equityUsdtApprox": 33.4731,
-    "realizedPnl": -11.5269
+    "dayPnl": -0.0458,
+    "asOf": "2026-09-21T18:28:12+08:00",
+    "equityUsdtApprox": 33.4342,
+    "realizedPnl": -11.5269,
+    "isoEq": 22.5871,
+    "frozenBal": 22.5871
   },
-  "openOrders": [],
-  "positions": [],
+  "openOrders": [
+    {
+      "instId": "ETH-USDT-SWAP",
+      "algoId": "3942111048992997376",
+      "ordType": "oco",
+      "side": "sell",
+      "sz": "0.13",
+      "tpTriggerPx": "2880",
+      "slTriggerPx": "2581",
+      "state": "live",
+      "reduceOnly": true
+    },
+    {
+      "instId": "SOL-USDT-SWAP",
+      "algoId": "3942111042215002112",
+      "ordType": "oco",
+      "side": "sell",
+      "sz": "0.28",
+      "tpTriggerPx": "122.7",
+      "slTriggerPx": "109.95",
+      "state": "live",
+      "reduceOnly": true
+    }
+  ],
+  "positions": [
+    {
+      "instId": "ETH-USDT-SWAP",
+      "posSide": "net",
+      "side": "long",
+      "pos": 0.13,
+      "avgPx": 2717.12,
+      "lever": 3,
+      "mgnMode": "isolated",
+      "margin": 11.7742,
+      "notionalUsd": 35.31,
+      "upl": -0.0056,
+      "liqPx": 1819.61,
+      "tpTriggerPx": 2880,
+      "slTriggerPx": 2581,
+      "algoId": "3942111048992997376",
+      "ordId": "3942111048985366528",
+      "clOrdId": "gbETH091826",
+      "posId": "3906851920809709569"
+    },
+    {
+      "instId": "SOL-USDT-SWAP",
+      "posSide": "net",
+      "side": "long",
+      "pos": 0.28,
+      "avgPx": 115.91,
+      "lever": 3,
+      "mgnMode": "isolated",
+      "margin": 10.8183,
+      "notionalUsd": 32.45,
+      "upl": 0.0,
+      "liqPx": 77.63,
+      "tpTriggerPx": 122.7,
+      "slTriggerPx": 109.95,
+      "algoId": "3942111042215002112",
+      "ordId": "3942111042207371264",
+      "clOrdId": "gbSOL091826",
+      "posId": "3906649862731091969"
+    }
+  ],
   "universe": [
     "BOME-USDT-SWAP",
     "BONK-USDT-SWAP",
@@ -3958,6 +4022,78 @@
         "api_restored",
         "no_chase"
       ]
+    },
+    {
+      "id": "d_open_182812",
+      "at": "2026-09-21T18:28:12+08:00",
+      "action": "open",
+      "instId": "ETH-USDT-SWAP,SOL-USDT-SWAP",
+      "summary": "结束空仓：开多 ETH+SOL 永续（3x逐仓），趋势回踩/延续结构，附带OCO止盈止损。",
+      "reason": "用户要求停止空仓，在风险壳内适当进场。扫描USDT-SWAP：涨幅榜多属ZETA/KMNO等+20%以上疯狗，放弃追高。短名单指标：ETH 15m/1H双ST UP（15m下轨≈2678），RSI15≈64.4、距ST仅~1.4%，结构最佳；SOL 双ST UP（15m≈113.59），RSI15≈68.7、距ST~1.9%，流动性好；DOGE/ARB亦双ST UP但SOL更优或距ST更近；BTC RSI15≈76.8偏热，XRP RSI≈76–77更热。成交：ETH市价多0.13张@2717.12（ordId 3942111048985366528，clOrdId gbETH091826），名义≈35.3U，保证金≈11.77U，OCO TP2880(+6%)/SL2581(-5%)，algoId 3942111048992997376；SOL市价多0.28张@115.91（ordId 3942111042207371264，clOrdId gbSOL091826），名义≈32.4U，保证金≈10.82U，OCO TP122.7(+5.9%)/SL109.95(-5.1%)，algoId 3942111042215002112。权益≈33.4342U，可用≈10.8541U，逐仓占用≈22.5871U，日PnL≈-0.0458U（基线33.48），远低于9U日停。目标：约5–7%波动对应约2–2.5U/笔。",
+      "lesson": "全市场偏绿时优先选双ST对齐且距15m ST近、RSI未>85的流动性格子，而非追+15%疯狗；空仓指令下可进场但保持2–3U尺度与3x逐仓。",
+      "material": true,
+      "bookChange": true,
+      "decision": "open_long_eth_sol",
+      "decisionCode": "open_long_dual_st_pullback",
+      "equity": 33.4342,
+      "dailyPnlApprox": -0.0458,
+      "uplApprox": -0.0053,
+      "availUsdt": 10.8541,
+      "positions": 2,
+      "openOrders": 0,
+      "pendingAlgos": 2,
+      "fills": [
+        {
+          "instId": "ETH-USDT-SWAP",
+          "side": "buy",
+          "sz": 0.13,
+          "avgPx": 2717.12,
+          "ordId": "3942111048985366528",
+          "clOrdId": "gbETH091826",
+          "fee": -0.01766128,
+          "lever": 3,
+          "mgnMode": "isolated",
+          "tp": 2880,
+          "sl": 2581,
+          "algoId": "3942111048992997376"
+        },
+        {
+          "instId": "SOL-USDT-SWAP",
+          "side": "buy",
+          "sz": 0.28,
+          "avgPx": 115.91,
+          "ordId": "3942111042207371264",
+          "clOrdId": "gbSOL091826",
+          "fee": -0.0162274,
+          "lever": 3,
+          "mgnMode": "isolated",
+          "tp": 122.7,
+          "sl": 109.95,
+          "algoId": "3942111042215002112"
+        }
+      ],
+      "scan": {
+        "gainersSkipped": [
+          "ZETA(+72%)",
+          "KMNO(+30%)",
+          "CASHCAT(+28%)",
+          "SEI(+25%)",
+          "SUI(+23%)",
+          "NEAR(+21%)"
+        ],
+        "shortlist": [
+          "ETH",
+          "SOL",
+          "DOGE",
+          "XRP",
+          "ARB",
+          "BTC"
+        ],
+        "chosen": [
+          "ETH-USDT-SWAP",
+          "SOL-USDT-SWAP"
+        ]
+      }
     }
   ],
   "strategy_review": {
