@@ -14,6 +14,17 @@ const signed = (n, d = 2) => {
 };
 const color = (n) => (Number(n) >= 0 ? 'up' : 'down');
 
+function accountEquity(data) {
+  const a = data?.account || {};
+  const eq = Number(a.totalEq ?? a.equityUsdtApprox ?? a.eq);
+  return Number.isFinite(eq) ? eq : NaN;
+}
+function accountAvail(data) {
+  const a = data?.account || {};
+  const v = Number(a.availEq ?? a.availBal ?? a.cashUsdt);
+  return Number.isFinite(v) ? v : NaN;
+}
+
 function baseAsset(instId = '') {
   return String(instId).split('-')[0] || instId || '—';
 }
@@ -122,28 +133,30 @@ function mapHistory(data) {
 }
 
 function buildEquitySeries(data) {
-  // Do not fabricate a 30-day curve. Use stored equityHistory if present; else start capital + current.
+  // Do not fabricate a 30-day curve. Only plot real equityHistory snapshots.
   const hist = Array.isArray(data.equityHistory) ? data.equityHistory.filter((x) => Number.isFinite(Number(x.equity))) : [];
   if (hist.length >= 2) {
     return hist.map((h) => ({ t: h.at || h.t, v: Number(h.equity) }));
   }
-  const eq = Number(data.account?.equityUsdtApprox);
-  const pts = [{ t: 'start', v: NET_INVESTED }];
-  if (Number.isFinite(eq)) pts.push({ t: data.updatedAt || 'now', v: eq });
-  return pts;
+  return [];
 }
 
 function renderMetrics(data) {
-  const eq = Number(data.account?.equityUsdtApprox);
+  const eq = accountEquity(data);
   const pnl = Number.isFinite(eq) ? eq - NET_INVESTED : NaN;
   const ret = Number.isFinite(pnl) ? (pnl / NET_INVESTED) * 100 : NaN;
-  const realized = Number(data.account?.realizedPnl);
   const upl = positionsView.reduce((s, r) => s + Number(r.pnl || 0), 0);
+  const uplAcc = Number(data.account?.upl);
+  const floating = Number.isFinite(uplAcc) ? uplAcc : upl;
+  const realizedRaw = Number(data.account?.realizedPnl);
+  const realized = Number.isFinite(realizedRaw)
+    ? realizedRaw
+    : (Number.isFinite(eq) ? eq - NET_INVESTED - floating : NaN);
   const metrics = document.querySelectorAll('.metric');
   if (metrics[0]) {
     metrics[0].querySelector('.value').textContent = Number.isFinite(eq) ? fmt(eq) : '—';
-    metrics[0].querySelector('.sub').innerHTML = Number.isFinite(upl)
-      ? `<span class="${color(upl)}">${signed(upl)}</span> 持仓浮动`
+    metrics[0].querySelector('.sub').innerHTML = Number.isFinite(floating)
+      ? `<span class="${color(floating)}">${signed(floating)}</span> 持仓浮动`
       : '—';
   }
   if (metrics[1]) {
@@ -155,7 +168,7 @@ function renderMetrics(data) {
     el.textContent = signed(pnl);
     el.className = 'value num ' + color(pnl);
     const realTxt = Number.isFinite(realized) ? signed(realized) : '—';
-    metrics[2].querySelector('.sub').innerHTML = `已实现 <span class="${color(realized)}">${realTxt}</span> · 浮动 <span class="${color(upl)}">${signed(upl)}</span>`;
+    metrics[2].querySelector('.sub').innerHTML = `已实现 <span class="${color(realized)}">${realTxt}</span> · 浮动 <span class="${color(floating)}">${signed(floating)}</span>`;
   }
   if (metrics[3]) {
     const el = metrics[3].querySelector('.value');
@@ -166,18 +179,14 @@ function renderMetrics(data) {
 }
 
 function renderAllocation(data) {
-  const eq = Number(data.account?.equityUsdtApprox) || 0;
-  // Approximate: USDT cash = eq - sum margins; use position notional weights for display
-  let used = 0;
-  const parts = positionsView.map((p, i) => {
-    const v = Math.max(Math.abs(Number(p.pnl) || 0) + 0.5, Number(p.value) || 1);
-    used += Math.abs(Number(p.raw?.margin) || Number(p.raw?.imr) || p.margin || (p.value ? p.value / 2 : 0.5));
-    return p;
-  });
-  // Simpler allocation: each position equal visual share by |upl|+1, cash remainder
-  const margins = positionsView.map((p) => Math.abs(Number(p.raw?.margin) || Number(p.raw?.imr) || 0.5));
+  const eq = accountEquity(data);
+  const avail = accountAvail(data);
+  // Margins from open positions; prefer live availEq for cash when present
+  const margins = positionsView.map((p) => Math.abs(Number(p.raw?.margin) || Number(p.raw?.imr) || 0));
   const marginSum = margins.reduce((a, b) => a + b, 0);
-  const cash = Math.max(eq - marginSum, 0);
+  const cash = Number.isFinite(avail)
+    ? Math.max(avail, 0)
+    : Math.max((Number.isFinite(eq) ? eq : 0) - marginSum, 0);
   const colors = ['var(--yellow)', '#64748b', '#8a96a7', '#49535f', '#f7931a', '#0ecb81', '#f6465d', '#687bba', '#a8ecd9', '#929aa5', '#3b82f6', '#eab308', '#22c55e', '#ef4444'];
   const slices = [{ name: 'USDT(可用/保证金外)', value: cash, color: colors[0] }];
   positionsView.forEach((p, i) => {
@@ -286,11 +295,17 @@ function drawChart() {
   const svg = document.getElementById('equityChart');
   const tip = document.getElementById('chartTooltip');
   if (!svg) return;
+  const liveEq = snapshot ? accountEquity(snapshot) : NaN;
+  const endStrongAll = document.querySelectorAll('.chartfooter strong.num');
+  const setEndingEquity = (v) => {
+    if (endStrongAll[1] && Number.isFinite(v)) endStrongAll[1].textContent = fmt(v) + ' USDT';
+  };
   if (values.length < 2) {
     svg.innerHTML = `<text x="40" y="110" fill="#929aa5" font-size="13">权益曲线样本不足（需要历史快照）。当前仅有起点与最新权益，不会伪造 30 天曲线。</text>`;
     plotted = [];
     document.getElementById('rangeLabel').textContent = '样本不足';
     document.getElementById('rangeReturn').textContent = '—';
+    setEndingEquity(liveEq);
     tip.hidden = true;
     return;
   }
