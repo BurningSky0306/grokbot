@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-22T12:40:38+08:00",
+  "updatedAt": "2026-09-22T16:36:07+08:00",
   "account": {
-    "equity": 33.8023,
-    "totalEq": 33.8023,
-    "equityUsdtApprox": 33.8023,
-    "eq": 33.8111,
+    "equity": 33.6221,
+    "totalEq": 33.6221,
+    "equityUsdtApprox": 33.6221,
+    "eq": 33.6315,
     "availBal": 10.8541,
-    "isoEq": 22.951,
-    "upl": 0.3791,
-    "realizedPnl": -11.5614,
+    "isoEq": 22.771,
+    "upl": 0.1961,
+    "realizedPnl": -11.574,
     "dayBaseline": 33.48,
-    "dailyPnl": 0.3223,
+    "dailyPnl": 0.1421,
     "currency": "USDT",
-    "asOf": "2026-09-22T12:40:38+08:00"
+    "asOf": "2026-09-22T16:36:07+08:00"
   },
   "openOrders": [],
   "positions": [
@@ -24,19 +24,19 @@
       "avgPx": 2717.12,
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": 11.773,
-      "notionalUsd": 35.4908,
-      "markPx": 2730.77,
-      "last": 2731.17,
-      "upl": 0.1775,
-      "liqPx": 1819.6997,
+      "margin": 11.7703,
+      "notionalUsd": 35.4276,
+      "markPx": 2725.96,
+      "last": 2726.49,
+      "upl": 0.1149,
+      "liqPx": 1819.9116,
       "tpTriggerPx": 2880,
       "slTriggerPx": 2581,
       "algoId": "3942111048992997376",
       "ordId": "",
       "clOrdId": "gbETH091826",
       "posId": "3906851920809709569",
-      "mgnRatio": 74.8075
+      "mgnRatio": 74.5302
     },
     {
       "instId": "SOL-USDT-SWAP",
@@ -46,19 +46,19 @@
       "avgPx": 115.91,
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": 10.8142,
-      "notionalUsd": 32.6479,
-      "markPx": 116.63,
-      "last": 116.65,
-      "upl": 0.2016,
-      "liqPx": 77.6472,
+      "margin": 10.8109,
+      "notionalUsd": 32.5269,
+      "markPx": 116.2,
+      "last": 116.24,
+      "upl": 0.0812,
+      "liqPx": 77.6589,
       "tpTriggerPx": 122.7,
       "slTriggerPx": 109.95,
       "algoId": "3942111042215002112",
       "ordId": "",
       "clOrdId": "gbSOL091826",
       "posId": "3906649862731091969",
-      "mgnRatio": 74.961
+      "mgnRatio": 74.3938
     }
   ],
   "universe": [
@@ -4155,6 +4155,20 @@
       "equity": 33.8023,
       "dailyPnl": 0.3223,
       "upl": 0.3791,
+      "orderChange": false
+    },
+    {
+      "id": "d_w_163607",
+      "at": "2026-09-22T16:36:07+08:00",
+      "action": "watch_hold",
+      "instId": "ETH-USDT-SWAP,SOL-USDT-SWAP",
+      "summary": "10分钟盯盘：维持 ETH+SOL 双多与现有 OCO；1H ST 仍 UP，BTC 远高于入场区不追，无下单变更。",
+      "reason": "权益≈33.62U（日基线33.48，日PnL≈+0.14U，远低于9U日停）。可用≈10.85U，逐仓占用≈22.77U，合计浮盈≈+0.20U。仓位：ETH多0.13@2717.12 mark≈2725.96 upl≈+0.11U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈116.20 upl≈+0.08U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2748.94，价下）/1H ST UP（下轨≈2695.41），RSI15≈41.9、RSI1H≈51.2；SOL 15m ST DOWN（上轨≈117.58）/1H ST UP（下轨≈115.21），RSI15≈42.0、RSI1H≈51.0；BTC last≈85487.2，1H ST UP 下轨≈84750.6，价远高于≈84750–84900 入场区，跳过不追。无成交、无OCO变更、无风险逼近。结论：hold_manage_oco — 浮盈远未到2–3U裁量尺度且1H结构完好，不早砍；可用预留给BTC回调计划，本轮不扫其他合约。",
+      "lesson": "短线15m回撤但1H仍UP就让OCO工作；BTC远离计划区不追，容量留给计划入场。",
+      "material": false,
+      "equity": 33.6221,
+      "dailyPnl": 0.1421,
+      "upl": 0.1961,
       "orderChange": false
     }
   ],
