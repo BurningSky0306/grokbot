@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-22T17:41:24+08:00",
+  "updatedAt": "2026-09-22T23:15:04+08:00",
   "account": {
-    "equity": 34.0514,
-    "totalEq": 34.0416,
-    "equityUsdtApprox": 34.0514,
-    "eq": 34.0514,
+    "equity": 34.0897,
+    "totalEq": 34.0856,
+    "equityUsdtApprox": 34.0897,
+    "eq": 34.0897,
     "availBal": 10.8541,
-    "isoEq": 23.1906,
-    "upl": 0.616,
-    "realizedPnl": -11.574,
+    "isoEq": 23.2355,
+    "upl": 0.6543,
+    "realizedPnl": -0.045,
     "dayBaseline": 33.48,
-    "dailyPnl": 0.5714,
+    "dailyPnl": 0.6097,
     "currency": "USDT",
-    "asOf": "2026-09-22T17:41:24+08:00"
+    "asOf": "2026-09-22T23:15:04+08:00"
   },
   "openOrders": [],
   "positions": [
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2740.6,
-      "last": 2740.64,
+      "markPx": 2743.84,
+      "last": 2743.98,
       "lever": "3",
-      "upl": 0.3052,
+      "upl": 0.3474,
       "margin": 11.7703,
       "liqPx": 1819.91,
-      "notionalUsd": 35.6175,
+      "notionalUsd": 35.6656,
       "realizedPnl": -0.0215,
       "oco": {
         "tp": 2880,
@@ -45,13 +45,13 @@
       "posSide": "net",
       "pos": 0.28,
       "avgPx": 115.91,
-      "markPx": 117.02,
-      "last": 117.02,
+      "markPx": 117.05,
+      "last": 117.06,
       "lever": "3",
-      "upl": 0.3108,
+      "upl": 0.3192,
       "margin": 10.8109,
       "liqPx": 77.66,
-      "notionalUsd": 32.7561,
+      "notionalUsd": 32.7701,
       "realizedPnl": -0.0235,
       "oco": {
         "tp": 122.7,
@@ -4184,49 +4184,50 @@
       "dailyPnl": 0.5714,
       "upl": 0.616,
       "orderChange": false
+    },
+    {
+      "id": "d_sr_231504",
+      "at": "2026-09-22T23:15:04+08:00",
+      "action": "strategy_review",
+      "instId": "ETH-USDT-SWAP,SOL-USDT-SWAP",
+      "summary": "策略审视：维持 ETH+SOL 双多与现有 OCO；SOL 15m 已翻多、ETH 仍 15m DOWN/1H UP，日盈正且可用资金偏紧，继续冻结新开/加仓，只管仓。",
+      "reason": "权益≈34.09U（日基线33.48，日PnL≈+0.61U，远低于9U日停）。可用≈10.85U，逐仓占用≈23.24U，合计浮盈≈+0.65U。仓位：ETH多0.13@2717.12 mark≈2743.84 upl≈+0.35U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈117.05 upl≈+0.32U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2766.49）/1H ST UP（下轨≈2694.20），RSI15≈50.5、RSI1H≈54.1；SOL 15m ST UP（下轨≈116.01）/1H ST UP（下轨≈115.17），RSI15≈51.0、RSI1H≈53.7；BTC last≈86254 15m+1H ST UP（1H下轨≈84736）RSI1H≈63.9（背景偏稳，距84900回踩区仍远，不作新开理由）。相对上次审视（~17:41）：仓位与OCO未变；权益由≈34.05略升至≈34.09，浮盈由≈+0.62升至≈+0.65；SOL 15m 自 DOWN 翻 UP，ETH 仍处 15m DOWN/1H UP 修复段，距SL仍远（ETH≈2581 / SOL≈109.95）。近3日无新成交（仅持仓开仓单）。历史教训：喷雾仓多数止损；集中双仓+OCO更优。结论：hold_manage_oco — 不早砍（合计浮盈远低于2–3U裁量尺度、1H未破）、不强制轮换；容量偏紧，冻结裁量新开/加仓，只维护现有OCO。",
+      "lesson": "集中双仓+OCO优于喷雾；15m回撤不构成提前平仓，以1H结构与OCO为准；可用资金偏紧时冻结新开。",
+      "material": false,
+      "equity": 34.0897,
+      "dailyPnl": 0.6097,
+      "upl": 0.6543,
+      "orderChange": false
     }
   ],
   "strategy_review": {
-    "at": "2026-09-22T17:41:24+08:00",
+    "at": "2026-09-22T23:15:04+08:00",
     "decision": "hold_manage_oco",
-    "summary": "策略审视：维持 ETH+SOL 双多与现有 OCO；15m 仍偏弱、1H ST 仍 UP，日盈正且可用资金偏紧，继续冻结新开/加仓，只管仓。",
-    "reason": "权益≈34.05U（日基线33.48，日PnL≈+0.57U，远低于9U日停）。可用≈10.85U，逐仓占用≈23.19U，合计浮盈≈+0.62U。仓位：ETH多0.13@2717.12 mark≈2740.6 upl≈+0.31U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈117.02 upl≈+0.31U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2748.90，价下）/1H ST UP（下轨≈2695.34），RSI15≈52.6、RSI1H≈55.5；SOL 15m ST DOWN（上轨≈117.76）/1H ST UP（下轨≈115.22），RSI15≈51.8、RSI1H≈55.7；BTC last≈85930 15m ST UP（下轨≈85333）RSI1H≈62.4（背景偏稳，不作新开理由）。相对上次审视（~12:40）：仓位与OCO未变；权益由≈33.80回升至≈34.05，浮盈由≈+0.38回升至≈+0.62；双币15m RSI自~35回升至~52，仍处15m DOWN/1H UP 的回撤修复段，距SL仍远（ETH≈2581 / SOL≈109.95）。近3日无新成交（仅持仓开仓单）。历史教训：喷雾仓多数止损；集中双仓+OCO更优。结论：hold_manage_oco — 不早砍（合计浮盈远低于2–3U裁量尺度、1H未破）、不强制轮换；容量偏紧+15m仍未翻多，冻结裁量新开/加仓，只维护现有OCO。",
-    "equity": 34.0514,
-    "dayPnl": 0.5714,
+    "summary": "策略审视：维持 ETH+SOL 双多与现有 OCO；SOL 15m 已翻多、ETH 仍 15m DOWN/1H UP，日盈正且可用资金偏紧，继续冻结新开/加仓，只管仓。",
+    "reason": "权益≈34.09U（日基线33.48，日PnL≈+0.61U，远低于9U日停）。可用≈10.85U，逐仓占用≈23.24U，合计浮盈≈+0.65U。仓位：ETH多0.13@2717.12 mark≈2743.84 upl≈+0.35U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈117.05 upl≈+0.32U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2766.49）/1H ST UP（下轨≈2694.20），RSI15≈50.5、RSI1H≈54.1；SOL 15m ST UP（下轨≈116.01）/1H ST UP（下轨≈115.17），RSI15≈51.0、RSI1H≈53.7；BTC last≈86254 15m+1H ST UP（1H下轨≈84736）RSI1H≈63.9（背景偏稳，距84900回踩区仍远，不作新开理由）。相对上次审视（~17:41）：仓位与OCO未变；权益由≈34.05略升至≈34.09，浮盈由≈+0.62升至≈+0.65；SOL 15m 自 DOWN 翻 UP，ETH 仍处 15m DOWN/1H UP 修复段，距SL仍远（ETH≈2581 / SOL≈109.95）。近3日无新成交（仅持仓开仓单）。历史教训：喷雾仓多数止损；集中双仓+OCO更优。结论：hold_manage_oco — 不早砍（合计浮盈远低于2–3U裁量尺度、1H未破）、不强制轮换；容量偏紧，冻结裁量新开/加仓，只维护现有OCO。",
+    "equity": 34.0897,
+    "dayPnl": 0.6097,
     "dayBaseline": 33.48,
-    "book": "ETH+SOL long 3x isolated + live OCO",
-    "material_change": false,
-    "keep": [
-      "risk_envelope_3x_2to3u_9u_daystop",
-      "selective_quality_over_forced_rotation",
-      "eth_sol_long_with_oco",
-      "concentrated_book_over_micro_spray"
-    ],
-    "tweak": [
-      "freeze_discretionary_opens_while_capacity_thin",
-      "respect_15m_st_down_as_pullback_not_exit_while_1h_up",
-      "manage_oco_only_until_tp_sl_or_1h_structure_break"
-    ],
-    "replace": [],
-    "freeze_discretionary_opens": true,
-    "markets": {
-      "ETH-USDT-SWAP": {
-        "last": 2740.64,
-        "mark": 2740.6,
+    "book": {
+      "positions": 2,
+      "avail": 10.8541,
+      "isoEq": 23.2355,
+      "upl": 0.6543,
+      "eth": {
+        "instId": "ETH-USDT-SWAP",
+        "instType": "SWAP",
+        "mgnMode": "isolated",
+        "posSide": "net",
+        "pos": 0.13,
         "avgPx": 2717.12,
-        "upl": 0.3052,
-        "rsi15": 52.59,
-        "rsi1h": 55.52,
-        "st15": "DOWN",
-        "st1h": "UP",
-        "st15_bands": {
-          "upper": 2748.9,
-          "lower": 2717.41
-        },
-        "st1h_bands": {
-          "upper": 2792.13,
-          "lower": 2695.34
-        },
+        "markPx": 2743.84,
+        "last": 2743.98,
+        "lever": "3",
+        "upl": 0.3474,
+        "margin": 11.7703,
+        "liqPx": 1819.91,
+        "notionalUsd": 35.6656,
+        "realizedPnl": -0.0215,
         "oco": {
           "tp": 2880,
           "sl": 2581,
@@ -4234,41 +4235,62 @@
           "state": "live"
         }
       },
-      "SOL-USDT-SWAP": {
-        "last": 117.02,
-        "mark": 117.02,
+      "sol": {
+        "instId": "SOL-USDT-SWAP",
+        "instType": "SWAP",
+        "mgnMode": "isolated",
+        "posSide": "net",
+        "pos": 0.28,
         "avgPx": 115.91,
-        "upl": 0.3108,
-        "rsi15": 51.83,
-        "rsi1h": 55.73,
-        "st15": "DOWN",
-        "st1h": "UP",
-        "st15_bands": {
-          "upper": 117.76,
-          "lower": 115.61
-        },
-        "st1h_bands": {
-          "upper": 120.0,
-          "lower": 115.22
-        },
+        "markPx": 117.05,
+        "last": 117.06,
+        "lever": "3",
+        "upl": 0.3192,
+        "margin": 10.8109,
+        "liqPx": 77.66,
+        "notionalUsd": 32.7701,
+        "realizedPnl": -0.0235,
         "oco": {
           "tp": 122.7,
           "sl": 109.95,
           "algoId": "3942111042215002112",
           "state": "live"
         }
+      }
+    },
+    "material_change": false,
+    "keep": [
+      "ETH-USDT-SWAP long 0.13 + OCO",
+      "SOL-USDT-SWAP long 0.28 + OCO"
+    ],
+    "tweak": [],
+    "replace": [],
+    "freeze_discretionary_opens": true,
+    "markets": {
+      "ETH": {
+        "st15": "DOWN",
+        "st15_upper": 2766.49,
+        "st1h": "UP",
+        "st1h_lower": 2694.2,
+        "rsi15": 50.51,
+        "rsi1h": 54.07
       },
-      "BTC-USDT-SWAP": {
-        "last": 85930,
-        "rsi1h": 62.38,
+      "SOL": {
         "st15": "UP",
-        "st15_bands": {
-          "upper": 86744.1,
-          "lower": 85333.3
-        },
-        "high24h": 87374.3,
-        "low24h": 84102.6,
-        "note": "15m ST已翻UP、RSI1H≈62，背景偏稳；容量紧，不作新开。"
+        "st15_lower": 116.01,
+        "st1h": "UP",
+        "st1h_lower": 115.17,
+        "rsi15": 50.95,
+        "rsi1h": 53.65
+      },
+      "BTC": {
+        "last": 86253.6,
+        "st15": "UP",
+        "st15_lower": 85374.4,
+        "st1h": "UP",
+        "st1h_lower": 84735.8,
+        "rsi1h": 63.87,
+        "entry": "skip_above_84900"
       }
     }
   }
