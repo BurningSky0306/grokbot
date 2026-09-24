@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-24T19:45:11+08:00",
+  "updatedAt": "2026-09-24T20:28:31+08:00",
   "account": {
-    "asOf": "2026-09-24T19:45:11+08:00",
+    "asOf": "2026-09-24T20:28:31+08:00",
     "currency": "USDT",
     "availBal": 10.8541,
     "availEq": 10.8541,
-    "eq": 31.6961,
-    "equity": 31.6961,
-    "equityUsdtApprox": 31.6866,
-    "totalEq": 31.6866,
-    "isoEq": 20.8357,
-    "upl": -1.7271,
+    "eq": 31.8283,
+    "equity": 31.8283,
+    "equityUsdtApprox": 31.8172,
+    "totalEq": 31.8172,
+    "isoEq": 20.9742,
+    "upl": -1.5948,
     "realizedPnl": -0.0573,
-    "dailyPnl": -1.7839,
+    "dailyPnl": -1.6517,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2644.41,
-      "last": 2644.32,
+      "markPx": 2647.23,
+      "last": 2647.01,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.760167729096704,
-      "notionalUsd": 34.367016801,
-      "upl": -0.9452300000000006,
+      "notionalUsd": 34.4016009636,
+      "upl": -0.9085699999999984,
       "liqPx": 1820.6947947226593,
       "oco": {
         "algoId": "3942111048992997376",
@@ -44,13 +44,13 @@
       "posSide": "net",
       "pos": 0.28,
       "avgPx": 115.91,
-      "markPx": 113.12,
-      "last": 113.12,
+      "markPx": 113.46,
+      "last": 113.46,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 10.808846444784862,
-      "notionalUsd": 31.664097920000007,
-      "upl": -0.7811999999999979,
+      "notionalUsd": 31.757363232000003,
+      "upl": -0.6860000000000008,
       "liqPx": 77.66643092206048,
       "oco": {
         "algoId": "3942111042215002112",
@@ -4498,6 +4498,62 @@
       "instId": "ETH-USDT-SWAP,SOL-USDT-SWAP",
       "reason": "权益≈31.70U（日基线33.48，日PnL≈-1.78U，远低于9U日停）。可用≈10.85U，逐仓占用≈20.84U，合计浮亏≈-1.73U。仓位：ETH多0.13@2717.12 mark≈2644.41 upl≈-0.95U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈113.12 upl≈-0.78U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2673.34 下轨≈2618.16）/1H ST DOWN（上轨≈2710.58 下轨≈2631.58），RSI15≈34.21、RSI1H≈32.73；SOL 15m ST DOWN（上轨≈114.60 下轨≈112.17）/1H ST DOWN（上轨≈116.83 下轨≈111.89），RSI15≈32.03、RSI1H≈35.65；BTC last≈83404.1 1H ST DOWN（上轨≈85102.8 下轨≈82897.7）RSI1H≈35.55（背景偏弱，不作新开理由）。相对上次审视（~14:43）：仓位与OCO未变；权益自≈32.72降至≈31.70，合计浮亏自≈-0.70扩大至≈-1.73；SOL 15m ST 自 UP 回落为 DOWN，ETH/SOL 双周期均 DOWN，趋势未翻转；价距各自 SL 仍有缓冲（ETH mark≈2644 vs SL2581；SOL mark≈113.12 vs SL109.95）且 OCO 保护完好。历史教训：此前高波动轮换（ZEC/NEAR/DOT等）止损亏损偏大，本轮坚持选择性、不强制轮换。决策 hold_manage_oco：不早砍、不替换、不加仓、不新开；容量偏紧+无高确信度新仓（双仓双周期 ST DOWN），继续只管理 OCO。",
       "summary": "策略审视：维持 ETH+SOL 双多与现有 OCO；双仓 15m/1H 均 ST DOWN，RSI 偏弱；日亏约 -1.78U 仍远低于 9U 日停，可用≈10.85U 偏紧，继续冻结新开/加仓，只管仓。"
+    },
+    {
+      "id": "d_w_202831",
+      "at": "2026-09-24T20:28:31+08:00",
+      "action": "watch_hold",
+      "instId": "ETH-USDT-SWAP,SOL-USDT-SWAP",
+      "summary": "10分钟盯盘：维持 ETH+SOL 双多与现有 OCO；双仓 15m/1H 均 ST DOWN，BTC 远低于入场区且 1H ST DOWN 跳过，无下单变更。",
+      "reason": "权益≈31.83U（日基线33.48，日PnL≈-1.65U，远低于9U日停）。可用≈10.85U，逐仓占用≈20.97U，合计浮亏≈-1.59U。仓位：ETH多0.13@2717.12 mark≈2647.23 upl≈-0.91U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈113.46 upl≈-0.69U，OCO TP122.7/SL109.95 live。结构：ETH 15m/1H ST DOWN（15m上≈2673.30 下≈2622.13；1H上≈2710.16 下≈2631.50）RSI15≈37.21；SOL 15m/1H ST DOWN（15m上≈114.61 下≈112.16；1H上≈116.79 下≈111.89）RSI15≈40.20；BTC last≈83481.7（入场区84750–84900外）1H ST DOWN（上≈85089.9 下≈82894.5）。决策 hold_manage_oco：OCO完好、合计浮亏未超2–3U裁量、日停未近，不早砍不加仓不扫微单。",
+      "book_action": "hold_manage_oco",
+      "material": false,
+      "bookChange": false,
+      "btc_entry": {
+        "eligible": false,
+        "last": 83481.7,
+        "zone": [
+          84750,
+          84900
+        ],
+        "st1h": "DOWN",
+        "st1h_upper": 85089.9,
+        "st1h_lower": 82894.5,
+        "skip_reason": "price_below_zone_and_1h_st_down"
+      },
+      "risk": {
+        "dayBaseline": 33.48,
+        "dailyPnl": -1.6517,
+        "dailyStop": 9,
+        "combinedUpl": -1.5946,
+        "maxLeverage": 3
+      },
+      "indicators": {
+        "ETH": {
+          "st15": "DOWN",
+          "st15_upper": 2673.3,
+          "st15_lower": 2622.13,
+          "st1h": "DOWN",
+          "st1h_upper": 2710.16,
+          "st1h_lower": 2631.5,
+          "rsi15": 37.21
+        },
+        "SOL": {
+          "st15": "DOWN",
+          "st15_upper": 114.61,
+          "st15_lower": 112.16,
+          "st1h": "DOWN",
+          "st1h_upper": 116.79,
+          "st1h_lower": 111.89,
+          "rsi15": 40.2
+        },
+        "BTC": {
+          "last": 83481.7,
+          "st1h": "DOWN",
+          "st1h_upper": 85089.9,
+          "st1h_lower": 82894.5
+        }
+      }
     }
   ],
   "strategy_review": {
