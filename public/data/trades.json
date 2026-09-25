@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-25T10:40:01+08:00",
+  "updatedAt": "2026-09-25T11:53:31+08:00",
   "account": {
-    "asOf": "2026-09-25T10:40:01+08:00",
+    "asOf": "2026-09-25T11:53:31+08:00",
     "currency": "USDT",
     "availBal": 10.8541,
     "availEq": 10.8541,
-    "eq": 33.3708,
-    "equity": 33.3708,
-    "equityUsdtApprox": 33.3608,
-    "totalEq": 33.3608,
-    "isoEq": 22.5099,
-    "upl": -0.0527,
+    "eq": 33.0961,
+    "equity": 33.0961,
+    "equityUsdtApprox": 33.0859,
+    "totalEq": 33.0859,
+    "isoEq": 22.242,
+    "upl": -0.3274,
     "realizedPnl": -0.057,
-    "dailyPnl": -0.1092,
+    "dailyPnl": -0.3941,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2681.61,
-      "last": 2681.56,
+      "markPx": 2676.17,
+      "last": 2676.04,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.759893025365772,
-      "notionalUsd": 34.850471721000005,
-      "upl": -0.461629999999997,
+      "notionalUsd": 34.7794250349,
+      "upl": -0.5323499999999977,
       "liqPx": 1820.716021298476,
       "oco": {
         "algoId": "3942111048992997376",
@@ -44,13 +44,13 @@
       "posSide": "net",
       "pos": 0.28,
       "avgPx": 115.91,
-      "markPx": 117.37,
-      "last": 117.39,
+      "markPx": 116.64,
+      "last": 116.65,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 10.809498709437717,
-      "notionalUsd": 32.85374092000001,
-      "upl": 0.4088000000000023,
+      "notionalUsd": 32.64907564800001,
+      "upl": 0.2044000000000011,
       "liqPx": 77.6640908752324,
       "oco": {
         "algoId": "3942111042215002112",
@@ -4714,6 +4714,66 @@
           "st1h": "UP",
           "st1h_lower": 114.76,
           "st1h_upper": 119.95
+        }
+      }
+    },
+    {
+      "id": "d_w_115331",
+      "at": "2026-09-25T11:53:31+08:00",
+      "action": "watch_hold",
+      "instId": "ETH-USDT-SWAP,SOL-USDT-SWAP",
+      "summary": "10分钟盯盘：维持 ETH+SOL 双多与现有 OCO；ETH 15m/1H ST DOWN，SOL 15m DOWN / 1H UP；BTC 远低于入场区且 1H ST DOWN 跳过，无下单变更。",
+      "reason": "权益≈33.10U（日基线33.48，日PnL≈-0.39U，远低于9U日停）。可用≈10.85U，逐仓占用≈22.24U，合计浮亏≈-0.33U。仓位：ETH多0.13@2717.12 mark≈2676.17 upl≈-0.53U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈116.64 upl≈+0.20U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上≈2697.48 下≈2672.77）/1H ST DOWN（上≈2709.37 下≈2631.67）RSI15≈41.26；SOL 15m ST DOWN（上≈118.11 下≈115.19）/1H ST UP（下≈114.35 上≈119.95）RSI15≈41.00；BTC last≈84188.5（入场区84750–84900外）1H ST DOWN（上≈85081.1 下≈83018.5）。决策 hold_manage_oco：OCO完好、合计浮亏未超2–3U裁量、日停未近，不早砍不加仓不扫微单；BTC 预留缓冲仍占用，无多余高确信度新开。",
+      "book_action": "hold_manage_oco",
+      "decision": "hold_manage_oco",
+      "decisionCode": "hold_manage_oco",
+      "material": false,
+      "bookChange": false,
+      "equity": 33.0961,
+      "btc_entry": {
+        "eligible": false,
+        "last": 84188.5,
+        "zone": [
+          84750,
+          84900
+        ],
+        "st1h": "DOWN",
+        "st1h_upper": 85081.1,
+        "st1h_lower": 83018.5,
+        "skip_reason": "price_below_zone_and_1h_st_down"
+      },
+      "risk": {
+        "dayBaseline": 33.48,
+        "dailyPnl": -0.3941,
+        "dailyStop": 9,
+        "combinedUpl": -0.3274,
+        "maxLeverage": 3,
+        "capacity": "thin"
+      },
+      "indicators": {
+        "ETH": {
+          "st15": "DOWN",
+          "st15_upper": 2697.48,
+          "st15_lower": 2672.77,
+          "st1h": "DOWN",
+          "st1h_upper": 2709.37,
+          "st1h_lower": 2631.67,
+          "rsi15": 41.26
+        },
+        "SOL": {
+          "st15": "DOWN",
+          "st15_upper": 118.11,
+          "st15_lower": 115.19,
+          "st1h": "UP",
+          "st1h_upper": 119.95,
+          "st1h_lower": 114.35,
+          "rsi15": 41.0
+        },
+        "BTC": {
+          "last": 84188.5,
+          "st1h": "DOWN",
+          "st1h_upper": 85081.1,
+          "st1h_lower": 83018.5
         }
       }
     }
