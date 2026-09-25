@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-26T06:24:54+08:00",
+  "updatedAt": "2026-09-26T06:40:10+08:00",
   "account": {
-    "asOf": "2026-09-26T06:24:54+08:00",
+    "asOf": "2026-09-26T06:40:10+08:00",
     "currency": "USDT",
     "availBal": 23.555044,
     "availEq": 23.555044,
-    "eq": 34.92118,
-    "equity": 34.92118,
-    "equityUsdtApprox": 34.913847,
-    "totalEq": 34.913847,
-    "isoEq": 11.363749,
-    "upl": -0.39182,
+    "eq": 34.99073,
+    "equity": 34.99073,
+    "equityUsdtApprox": 34.983732,
+    "totalEq": 34.983732,
+    "isoEq": 11.435686,
+    "upl": -0.32227,
     "realizedPnl": -9.687,
-    "dailyPnl": 1.44118,
+    "dailyPnl": 1.51073,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2686.98,
-      "last": 2686.99,
+      "markPx": 2692.34,
+      "last": 2692.35,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.757955585931784,
-      "notionalUsd": 34.9234045446,
-      "upl": -0.3918199999999984,
+      "notionalUsd": 34.993419916,
+      "upl": -0.32214,
       "liqPx": 1820.8657287847786,
       "oco": {
         "algoId": "3942111048992997376",
@@ -69,6 +69,18 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
+    {
+      "id": "d_review_064010",
+      "at": "2026-09-26T06:40:10+08:00",
+      "recordedAt": "2026-09-26T06:40:10+08:00",
+      "action": "hold_manage_oco",
+      "instId": "ETH-USDT-SWAP",
+      "summary": "5小时策略审视：守 ETH+OCO；SOL 已止盈；仓容恢复但不强制新开。",
+      "reason": "权益≈34.99U（日基线33.48，日PnL≈+1.51U，远低于9U日停）。可用≈23.56U（SOL 止盈后仓容恢复），逐仓占用≈11.44U，ETH 浮亏≈-0.32U。仓位：仅 ETH 多 0.13@2717.12 mark≈2692.34 upl≈-0.32U，OCO TP2880/SL2581 live（algoId 3942111048992997376）。近3日关键成交：SOL 0.28 于≈122.75 止盈平仓，fillPnl≈+1.92U（入场@115.91），策略兑现有效；ETH 仍静持。结构：ETH 15m ST DOWN（上轨≈2701.64 下轨≈2670.88）/1H ST UP（下轨≈2663.74 上轨≈2737.91），RSI15≈53.72、RSI1H≈52.82——短线承压但 1H 多头未破，距 SL2581 缓冲充足，不提前砍。SOL last≈122.19 近24h高122.91，15m ST DOWN（上轨≈122.80）/1H ST UP（下轨≈117.32），不追高重开。BTC last≈84026.6，1H ST DOWN（上轨≈84962.9 下轨≈83463.7），仍低于既定回踩区 84750–84900，不作新开理由。相对上次审视（~02:28）：SOL 已确认 TP 离场并计入；权益自≈34.35 升至≈34.99；可用自≈10.85 恢复至≈23.56；ETH OCO 未改。历史教训：高波动轮换止损偏大，本轮坚持选择性。决策 hold_manage_oco：保留 ETH+OCO；不替换、不加仓；仓容虽足但不因空位喷仓；仅在高确信度回踩（BTC 进区或 ETH/SOL 清晰 1H 多头回踩+短周期配合）时再考虑新开。",
+      "lesson": "止盈兑现后仓容恢复≠必须立刻补仓；SOL 已证明耐心等 TP 有效，下一笔仍要等高确信度回踩。",
+      "material": false,
+      "bookChange": false
+    },
     {
       "id": "d_watch_062454",
       "at": "2026-09-26T06:24:54+08:00",
@@ -4982,48 +4994,49 @@
     }
   ],
   "strategy_review": {
-    "at": "2026-09-26T02:28:39+08:00",
-    "decision": "sol_oco_tp_hit_hold_eth",
-    "summary": "SOL OCO 止盈已触发（约 +1.87U）；仅剩 ETH 多仓+OCO，BTC 未进区且 1H ST DOWN，不追；本轮不新开。",
-    "reason": "权益≈34.35U（日基线33.48，日PnL≈+0.87U，远低于9U日停）。可用≈10.85U，逐仓占用≈23.49U，合计浮盈≈+0.94U。仓位：ETH多0.13@2717.12 mark≈2682.15 upl≈-0.45U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈120.86 upl≈+1.39U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2719.50 下轨≈2645.60）/1H ST UP（下轨≈2663.86 上轨≈2756.45），RSI15≈44.36、RSI1H≈46.28；SOL 15m ST UP（下轨≈118.48 上轨≈122.37）/1H ST UP（下轨≈116.69 上轨≈124.19），RSI15≈55.07、RSI1H≈67.93（距TP≈1.5%）；BTC last≈83701.1 1H ST DOWN（上轨≈84948.8 下轨≈83464.6）（背景偏弱，不作新开理由）。相对上次审视（~20:40）：仓位与OCO未变；权益自≈34.75略回至≈34.35，合计浮盈自≈+1.33收至≈+0.93；ETH 15m ST 自 UP 翻 DOWN（短线转弱，但 1H 仍 UP，mark 距 SL2581 缓冲仍足）；SOL 双周期仍 UP，RSI 自偏热回落至中性偏强，mark≈120.86 仍近 TP122.7；近3日无新成交，仓位静持。价距各自 SL 缓冲充足（ETH mark≈2682 vs SL2581；SOL mark≈120.9 vs SL109.95）且 OCO 保护完好。历史教训：此前高波动轮换（ZEC/NEAR/DOT等）止损亏损偏大，本轮坚持选择性、不强制轮换；ETH 短线转弱不提前砍仓，让 OCO 继续保护既定目标。决策 hold_manage_oco：不早砍、不替换、不加仓、不新开；容量偏紧+无高确信度增量仓，继续只管理 OCO。",
-    "book_action": "sol_closed_tp",
+    "at": "2026-09-26T06:40:10+08:00",
+    "decision": "hold_manage_oco",
+    "summary": "SOL 已止盈离场；仅守 ETH 3x 逐仓多+OCO；仓容已恢复但仍不强制新开，等高质量回踩。",
+    "reason": "权益≈34.99U（日基线33.48，日PnL≈+1.51U，远低于9U日停）。可用≈23.56U（SOL 止盈后仓容恢复），逐仓占用≈11.44U，ETH 浮亏≈-0.32U。仓位：仅 ETH 多 0.13@2717.12 mark≈2692.34 upl≈-0.32U，OCO TP2880/SL2581 live（algoId 3942111048992997376）。近3日关键成交：SOL 0.28 于≈122.75 止盈平仓，fillPnl≈+1.92U（入场@115.91），策略兑现有效；ETH 仍静持。结构：ETH 15m ST DOWN（上轨≈2701.64 下轨≈2670.88）/1H ST UP（下轨≈2663.74 上轨≈2737.91），RSI15≈53.72、RSI1H≈52.82——短线承压但 1H 多头未破，距 SL2581 缓冲充足，不提前砍。SOL last≈122.19 近24h高122.91，15m ST DOWN（上轨≈122.80）/1H ST UP（下轨≈117.32），不追高重开。BTC last≈84026.6，1H ST DOWN（上轨≈84962.9 下轨≈83463.7），仍低于既定回踩区 84750–84900，不作新开理由。相对上次审视（~02:28）：SOL 已确认 TP 离场并计入；权益自≈34.35 升至≈34.99；可用自≈10.85 恢复至≈23.56；ETH OCO 未改。历史教训：高波动轮换止损偏大，本轮坚持选择性。决策 hold_manage_oco：保留 ETH+OCO；不替换、不加仓；仓容虽足但不因空位喷仓；仅在高确信度回踩（BTC 进区或 ETH/SOL 清晰 1H 多头回踩+短周期配合）时再考虑新开。",
+    "book_action": "keep",
     "freeze_new_opens": false,
     "risk": {
-      "capacity": "thin",
+      "capacity": "ok",
       "dailyLossStop": 9,
-      "dailyPnl": 0.8719,
+      "dailyPnl": 1.51073,
       "dayBaseline": 33.48,
       "maxLeverage": 3
     },
     "indicators": {
       "ETH": {
-        "rsi15": 44.36,
-        "rsi1h": 46.28,
+        "rsi15": 53.72,
+        "rsi1h": 52.82,
         "st15": "DOWN",
-        "st15_lower": 2645.6,
-        "st15_upper": 2719.5,
+        "st15_lower": 2670.88,
+        "st15_upper": 2701.64,
         "st1h": "UP",
-        "st1h_lower": 2663.86,
-        "st1h_upper": 2756.45
+        "st1h_lower": 2663.74,
+        "st1h_upper": 2737.91
       },
       "SOL": {
-        "rsi15": 55.07,
-        "rsi1h": 67.93,
-        "st15": "UP",
-        "st15_lower": 118.48,
-        "st15_upper": 122.37,
+        "last": 122.19,
+        "st15": "DOWN",
+        "st15_lower": 120.16,
+        "st15_upper": 122.8,
         "st1h": "UP",
-        "st1h_lower": 116.69,
-        "st1h_upper": 124.19
+        "st1h_lower": 117.32,
+        "st1h_upper": 124.19,
+        "note": "flat_after_tp"
       },
       "BTC": {
-        "last": 83701.1,
+        "last": 84026.6,
         "st1h": "DOWN",
-        "st1h_upper": 84948.8,
-        "st1h_lower": 83464.6
+        "st1h_upper": 84962.9,
+        "st1h_lower": 83463.7
       }
     },
-    "lesson": "选择性优先：ETH 15m 翻空而 1H 仍多时，守仓与 OCO，不因短线转弱提前砍仓或强行轮换。",
-    "material": true
+    "lesson": "止盈兑现后仓容恢复≠必须立刻补仓；SOL 已证明耐心等 TP 有效，下一笔仍要等高确信度回踩。",
+    "material": false,
+    "bookChange": false
   }
 }
