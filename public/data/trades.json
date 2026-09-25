@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-25T11:53:31+08:00",
+  "updatedAt": "2026-09-25T15:40:06+08:00",
   "account": {
-    "asOf": "2026-09-25T11:53:31+08:00",
+    "asOf": "2026-09-25T15:40:06+08:00",
     "currency": "USDT",
     "availBal": 10.8541,
     "availEq": 10.8541,
-    "eq": 33.0961,
-    "equity": 33.0961,
-    "equityUsdtApprox": 33.0859,
-    "totalEq": 33.0859,
-    "isoEq": 22.242,
-    "upl": -0.3274,
+    "eq": 32.8655,
+    "equity": 32.8655,
+    "equityUsdtApprox": 32.8572,
+    "totalEq": 32.8572,
+    "isoEq": 22.0058,
+    "upl": -0.5581,
     "realizedPnl": -0.057,
-    "dailyPnl": -0.3941,
+    "dailyPnl": -0.6228,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2676.17,
-      "last": 2676.04,
+      "markPx": 2671.39,
+      "last": 2671.38,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.759893025365772,
-      "notionalUsd": 34.7794250349,
-      "upl": -0.5323499999999977,
+      "notionalUsd": 34.7197352632,
+      "upl": -0.5944900000000003,
       "liqPx": 1820.716021298476,
       "oco": {
         "algoId": "3942111048992997376",
@@ -44,13 +44,13 @@
       "posSide": "net",
       "pos": 0.28,
       "avgPx": 115.91,
-      "markPx": 116.64,
-      "last": 116.65,
+      "markPx": 116.04,
+      "last": 116.05,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 10.809498709437717,
-      "notionalUsd": 32.64907564800001,
-      "upl": 0.2044000000000011,
+      "notionalUsd": 32.48340211200001,
+      "upl": 0.0364000000000027,
       "liqPx": 77.6640908752324,
       "oco": {
         "algoId": "3942111042215002112",
@@ -4776,52 +4776,107 @@
           "st1h_lower": 83018.5
         }
       }
+    },
+    {
+      "id": "d_sr_154006",
+      "at": "2026-09-25T15:40:06+08:00",
+      "action": "strategy_review",
+      "instId": "ETH-USDT-SWAP,SOL-USDT-SWAP",
+      "summary": "策略审视：维持 ETH+SOL 双多与现有 OCO；ETH 15m/1H 均 DOWN，SOL 15m DOWN / 1H UP；日亏约 -0.62U 远低于 9U 日停，可用≈10.85U 偏紧，继续冻结新开/加仓，只管仓。",
+      "reason": "权益≈32.86U（日基线33.48，日PnL≈-0.62U，远低于9U日停）。可用≈10.85U，逐仓占用≈22.01U，合计浮亏≈-0.56U。仓位：ETH多0.13@2717.12 mark≈2671.39 upl≈-0.59U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈116.04 upl≈+0.04U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2692.19 下轨≈2659.97）/1H ST DOWN（上轨≈2709.62 下轨≈2631.15），RSI15≈42.03、RSI1H≈44.27；SOL 15m ST DOWN（上轨≈117.43 下轨≈115.27）/1H ST UP（下轨≈114.34 上轨≈119.07），RSI15≈41.77、RSI1H≈48.29；BTC last≈83853.2 15m+1H ST 均 DOWN（1H上轨≈85085.1 下轨≈83017.4）RSI1H≈41.59（背景偏弱，不作新开理由）。相对上次审视（~10:40）：仓位与OCO未变；权益自≈33.37降至≈32.86，合计浮亏自≈-0.05扩至≈-0.56；SOL 15m ST 自 UP 翻 DOWN（短线转弱，但 1H 仍 UP，mark 距 SL109.95 缓冲仍足）；ETH 继续双周期 DOWN；近3日无新成交，仓位静持。价距各自 SL 缓冲充足（ETH mark≈2671 vs SL2581；SOL mark≈116.0 vs SL109.95）且 OCO 保护完好。历史教训：此前高波动轮换（ZEC/NEAR/DOT等）止损亏损偏大，本轮坚持选择性、不强制轮换。决策 hold_manage_oco：不早砍、不替换、不加仓、不新开；容量偏紧+ETH 双周期 DOWN+SOL 15m 转弱但 1H 仍 UP、无高确信度增量仓，继续只管理 OCO。",
+      "lesson": "选择性优先：SOL 15m 翻空而 1H 仍多时，守仓与 OCO，不因短线转弱提前砍仓或强行轮换。",
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_manage_oco",
+      "decisionCode": "hold_manage_oco",
+      "equity": 32.8655,
+      "book_action": "keep",
+      "freeze_new_opens": true,
+      "risk": {
+        "capacity": "thin",
+        "dailyLossStop": 9,
+        "dailyPnl": -0.6228,
+        "dayBaseline": 33.48,
+        "maxLeverage": 3
+      },
+      "indicators": {
+        "BTC": {
+          "last": 83853.2,
+          "rsi1h": 41.59,
+          "st1h": "DOWN",
+          "st1h_lower": 83017.4,
+          "st1h_upper": 85085.1,
+          "st15": "DOWN",
+          "st15_lower": 83687.5,
+          "st15_upper": 84438.3
+        },
+        "ETH": {
+          "rsi15": 42.03,
+          "rsi1h": 44.27,
+          "st15": "DOWN",
+          "st15_lower": 2659.97,
+          "st15_upper": 2692.19,
+          "st1h": "DOWN",
+          "st1h_lower": 2631.15,
+          "st1h_upper": 2709.62
+        },
+        "SOL": {
+          "rsi15": 41.77,
+          "rsi1h": 48.29,
+          "st15": "DOWN",
+          "st15_lower": 115.27,
+          "st15_upper": 117.43,
+          "st1h": "UP",
+          "st1h_lower": 114.34,
+          "st1h_upper": 119.07
+        }
+      }
     }
   ],
   "strategy_review": {
-    "at": "2026-09-25T10:40:01+08:00",
+    "at": "2026-09-25T15:40:06+08:00",
     "decision": "hold_manage_oco",
-    "summary": "策略审视：维持 ETH+SOL 双多与现有 OCO；ETH 15m/1H 均 DOWN，SOL 15m+1H 均 UP；日亏约 -0.11U 远低于 9U 日停，可用≈10.85U 偏紧，继续冻结新开/加仓，只管仓。",
-    "reason": "权益≈33.37U（日基线33.48，日PnL≈-0.11U，远低于9U日停）。可用≈10.85U，逐仓占用≈22.51U，合计浮亏≈-0.05U。仓位：ETH多0.13@2717.12 mark≈2681.61 upl≈-0.46U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈117.37 upl≈+0.41U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2705.29 下轨≈2672.56）/1H ST DOWN（上轨≈2709.32 下轨≈2631.77），RSI15≈45.03、RSI1H≈50.02；SOL 15m ST UP（下轨≈116.67 上轨≈119.22）/1H ST UP（下轨≈114.76 上轨≈119.95），RSI15≈54.18、RSI1H≈61.52；BTC last≈84417.4 15m ST UP / 1H ST DOWN（上轨≈85079.0 下轨≈83125.8）RSI1H≈51.51（背景未确认多头，不作新开理由）。相对上次审视（~05:39）：仓位与OCO未变；权益自≈33.34微升至≈33.37，合计浮亏自≈-0.08收窄至≈-0.05；ETH 15m ST 自 UP 翻 DOWN（结构转弱，但 mark 距 SL2581 仍有缓冲）；SOL 15m+1H 仍 UP；近3日无新成交，仓位继续静持。价距各自 SL 缓冲充足（ETH mark≈2682 vs SL2581；SOL mark≈117.4 vs SL109.95）且 OCO 保护完好。历史教训：此前高波动轮换（ZEC/NEAR/DOT等）止损亏损偏大，本轮坚持选择性、不强制轮换。决策 hold_manage_oco：不早砍、不替换、不加仓、不新开；容量偏紧+ETH 双周期 DOWN、无高确信度增量仓，继续只管理 OCO。",
+    "summary": "策略审视：维持 ETH+SOL 双多与现有 OCO；ETH 15m/1H 均 DOWN，SOL 15m DOWN / 1H UP；日亏约 -0.62U 远低于 9U 日停，可用≈10.85U 偏紧，继续冻结新开/加仓，只管仓。",
+    "reason": "权益≈32.86U（日基线33.48，日PnL≈-0.62U，远低于9U日停）。可用≈10.85U，逐仓占用≈22.01U，合计浮亏≈-0.56U。仓位：ETH多0.13@2717.12 mark≈2671.39 upl≈-0.59U，OCO TP2880/SL2581 live；SOL多0.28@115.91 mark≈116.04 upl≈+0.04U，OCO TP122.7/SL109.95 live。结构：ETH 15m ST DOWN（上轨≈2692.19 下轨≈2659.97）/1H ST DOWN（上轨≈2709.62 下轨≈2631.15），RSI15≈42.03、RSI1H≈44.27；SOL 15m ST DOWN（上轨≈117.43 下轨≈115.27）/1H ST UP（下轨≈114.34 上轨≈119.07），RSI15≈41.77、RSI1H≈48.29；BTC last≈83853.2 15m+1H ST 均 DOWN（1H上轨≈85085.1 下轨≈83017.4）RSI1H≈41.59（背景偏弱，不作新开理由）。相对上次审视（~10:40）：仓位与OCO未变；权益自≈33.37降至≈32.86，合计浮亏自≈-0.05扩至≈-0.56；SOL 15m ST 自 UP 翻 DOWN（短线转弱，但 1H 仍 UP，mark 距 SL109.95 缓冲仍足）；ETH 继续双周期 DOWN；近3日无新成交，仓位静持。价距各自 SL 缓冲充足（ETH mark≈2671 vs SL2581；SOL mark≈116.0 vs SL109.95）且 OCO 保护完好。历史教训：此前高波动轮换（ZEC/NEAR/DOT等）止损亏损偏大，本轮坚持选择性、不强制轮换。决策 hold_manage_oco：不早砍、不替换、不加仓、不新开；容量偏紧+ETH 双周期 DOWN+SOL 15m 转弱但 1H 仍 UP、无高确信度增量仓，继续只管理 OCO。",
     "book_action": "keep",
     "freeze_new_opens": true,
     "risk": {
       "capacity": "thin",
       "dailyLossStop": 9,
-      "dailyPnl": -0.1092,
+      "dailyPnl": -0.6228,
       "dayBaseline": 33.48,
       "maxLeverage": 3
     },
     "indicators": {
       "BTC": {
-        "last": 84417.4,
-        "rsi1h": 51.51,
+        "last": 83853.2,
+        "rsi1h": 41.59,
         "st1h": "DOWN",
-        "st1h_lower": 83125.8,
-        "st1h_upper": 85079.0,
-        "st15": "UP",
-        "st15_lower": 84131.1,
-        "st15_upper": 85177.7
+        "st1h_lower": 83017.4,
+        "st1h_upper": 85085.1,
+        "st15": "DOWN",
+        "st15_lower": 83687.5,
+        "st15_upper": 84438.3
       },
       "ETH": {
-        "rsi15": 45.03,
-        "rsi1h": 50.02,
+        "rsi15": 42.03,
+        "rsi1h": 44.27,
         "st15": "DOWN",
-        "st15_lower": 2672.56,
-        "st15_upper": 2705.29,
+        "st15_lower": 2659.97,
+        "st15_upper": 2692.19,
         "st1h": "DOWN",
-        "st1h_lower": 2631.77,
-        "st1h_upper": 2709.32
+        "st1h_lower": 2631.15,
+        "st1h_upper": 2709.62
       },
       "SOL": {
-        "rsi15": 54.18,
-        "rsi1h": 61.52,
-        "st15": "UP",
-        "st15_lower": 116.67,
-        "st15_upper": 119.22,
+        "rsi15": 41.77,
+        "rsi1h": 48.29,
+        "st15": "DOWN",
+        "st15_lower": 115.27,
+        "st15_upper": 117.43,
         "st1h": "UP",
-        "st1h_lower": 114.76,
-        "st1h_upper": 119.95
+        "st1h_lower": 114.34,
+        "st1h_upper": 119.07
       }
     }
   }
