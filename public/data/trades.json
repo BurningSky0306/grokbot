@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-26T17:33:36+08:00",
+  "updatedAt": "2026-09-26T18:55:15+08:00",
   "account": {
-    "asOf": "2026-09-26T17:33:36+08:00",
+    "asOf": "2026-09-26T18:55:15+08:00",
     "currency": "USDT",
     "availBal": 23.555044,
     "availEq": 23.555044,
-    "eq": 34.82639,
-    "equity": 34.82639,
-    "equityUsdtApprox": 34.819076,
-    "totalEq": 34.819076,
-    "isoEq": 11.268978,
-    "upl": -0.48451,
+    "eq": 34.89893,
+    "equity": 34.89893,
+    "equityUsdtApprox": 34.89195,
+    "totalEq": 34.89195,
+    "isoEq": 11.343885,
+    "upl": -0.41197,
     "realizedPnl": -9.6891,
-    "dailyPnl": 1.34639,
+    "dailyPnl": 1.41893,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2679.85,
-      "last": 2679.85,
+      "markPx": 2685.43,
+      "last": 2685.45,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.755855127423592,
-      "notionalUsd": 34.8307340095,
-      "upl": -0.48451,
+      "notionalUsd": 34.903607882,
+      "upl": -0.41197,
       "liqPx": 1821.0280328846275,
       "oco": {
         "algoId": "3942111048992997376",
@@ -69,6 +69,55 @@
     "ZEC-USDT-SWAP"
   ],
   "decisions": [
+    {
+      "id": "d_watch_185515",
+      "at": "2026-09-26T18:55:15+08:00",
+      "recordedAt": "2026-09-26T18:55:15+08:00",
+      "action": "hold_manage_oco",
+      "instId": "ETH-USDT-SWAP",
+      "summary": "10分钟盯盘：守 ETH+OCO；BTC 未进区；SOL 空仓不追；无新开。",
+      "reason": "权益≈34.90U 可用≈23.56U 日基线33.48 日PnL≈+1.42U（远低于9U日停）。仓位：ETH多0.13@2717.12 mark≈2685.43 uPnL≈-0.41U，OCO TP2880/SL2581 live；SOL 已平空仓。ETH 15m ST DOWN upper≈2692.99 / 1H ST DOWN upper≈2717.76 lower≈2663.11 RSI15≈47.37——结构偏软但 OCO 完整、距 SL2581 缓冲充足，不提前砍。BTC last≈84096.8 低于84750–84900 且 1H ST DOWN upper≈84756.2，不追。SOL last≈120.46（15m ST DOWN upper≈120.99 / 1H ST UP lower≈117.99），不追高重开。无成交、无订单变更。",
+      "lesson": "有可用仓容也不喷仓；等 BTC 回踩区或清晰的 1H 多头回踩+短周期配合再开。",
+      "material": false,
+      "bookChange": false,
+      "risk": {
+        "maxLeverage": 3,
+        "dailyLossStopUsdt": 9,
+        "dayBaseline": 33.48,
+        "dailyPnl": 1.4189,
+        "underStop": true
+      },
+      "market": {
+        "ETH": {
+          "last": 2685.45,
+          "mark": 2685.43,
+          "st15": "DOWN",
+          "st15Upper": 2692.99,
+          "st15Lower": 2674.59,
+          "st1h": "DOWN",
+          "st1hUpper": 2717.76,
+          "st1hLower": 2663.11,
+          "rsi15": 47.37
+        },
+        "BTC": {
+          "last": 84096.8,
+          "st1h": "DOWN",
+          "st1hUpper": 84756.2,
+          "st1hLower": 83443.9,
+          "entryZone": "84750-84900",
+          "action": "skip"
+        },
+        "SOL": {
+          "last": 120.46,
+          "st15": "DOWN",
+          "st15Upper": 120.99,
+          "st1h": "UP",
+          "st1hLower": 117.99,
+          "st1hUpper": 123.25,
+          "action": "flat_skip"
+        }
+      }
+    },
     {
       "id": "d_watch_164609",
       "at": "2026-09-26T16:46:09+08:00",
