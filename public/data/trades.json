@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-27T03:36:35+08:00",
+  "updatedAt": "2026-09-27T03:49:45+08:00",
   "account": {
-    "asOf": "2026-09-27T03:36:35+08:00",
+    "asOf": "2026-09-27T03:49:45+08:00",
     "currency": "USDT",
     "availBal": 23.555044,
     "availEq": 23.555044,
-    "eq": 34.869445,
-    "equity": 34.869445,
-    "equityUsdtApprox": 34.861774,
-    "totalEq": 34.861774,
-    "isoEq": 11.314401,
-    "upl": -0.44083,
+    "eq": 34.863725,
+    "equity": 34.863725,
+    "equityUsdtApprox": 34.855706,
+    "totalEq": 34.855706,
+    "isoEq": 11.30608,
+    "upl": -0.44655,
     "realizedPnl": -9.689725,
-    "dailyPnl": 1.389445,
+    "dailyPnl": 1.383725,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2683.21,
-      "last": 2683.23,
+      "markPx": 2682.77,
+      "last": 2682.73,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.755230701976204,
-      "notionalUsd": 34.8740560194,
-      "upl": -0.44083,
+      "notionalUsd": 34.867988517700006,
+      "upl": -0.44655,
       "liqPx": 1821.0762827356793,
       "oco": {
         "algoId": "3942111048992997376",
@@ -5265,43 +5265,56 @@
       "material": false,
       "bookChange": false,
       "decision": "hold_manage_oco"
+    },
+    {
+      "id": "d_watch_034945",
+      "at": "2026-09-27T03:49:45+08:00",
+      "recordedAt": "2026-09-27T03:49:45+08:00",
+      "action": "hold_manage_oco",
+      "instId": "ETH-USDT-SWAP",
+      "summary": "10分钟盯盘：维持 ETH 3x 逐仓多+OCO；结构偏软但不早砍；BTC 未进区且 1H ST DOWN，跳过。",
+      "reason": "权益≈34.86U 可用≈23.56U 日基线33.48 日PnL≈+1.38U（远低于9U日停）。仓位：ETH多0.13@2717.12 mark≈2682.77 uPnL≈-0.45U，OCO TP2880/SL2581 live（algoId 3942111048992997376）；SOL 空仓。ETH 15m ST DOWN upper≈2689.98 / 1H ST UP lower≈2670.86 upper≈2706.79 RSI15≈40.07——1H 仍 UP、OCO 完整、距 SL2581 缓冲充足，浮亏未破 2–3U 尺度，不提前砍。BTC last≈83987.9 低于84750–84900 且 1H ST DOWN upper≈84539.4，不追。SOL last≈121.09，1H ST UP（下轨≈118.76），无高确信度回踩入场，不喷雾加仓。无成交、无订单变更。",
+      "lesson": "1H 仍 UP + OCO 保护且浮亏未破 2–3U 时继续 hold；BTC 未进回踩区且 ST DOWN 时坚决不追。",
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_manage_oco"
     }
   ],
   "strategy_review": {
-    "at": "2026-09-27T03:13:07+08:00",
+    "at": "2026-09-27T03:49:45+08:00",
     "decision": "hold_manage_oco",
     "summary": "10分钟盯盘：维持 ETH 3x 逐仓多+OCO；15m ST DOWN / 1H ST UP；BTC 未进区且 1H ST DOWN，跳过；SOL 空仓；无新开。",
-    "reason": "权益≈34.88U 可用≈23.56U 日基线33.48 日PnL≈+1.40U（远低于9U日停）。仓位：ETH多0.13@2717.12 mark≈2684.3 uPnL≈-0.43U，OCO TP2880/SL2581 live（algoId 3942111048992997376）；SOL 空仓。ETH 15m ST DOWN upper≈2691.90 / 1H ST UP lower≈2670.86 upper≈2707.37 RSI15≈41.69——15m 偏软但 1H 仍 UP，OCO 完整、浮亏未破 2–3U 尺度，不提前砍。BTC last≈83986.1 低于84750–84900 且 1H ST DOWN upper≈84545.1（15m ST DOWN upper≈84140.4），不追。SOL last≈121.21，1H ST UP（下轨≈118.76），止盈后空仓不追高重开；无高确信度新开。无成交、无订单变更。",
+    "reason": "权益≈34.86U 可用≈23.56U 日基线33.48 日PnL≈+1.38U（远低于9U日停）。仓位：ETH多0.13@2717.12 mark≈2682.77 uPnL≈-0.45U，OCO TP2880/SL2581 live（algoId 3942111048992997376）；SOL 空仓。ETH 15m ST DOWN upper≈2689.98 / 1H ST UP lower≈2670.86 upper≈2706.79 RSI15≈40.07——1H 仍 UP、OCO 完整、距 SL2581 缓冲充足，浮亏未破 2–3U 尺度，不提前砍。BTC last≈83987.9 低于84750–84900 且 1H ST DOWN upper≈84539.4，不追。SOL last≈121.09，1H ST UP（下轨≈118.76），无高确信度回踩入场，不喷雾加仓。无成交、无订单变更。",
     "book_action": "none",
     "freeze_new_opens": false,
     "risk": {
       "maxLeverage": 3,
       "dailyLossStop": 9,
       "dayBaseline": 33.48,
-      "dailyPnl": 1.3963,
+      "dailyPnl": 1.383725,
       "underDailyStop": true,
       "availBal": 23.555044379678815,
-      "equity": 34.87628952248787,
-      "upl": -0.4266599999999963
+      "equity": 34.86372508165502,
+      "upl": -0.4465499999999989
     },
     "indicators": {
       "ETH": {
-        "last": 2684.31,
-        "mark": 2684.3,
+        "last": 2682.73,
+        "mark": 2682.77,
         "st15": {
           "trend": "DOWN",
-          "upper": 2691.9,
-          "lower": 2682.52
+          "upper": 2689.98,
+          "lower": 2674.83
         },
         "st1H": {
           "trend": "UP",
-          "upper": 2707.37,
+          "upper": 2706.79,
           "lower": 2670.86
         },
-        "rsi15": 41.69
+        "rsi15": 40.07
       },
       "SOL": {
-        "last": 121.21,
+        "last": 121.09,
         "st1H": {
           "trend": "UP",
           "upper": 123.23,
@@ -5309,22 +5322,22 @@
         }
       },
       "BTC": {
-        "last": 83986.1,
+        "last": 83987.9,
         "st15": {
           "trend": "DOWN",
-          "upper": 84140.4,
-          "lower": 83903.4
+          "upper": 84142.3,
+          "lower": 83902.3
         },
         "st1H": {
           "trend": "DOWN",
-          "upper": 84545.1,
+          "upper": 84539.4,
           "lower": 83632.7
         },
         "entryZone": "84750-84900",
         "inZone": false
       }
     },
-    "lesson": "结构完整+OCO保护时继续 hold；BTC 未进回踩区且 1H ST DOWN 时坚决不追。",
+    "lesson": "1H 仍 UP + OCO 保护且浮亏未破 2–3U 时继续 hold；BTC 未进回踩区且 ST DOWN 时坚决不追。",
     "material": false,
     "bookChange": false
   }
