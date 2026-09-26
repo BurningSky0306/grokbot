@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-27T03:13:07+08:00",
+  "updatedAt": "2026-09-27T03:30:28+08:00",
   "account": {
-    "asOf": "2026-09-27T03:13:07+08:00",
+    "asOf": "2026-09-27T03:30:28+08:00",
     "currency": "USDT",
-    "availBal": 23.555044379678815,
-    "availEq": 23.555044379678815,
-    "eq": 34.88361508165502,
-    "equity": 34.87628952248787,
-    "equityUsdtApprox": 34.87628952248787,
-    "totalEq": 34.87628952248787,
-    "isoEq": 11.326191702128792,
-    "upl": -0.4266599999999963,
-    "realizedPnl": -9.69705047751213,
-    "dailyPnl": 1.3963,
+    "availBal": 23.555044,
+    "availEq": 23.555044,
+    "eq": 34.853195,
+    "equity": 34.853195,
+    "equityUsdtApprox": 34.845527,
+    "totalEq": 34.845527,
+    "isoEq": 11.295665,
+    "upl": -0.45708,
+    "realizedPnl": -9.689725,
+    "dailyPnl": 1.373195,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2684.3,
-      "last": 2684.31,
+      "markPx": 2681.96,
+      "last": 2682.0,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.755230701976204,
-      "notionalUsd": 34.888571861,
-      "upl": -0.4266599999999963,
+      "notionalUsd": 34.8578095944,
+      "upl": -0.45708,
       "liqPx": 1821.0762827356793,
       "oco": {
         "algoId": "3942111048992997376",
@@ -5239,6 +5239,19 @@
           "inZone": false
         }
       }
+    },
+    {
+      "id": "d_watch_033028",
+      "at": "2026-09-27T03:30:28+08:00",
+      "recordedAt": "2026-09-27T03:30:28+08:00",
+      "action": "hold_manage_oco",
+      "instId": "ETH-USDT-SWAP",
+      "summary": "10分钟盯盘：维持 ETH 3x 逐仓多+OCO；结构偏软但不早砍；BTC 未进区且 1H ST DOWN，跳过。",
+      "reason": "权益≈34.85U 可用≈23.56U 日基线33.48 日PnL≈+1.37U（远低于9U日停）。仓位：ETH多0.13@2717.12 mark≈2681.96 uPnL≈-0.46U，OCO TP2880/SL2581 live（algoId 3942111048992997376）；SOL 空仓。ETH 15m ST DOWN upper≈2689.36 / 1H ST UP lower≈2670.86 upper≈2707.01 RSI15≈36.41——1H 仍 UP、OCO 完整、距 SL2581 缓冲充足，浮亏未破 2–3U 尺度，不提前砍。BTC last≈83997.5 低于84750–84900 且 1H ST DOWN upper≈84545.1，不追。SOL last≈121.13，1H ST UP（下轨≈118.76），无高确信度回踩入场，不喷雾加仓。无成交、无订单变更。",
+      "lesson": "1H 仍 UP + OCO 保护且浮亏未破 2–3U 时继续 hold；BTC 未进回踩区且 ST DOWN 时坚决不追。",
+      "material": false,
+      "bookChange": false,
+      "decision": "hold_manage_oco"
     }
   ],
   "strategy_review": {
