@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-28T04:20:09+08:00",
+  "updatedAt": "2026-09-28T05:58:34+08:00",
   "account": {
-    "asOf": "2026-09-28T04:20:09+08:00",
+    "asOf": "2026-09-28T05:58:34+08:00",
     "currency": "USDT",
     "availBal": 12.232085,
     "availEq": 12.232085,
-    "eq": 34.96703,
-    "equity": 34.96703,
-    "equityUsdtApprox": 34.957239,
-    "totalEq": 34.957239,
-    "isoEq": 22.728579,
-    "upl": -0.32213,
+    "eq": 34.80988,
+    "equity": 34.80988,
+    "equityUsdtApprox": 34.801525,
+    "totalEq": 34.801525,
+    "isoEq": 22.577794,
+    "upl": -0.47928,
     "realizedPnl": -9.709197,
-    "dailyPnl": 1.48703,
+    "dailyPnl": 1.32988,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.04,
       "avgPx": 84795.0,
-      "markPx": 84744.0,
-      "last": 84744.0,
+      "markPx": 84660.2,
+      "last": 84661.6,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.306363,
-      "notionalUsd": 33.888109,
-      "upl": -0.0204,
+      "notionalUsd": 33.855953,
+      "upl": -0.05392,
       "liqPx": 56784.723765,
       "oco": {
         "algoId": "3959222251548491776",
@@ -44,13 +44,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2693.92,
-      "last": 2693.98,
+      "markPx": 2684.4,
+      "last": 2684.4,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.750712,
-      "notionalUsd": 35.011154,
-      "upl": -0.3016,
+      "notionalUsd": 34.888825,
+      "upl": -0.42536,
       "liqPx": 1821.425472,
       "oco": {
         "algoId": "3942111048992997376",
@@ -66,6 +66,69 @@
     "SOL-USDT-SWAP"
   ],
   "decisions": [
+    {
+      "id": "d_watch_055834",
+      "at": "2026-09-28T05:58:34+08:00",
+      "recordedAt": "2026-09-28T05:58:34+08:00",
+      "action": "hold_manage_oco",
+      "decision": "hold_manage_oco",
+      "instId": "BTC-USDT-SWAP,ETH-USDT-SWAP",
+      "material": false,
+      "bookChange": false,
+      "summary": "10分钟盯盘：维持 BTC+ETH 双多 3x 逐仓+双 OCO；BTC 1H ST UP / ETH 1H ST DOWN（keep_watch）；日盈≈+1.33U 未近日停；可用≈12.23U 仓容偏紧不新开；无成交。",
+      "reason": "权益≈34.81U（日基线33.48，日PnL≈+1.33U，远低于9U日停）。可用≈12.23U，合计浮亏≈-0.48U。仓位：BTC 多 0.04@84795 mark≈84660.2 upl≈-0.054，OCO TP89877.4/SL80550.5 live（algoId 3959222251548491776）；ETH 多 0.13@2717.12 mark≈2684.4 upl≈-0.425，OCO TP2880/SL2581 live（algoId 3942111048992997376）。结构：BTC 15m ST DOWN（上轨≈84904.2 下轨≈84356.5）/1H ST UP（下轨≈84208.0 上轨≈85326.9）；ETH 15m ST DOWN（上轨≈2698.50 下轨≈2663.77）/1H ST DOWN（上轨≈2719.70 下轨≈2658.62）；SOL last≈122.82，1H ST UP（下轨≈121.14 上轨≈124.83），空仓、无清晰回踩且仓容偏紧。BTC last≈84661.6 已持仓，无需再开；ETH 1H 仍 DOWN 与多头冲突但距 SL≈3.9% 缓冲、浮亏远小于 2–3U 尺度，选择性 keep_watch 不强制砍仓。无限价单、无订单变更、双 OCO live。决策 hold_manage_oco；freeze_new_opens=true。",
+      "lesson": "仓容偏紧+双仓已保护时以 hold_manage_oco 为主；ETH 1H DOWN 标记 keep_watch，但不因单周期失败且 OCO/小浮亏齐全时强行轮换或挤第三笔。",
+      "risk": {
+        "maxLeverage": 3,
+        "dailyLossStop": 9,
+        "dayBaseline": 33.48,
+        "dailyPnl": 1.32988,
+        "underDailyStop": true,
+        "availBal": 12.232085,
+        "upl": -0.47928,
+        "capacityThin": true,
+        "freeze_new_opens": true
+      },
+      "market": {
+        "BTC": {
+          "last": 84661.6,
+          "mark": 84660.2,
+          "st15": {
+            "trend": "DOWN",
+            "lower": 84356.5,
+            "upper": 84904.2
+          },
+          "st1h": {
+            "trend": "UP",
+            "lower": 84208.0,
+            "upper": 85326.9
+          }
+        },
+        "ETH": {
+          "last": 2684.4,
+          "mark": 2684.4,
+          "st15": {
+            "trend": "DOWN",
+            "lower": 2663.77,
+            "upper": 2698.5
+          },
+          "st1h": {
+            "trend": "DOWN",
+            "lower": 2658.62,
+            "upper": 2719.7
+          }
+        },
+        "SOL": {
+          "last": 122.82,
+          "st1h": {
+            "trend": "UP",
+            "lower": 121.14,
+            "upper": 124.83
+          }
+        }
+      },
+      "material_for_user": false
+    },
     {
       "id": "d_watch_042009",
       "at": "2026-09-28T04:20:09+08:00",
