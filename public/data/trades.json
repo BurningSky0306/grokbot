@@ -1,36 +1,57 @@
 {
-  "updatedAt": "2026-09-27T13:49:14+08:00",
+  "updatedAt": "2026-09-27T16:07:54+08:00",
   "account": {
-    "asOf": "2026-09-27T13:49:14+08:00",
+    "asOf": "2026-09-27T16:07:54+08:00",
     "currency": "USDT",
-    "availBal": 23.555044,
-    "availEq": 23.555044,
-    "eq": 35.150526,
-    "equity": 35.150526,
-    "equityUsdtApprox": 35.139981,
-    "totalEq": 35.139981,
-    "isoEq": 11.595482,
-    "upl": -0.15873,
-    "realizedPnl": -9.690744,
-    "dailyPnl": 1.670526,
+    "availBal": 12.232085,
+    "availEq": 12.232085,
+    "eq": 35.295083,
+    "equity": 35.295083,
+    "equityUsdtApprox": 35.286965,
+    "totalEq": 35.286965,
+    "isoEq": 23.062997,
+    "upl": 0.00428,
+    "realizedPnl": -9.709197,
+    "dailyPnl": 1.815083,
     "dayBaseline": 33.48
   },
   "openOrders": [],
   "positions": [
+    {
+      "instId": "BTC-USDT-SWAP",
+      "instType": "SWAP",
+      "posSide": "net",
+      "pos": 0.04,
+      "avgPx": 84795.0,
+      "markPx": 84793.7,
+      "last": 84795.0,
+      "lever": "3",
+      "mgnMode": "isolated",
+      "margin": 11.306,
+      "notionalUsd": 33.909679,
+      "upl": -0.00052,
+      "liqPx": 56785.63490708186,
+      "oco": {
+        "algoId": "3959222251548491776",
+        "tp": 89877.4,
+        "sl": 80550.5,
+        "state": "live"
+      }
+    },
     {
       "instId": "ETH-USDT-SWAP",
       "instType": "SWAP",
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2704.91,
-      "last": 2704.91,
+      "markPx": 2717.5,
+      "last": 2717.5,
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": 11.754211593495183,
-      "notionalUsd": 35.153280851000005,
-      "upl": -0.15873,
-      "liqPx": 1821.1550300587116,
+      "margin": 11.752717,
+      "notionalUsd": 35.319375,
+      "upl": 0.00494,
+      "liqPx": 1821.2704816446126,
       "oco": {
         "algoId": "3942111048992997376",
         "tp": 2880,
@@ -5453,6 +5474,91 @@
         "dayBaseline": 33.48,
         "dailyPnl": 1.670526,
         "underDailyStop": true
+      }
+    },
+    {
+      "id": "d_watch_160754",
+      "at": "2026-09-27T16:07:54+08:00",
+      "recordedAt": "2026-09-27T16:07:54+08:00",
+      "action": "btc_entry_filled",
+      "decision": "btc_entry_filled",
+      "instId": "BTC-USDT-SWAP",
+      "material": true,
+      "bookChange": true,
+      "summary": "10分钟盯盘：BTC 进入 84750–84900 且 1H ST UP，已开 3x 逐仓多 0.04@84795，OCO TP89877.4/SL80550.5 已挂；ETH 继续持有+OCO；SOL 空仓不追高。",
+      "reason": "权益≈35.30U（日基线33.48，日PnL≈+1.82U，远低于9U日停）。可用≈12.23U。触发条件：BTC last≈84790 落在入口带 84750–84900，且 1H Supertrend UP（下轨≈84088.4 上轨≈85370.3）。已市价开多 BTC-USDT-SWAP 0.04 合约@84795（3x isolated，保证金≈11.31U，名义≈33.91U，目标 4–8% 波动≈2–3U），ordId 3959222251540860928，附带 OCO live algoId 3959222251548491776 TP89877.4(+6%)/SL80550.5(-5%)。ETH 继续持有 0.13@2717.12 mark≈2717.5 upl≈+0.005，OCO TP2880/SL2581 live（algoId 3942111048992997376）；15m/1H ST 均 UP，RSI15≈73.03 RSI1H≈68.44，不提前砍。SOL last≈124.13，15m/1H ST UP 但价在上轨之上无回踩，且仓容已用于 BTC，不追高。无风控触碰。",
+      "lesson": "BTC 严格等回踩带+1H ST UP 再进；进场后立刻挂 OCO，规模按 2–3U/4–8% 与约 11U 保证金约束。",
+      "risk": {
+        "dailyLossStopUsdt": 9,
+        "dailyPnl": 1.815083,
+        "dayBaseline": 33.48,
+        "maxLeverage": 3,
+        "underDailyStop": true
+      },
+      "market": {
+        "BTC": {
+          "decision": "entered_btc",
+          "entryZone": [
+            84750,
+            84900
+          ],
+          "last": 84795.0,
+          "fillPx": 84795.0,
+          "sz": 0.04,
+          "margin": 11.306,
+          "ordId": "3959222251540860928",
+          "ocoAlgoId": "3959222251548491776",
+          "tp": 89877.4,
+          "sl": 80550.5,
+          "st1H": {
+            "trend": "UP",
+            "lower": 84088.4,
+            "upper": 85370.3
+          }
+        },
+        "ETH": {
+          "last": 2717.5,
+          "rsi15": 73.03,
+          "rsi1H": 68.44,
+          "st15": {
+            "trend": "UP",
+            "lower": 2701.32,
+            "upper": 2718.35
+          },
+          "st1H": {
+            "trend": "UP",
+            "lower": 2685.64,
+            "upper": 2738.02
+          }
+        },
+        "SOL": {
+          "last": 124.13,
+          "st15": {
+            "trend": "UP",
+            "lower": 122.47,
+            "upper": 126.05
+          },
+          "st1H": {
+            "trend": "UP",
+            "lower": 121.02,
+            "upper": 127.5
+          },
+          "decision": "skipped_no_pullback_capacity_used"
+        }
+      },
+      "fill": {
+        "instId": "BTC-USDT-SWAP",
+        "side": "buy",
+        "ordId": "3959222251540860928",
+        "clOrdId": "btcentry09271606",
+        "avgPx": 84795.0,
+        "sz": 0.04,
+        "fee": -0.016959,
+        "lever": "3",
+        "tdMode": "isolated",
+        "ocoAlgoId": "3959222251548491776",
+        "tp": 89877.4,
+        "sl": 80550.5
       }
     }
   ],
