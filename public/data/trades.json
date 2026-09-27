@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-27T22:36:36+08:00",
+  "updatedAt": "2026-09-28T00:00:32+08:00",
   "account": {
-    "asOf": "2026-09-27T22:36:36+08:00",
+    "asOf": "2026-09-28T00:00:32+08:00",
     "currency": "USDT",
     "availBal": 12.232085,
     "availEq": 12.232085,
-    "eq": 34.897843,
-    "equity": 34.897843,
-    "equityUsdtApprox": 34.890863,
-    "totalEq": 34.890863,
-    "isoEq": 22.661224,
-    "upl": -0.39377,
+    "eq": 34.801343,
+    "equity": 34.801343,
+    "equityUsdtApprox": 34.792295,
+    "totalEq": 34.792295,
+    "isoEq": 22.569257,
+    "upl": -0.48946,
     "realizedPnl": -9.709197,
-    "dailyPnl": 1.417843,
+    "dailyPnl": 1.321343,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.04,
       "avgPx": 84795.0,
-      "markPx": 84687.1,
-      "last": 84686.8,
+      "markPx": 84437.8,
+      "last": 84437.5,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.306,
-      "notionalUsd": 33.868065,
-      "upl": -0.04316,
+      "notionalUsd": 33.7663384688,
+      "upl": -0.14288,
       "liqPx": 56785.63490708186,
       "oco": {
         "algoId": "3959222251548491776",
@@ -44,13 +44,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2690.15,
-      "last": 2690.0,
+      "markPx": 2690.46,
+      "last": 2690.48,
       "lever": "3",
       "mgnMode": "isolated",
-      "margin": 11.752717,
-      "notionalUsd": 34.964956,
-      "upl": -0.35061,
+      "margin": 11.752717476796244,
+      "notionalUsd": 34.96688624520001,
+      "upl": -0.34658,
       "liqPx": 1821.2704816446126,
       "oco": {
         "algoId": "3942111048992997376",
@@ -61,33 +61,9 @@
     }
   ],
   "universe": [
-    "BOME-USDT-SWAP",
-    "BONK-USDT-SWAP",
     "BTC-USDT-SWAP",
-    "CP-USDT-SWAP",
-    "DOGE-USDT-SWAP",
-    "DOOD-USDT-SWAP",
-    "DOT-USDT-SWAP",
     "ETH-USDT-SWAP",
-    "FLOKI-USDT-SWAP",
-    "GALA-USDT-SWAP",
-    "HMSTR-USDT-SWAP",
-    "IOST-USDT-SWAP",
-    "KAT-USDT-SWAP",
-    "LIT-USDT-SWAP",
-    "MEME-USDT-SWAP",
-    "NEAR-USDT-SWAP",
-    "NEIRO-USDT-SWAP",
-    "NOT-USDT-SWAP",
-    "OL-USDT-SWAP",
-    "PENGU-USDT-SWAP",
-    "PEPE-USDT-SWAP",
-    "PUMP-USDT-SWAP",
-    "SATS-USDT-SWAP",
-    "SHIB-USDT-SWAP",
-    "SOL-USDT-SWAP",
-    "SOPH-USDT-SWAP",
-    "ZEC-USDT-SWAP"
+    "SOL-USDT-SWAP"
   ],
   "decisions": [
     {
@@ -5737,6 +5713,72 @@
             "trend": "UP",
             "lower": 121.09,
             "upper": 125.81
+          }
+        }
+      }
+    },
+    {
+      "id": "d_watch_000032",
+      "at": "2026-09-28T00:00:32+08:00",
+      "recordedAt": "2026-09-28T00:00:32+08:00",
+      "action": "hold_manage_oco",
+      "decision": "hold_manage_oco",
+      "instId": "BTC-USDT-SWAP,ETH-USDT-SWAP",
+      "material": false,
+      "bookChange": false,
+      "summary": "10分钟盯盘：维持 BTC+ETH 双多 3x 逐仓+双 OCO；1H ST 仍 UP、15m DOWN；日盈≈+1.32U 未近日停；可用≈12.23U 仓容偏紧，不新开；无成交。",
+      "reason": "权益≈34.80U（日基线33.48，日PnL≈+1.32U，远低于9U日停）。可用≈12.23U，合计浮亏≈-0.489U。仓位：BTC 多 0.04@84795 mark≈84437.8 upl≈-0.143，OCO TP89877.4/SL80550.5 live（algoId 3959222251548491776）；ETH 多 0.13@2717.12 mark≈2690.46 upl≈-0.347，OCO TP2880/SL2581 live（algoId 3942111048992997376）。结构：BTC/ETH/SOL 1H ST UP（BTC 下轨≈84200.1 上轨≈85352.3；ETH 下轨≈2686.47 上轨≈2722.69；SOL 下轨≈121.10 上轨≈124.85）；BTC/ETH/SOL 15m ST DOWN。高周期多头未破，短线回撤中；浮亏未破 2–3U 尺度，OCO 完整，不提前砍。BTC 已持仓，无需再开；SOL last≈121.77 近 1H 下轨但仓容偏紧，不喷雾第三笔。无成交、无限价单、无订单变更。决策 hold_manage_oco；freeze_new_opens=true。",
+      "lesson": "双仓+仓容偏紧时以 hold_manage_oco 为主：1H ST UP 且 OCO 在则不因 15m DOWN 砍仓，也不挤第三笔。",
+      "risk": {
+        "maxLeverage": 3,
+        "dailyLossStop": 9,
+        "dayBaseline": 33.48,
+        "dailyPnl": 1.321343,
+        "underDailyStop": true,
+        "availBal": 12.232085,
+        "upl": -0.48946,
+        "capacityThin": true
+      },
+      "market": {
+        "BTC": {
+          "last": 84437.5,
+          "mark": 84437.8,
+          "st15": {
+            "trend": "DOWN",
+            "lower": 83825.3,
+            "upper": 85017.5
+          },
+          "st1h": {
+            "trend": "UP",
+            "lower": 84200.1,
+            "upper": 85352.3
+          }
+        },
+        "ETH": {
+          "last": 2690.48,
+          "mark": 2690.46,
+          "st15": {
+            "trend": "DOWN",
+            "lower": 2665.31,
+            "upper": 2709.08
+          },
+          "st1h": {
+            "trend": "UP",
+            "lower": 2686.47,
+            "upper": 2722.69
+          }
+        },
+        "SOL": {
+          "last": 121.77,
+          "st15": {
+            "trend": "DOWN",
+            "lower": 121.41,
+            "upper": 123.33
+          },
+          "st1h": {
+            "trend": "UP",
+            "lower": 121.1,
+            "upper": 124.85
           }
         }
       }
