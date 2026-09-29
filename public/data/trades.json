@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-29T09:32:04+08:00",
+  "updatedAt": "2026-09-29T13:04:00+08:00",
   "account": {
-    "asOf": "2026-09-29T09:32:04+08:00",
+    "asOf": "2026-09-29T13:04:00+08:00",
     "currency": "USDT",
     "availBal": 12.232085,
     "availEq": 12.232085,
-    "eq": 33.79937,
-    "equity": 33.79937,
-    "equityUsdtApprox": 33.79937,
-    "totalEq": 33.784161,
-    "isoEq": 21.55758,
-    "upl": -1.48,
-    "realizedPnl": -9.713729,
-    "dailyPnl": 0.31937,
+    "eq": 33.97,
+    "equity": 33.97,
+    "equityUsdtApprox": 33.96,
+    "totalEq": 33.96,
+    "isoEq": 21.742285,
+    "upl": -1.305,
+    "realizedPnl": -9.725,
+    "dailyPnl": 0.49,
     "dayBaseline": 33.48
   },
   "openOrders": [],
@@ -23,13 +23,13 @@
       "posSide": "net",
       "pos": 0.04,
       "avgPx": 84795.0,
-      "markPx": 82893.5,
-      "last": 82889.5,
+      "markPx": 83165.0,
+      "last": 83182.5,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.30088306895015,
-      "notionalUsd": 33.14247917,
-      "upl": -0.7606,
+      "notionalUsd": 33.266,
+      "upl": -0.65,
       "liqPx": 56798.48506039641,
       "oco": {
         "algoId": "3959222251548491776",
@@ -44,13 +44,13 @@
       "posSide": "net",
       "pos": 0.13,
       "avgPx": 2717.12,
-      "markPx": 2661.72,
-      "last": 2661.76,
+      "markPx": 2666.86,
+      "last": 2667.36,
       "lever": "3",
       "mgnMode": "isolated",
       "margin": 11.746401782136115,
-      "notionalUsd": 34.586788938,
-      "upl": -0.7202000000000013,
+      "notionalUsd": 34.66918,
+      "upl": -0.65,
       "liqPx": 1821.758500395154,
       "oco": {
         "algoId": "3942111048992997376",
@@ -6145,6 +6145,60 @@
       "freeze_new_opens": true,
       "book_action": "keep",
       "orders_changed": false
+    },
+    {
+      "id": "d_watch_130400",
+      "at": "2026-09-29T13:04:00+08:00",
+      "recordedAt": "2026-09-29T13:04:00+08:00",
+      "action": "hold_manage_oco",
+      "decision": "hold_manage_oco",
+      "instId": "BTC-USDT-SWAP,ETH-USDT-SWAP",
+      "material": false,
+      "bookChange": false,
+      "summary": "10分钟盯盘：维持 BTC+ETH 双多 3x 逐仓+双 OCO；BTC 1H ST DOWN（上轨≈84027），ETH 1H ST UP（下轨≈2635.30）；合计浮亏≈-1.31U、日盈≈+0.49U 未近日停；跳过新开 BTC/SOL/其它，仓容偏紧冻结第三笔；无下单/改单/撤单/成交。",
+      "reason": "权益≈33.97U totalEq≈33.96U（日基线33.48，日PnL≈+0.49U，远低于9U日停）。可用≈12.23U，逐仓占用≈21.74U，合计浮亏≈-1.305U。仓位：BTC 多 0.04@84795 mark≈83165 upl≈-0.65，OCO TP89877.4/SL80550.5 live（algoId 3959222251548491776）；ETH 多 0.13@2717.12 mark≈2666.86 upl≈-0.65，OCO TP2880/SL2581 live（algoId 3942111048992997376）。结构：BTC 1H ST DOWN（上轨≈84027 下轨≈82299）last≈83182.5——已持仓且远低于 84750–84900 回补带，跳过新开；ETH 1H ST UP（上轨≈2719.97 下轨≈2635.30）last≈2667.36，继续 hold；SOL flat last≈117.67，1H ST DOWN（上轨≈120.82 下轨≈116.27）——无高确信度入场。近窗口：无限价单、双 OCO 仍 live；本轮无 place/amend/cancel/fill。风险：日损未触发；杠杆均 3x；OCO 保护完整；距 SL 缓冲约 BTC 3.14% / ETH 3.22%。决策 hold_manage_oco / book_action=keep；freeze_new_opens=true；prefer concentrated book；material=false。",
+      "lesson": "已持 BTC+ETH 双仓时：BTC 1H ST DOWN 且远低于入场/回补带不加仓；ETH 1H 仍 UP 继续 hold_manage_oco；SOL/其它无高确信度信号则跳过；仓容偏紧继续 freeze_new_opens，优先集中持仓。",
+      "freeze_new_opens": true,
+      "risk": {
+        "maxLeverage": 3,
+        "dailyLossStop": 9,
+        "dayBaseline": 33.48,
+        "dailyPnl": 0.49,
+        "underDailyStop": true,
+        "availBal": 12.232085,
+        "upl": -1.305,
+        "capacityThin": true,
+        "btcSlBufferPct": 3.14,
+        "ethSlBufferPct": 3.22
+      },
+      "market": {
+        "BTC": {
+          "last": 83182.5,
+          "mark": 83165.0,
+          "st1h": {
+            "trend": "DOWN",
+            "upper": 84027.0,
+            "lower": 82299.0
+          }
+        },
+        "ETH": {
+          "last": 2667.36,
+          "mark": 2666.86,
+          "st1h": {
+            "trend": "UP",
+            "upper": 2719.97,
+            "lower": 2635.3
+          }
+        },
+        "SOL": {
+          "last": 117.67,
+          "st1h": {
+            "trend": "DOWN",
+            "upper": 120.82,
+            "lower": 116.27
+          }
+        }
+      }
     }
   ],
   "strategy_review": {
