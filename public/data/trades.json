@@ -6334,22 +6334,6 @@
       "orders_changed": false,
       "book_action": "keep",
       "type": "strategy_review"
-    },
-    {
-      "id": "d_sr_153600",
-      "at": "2026-09-30T15:35:41+08:00",
-      "recordedAt": "2026-09-30T15:35:41+08:00",
-      "action": "hold_manage_oco",
-      "decision": "hold_manage_oco",
-      "instId": "BTC-USDT-SWAP,ETH-USDT-SWAP",
-      "material": false,
-      "bookChange": false,
-      "summary": "策略审视：维持 BTC+ETH 双多 3x 逐仓+双 OCO；相对 10:38 审视，BTC 1H ST 已由 UP 翻 DOWN（上轨≈84236.4），现双周期 DOWN；ETH 仍 1H+15m DOWN。BTC mark≈83301.6（浮亏≈-0.60U），ETH mark≈2670.74（浮亏≈-0.60U），合计浮亏≈-1.20U、权益≈34.07U（日PnL≈+0.59U）。双 OCO 均 live，距 SL 缓冲约 BTC 3.3% / ETH 3.36%。可用≈12.23U 仓容偏紧；SOL 1H UP/15m DOWN（last≈118.5）无高质量 setup。选择性不强制砍仓/轮换，继续 freeze、hold_manage_oco。",
-      "reason": "权益≈34.07U totalEq≈34.05U（日基线33.48，日PnL≈+0.59U，远低于9U日停）。可用≈12.23U，逐仓占用≈21.83U，合计浮亏≈-1.20U。仓位：BTC 多 0.04@84795 mark≈83301.6 upl≈-0.60，OCO TP89877.4/SL80550.5 live（algoId 3959222251548491776）；ETH 多 0.13@2717.12 mark≈2670.74 upl≈-0.60，OCO TP2880.0/SL2581.0 live（algoId 3942111048992997376）。结构：BTC 1H ST DOWN（上轨≈84236.4 下轨≈82884.7）RSI≈47.32，15m ST DOWN（上轨≈83477.5）RSI≈50.87；ETH 1H ST DOWN（上轨≈2709.8 下轨≈2630.33）RSI≈45.23，15m ST DOWN（上轨≈2681.04）RSI≈49.6；SOL flat last≈118.5，1H ST UP（上轨≈121.46 下轨≈117.63）RSI≈46.48 / 15m ST DOWN（上轨≈119.59）——周期冲突、非高质量入场。近窗口：相对上次策略审视（10:38）与近期 10 分钟盯盘，无新成交、无限价单、双 OCO 仍 live 且参数未变；关键结构变化是 BTC 1H 由 UP→DOWN，价格仍在 1H 下轨≈82884.7 之上、距 OCO SL 缓冲≈3.3%。评估：多头结构转弱，但 OCO 保护完整、无更优替代标的与清晰失效触发，选择性原则下不强制砍仓/轮换；不加仓。风险：日损未触发；杠杆均 3x；仓容偏紧。决策 hold_manage_oco / book_action=keep；freeze_new_opens=true；无下单/改单/撤单；material=false。",
-      "freeze_new_opens": true,
-      "orders_changed": false,
-      "book_action": "keep",
-      "type": "strategy_review"
     }
   ],
   "strategy_review": {
